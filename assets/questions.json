@@ -1,0 +1,219 @@
+{
+  "Blanche": [
+    {
+      "question": "Que signifie Taekwondo ?",
+      "options": ["La voie du pied et du poing", "Art de la paix", "Technique de défense"],
+      "correctAnswer": "La voie du pied et du poing",
+      "image": "assets/images/taekwondo.jpg"
+    },
+    {
+      "question": "Quelle est la couleur de la ceinture pour un débutant ?",
+      "options": ["Blanche", "Jaune", "Verte"],
+      "correctAnswer": "Blanche",
+      "image": "assets/images/white_belt.png"
+    }
+  ],
+  "Jaune": [
+    {
+      "question": "Combien de coups de pied différents existe-t-il ?",
+      "options": ["5", "10", "15"],
+      "correctAnswer": "10",
+      "image": "assets/images/kicks.png"
+    },
+    {
+      "question": "Quelle est la signification de la ceinture jaune ?",
+      "options": ["Premières connaissances", "Initiation", "Compétence avancée"],
+      "correctAnswer": "Premières connaissances",
+      "image": "assets/images/yellow_belt.png"
+    }
+  ],
+  "Bleue": [
+    {
+      "question": "Comment dit-on 'coup de poing' en coréen ?",
+      "options": ["Jireugi", "Chagi", "Makgi", "Deungjumeok"],
+      "correctAnswer": "Jireugi",
+      "image": "assets/images/jireugi.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'blocage' ?",
+      "options": ["Makgi", "Chagi", "Jireugi", "Momtong"],
+      "correctAnswer": "Makgi",
+      "image": "assets/images/makgi.png"
+    },
+    {
+      "question": "Comment dit-on 'coup de pied latéral' en coréen ?",
+      "options": ["Yop Chagi", "Dollyo Chagi", "Ap Chagi", "Miro Chagi"],
+      "correctAnswer": "Yop Chagi",
+      "image": "assets/images/yop_chagi.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'coup de pied frontal' ?",
+      "options": ["Ap Chagi", "Yop Chagi", "Dollyo Chagi", "Nare Chagi"],
+      "correctAnswer": "Ap Chagi",
+      "image": "assets/images/ap_chagi.png"
+    },
+    {
+      "question": "Comment dit-on 'attaque' en coréen ?",
+      "options": ["Gonggyok", "Makgi", "Chigi", "Gyeorugi"],
+      "correctAnswer": "Gonggyok",
+      "image": "assets/images/gonggyok.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'poing' ?",
+      "options": ["Jumeok", "Bal", "Palmok", "Son"],
+      "correctAnswer": "Jumeok",
+      "image": "assets/images/jumeok.png"
+    },
+    {
+      "question": "Comment dit-on 'saluation' en coréen ?",
+      "options": ["Kyong Ye", "Sijak", "Gallyo", "Keuman"],
+      "correctAnswer": "Kyong Ye",
+      "image": "assets/images/kyong_ye.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'révérence' ?",
+      "options": ["Kyong Ye", "Charyeot", "Joon Bi", "Baro"],
+      "correctAnswer": "Kyong Ye",
+      "image": "assets/images/kyong_ye.png"
+    },
+    {
+      "question": "Comment dit-on 'position de combat' en coréen ?",
+      "options": ["Gyeorugi Jase", "Charyeot Jase", "Kibon Jase", "Juchum Jase"],
+      "correctAnswer": "Gyeorugi Jase",
+      "image": "assets/images/gyeorugi_jase.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'arrêt' ?",
+      "options": ["Kalyeo", "Keuman", "Charyeot", "Baro"],
+      "correctAnswer": "Keuman",
+      "image": "assets/images/keuman.png"
+    },
+    {
+      "question": "Comment dit-on 'technique de défense' en coréen ?",
+      "options": ["Bang Eo", "Gong Gyok", "Gyeorugi", "Bojumeok"],
+      "correctAnswer": "Bang Eo",
+      "image": "assets/images/bang_eo.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'technique de poing' ?",
+      "options": ["Jumeok Sool", "Jireugi", "Sonkal", "Chigi"],
+      "correctAnswer": "Jumeok Sool",
+      "image": "assets/images/jumeok_sool.png"
+    },
+    {
+      "question": "Comment dit-on 'maître' en coréen ?",
+      "options": ["Sabomnim", "Seonbae", "Kyosanim", "Jangnim"],
+      "correctAnswer": "Sabomnim",
+      "image": "assets/images/sabomnim.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'disciple' ?",
+      "options": ["Jeja", "Sabomnim", "Seonbae", "Bujeja"],
+      "correctAnswer": "Jeja",
+      "image": "assets/images/jeja.png"
+    },
+    {
+      "question": "Comment dit-on 'esprit' en coréen ?",
+      "options": ["Jungshin", "Maum", "Giyeok", "Yeoljeong"],
+      "correctAnswer": "Jungshin",
+      "image": "assets/images/jungshin.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'force' ?",
+      "options": ["Him", "Jin", "Yeoksa", "Gangnyeok"],
+      "correctAnswer": "Him",
+      "image": "assets/images/him.png"
+    },
+    {
+      "question": "Comment dit-on 'parade basse' en coréen ?",
+      "options": ["Arae Makgi", "Olgul Makgi", "Momtong Makgi", "An Makgi"],
+      "correctAnswer": "Arae Makgi",
+      "image": "assets/images/arae_makgi.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'blocage haut' ?",
+      "options": ["Olgul Makgi", "Arae Makgi", "Momtong Makgi", "Sonteul Makgi"],
+      "correctAnswer": "Olgul Makgi",
+      "image": "assets/images/olgui_makgi.png"
+    },
+    {
+      "question": "Comment dit-on 'parade médiane' en coréen ?",
+      "options": ["Momtong Makgi", "Arae Makgi", "Olgul Makgi", "An Makgi"],
+      "correctAnswer": "Momtong Makgi",
+      "image": "assets/images/momtong_makgi.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'poussée' ?",
+      "options": ["Miro", "Chireugi", "Jireugi", "Mireogi"],
+      "correctAnswer": "Miro",
+      "image": "assets/images/miro.png"
+    },
+    {
+      "question": "Comment dit-on 'frappe' en coréen ?",
+      "options": ["Chigi", "Jireugi", "Makgi", "Ap Chagi"],
+      "correctAnswer": "Chigi",
+      "image": "assets/images/chigi.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'coup de pied circulaire extérieur' ?",
+      "options": ["Bakkat Dollyo Chagi", "An Dollyo Chagi", "Olgul Chagi", "Yop Chagi"],
+      "correctAnswer": "Bakkat Dollyo Chagi",
+      "image": "assets/images/bakkat_dollyo_chagi.png"
+    },
+    {
+      "question": "Comment dit-on 'double coup de pied' en coréen ?",
+      "options": ["Dooleo Chagi", "Doobon Chagi", "Twio Chagi", "Narae Chagi"],
+      "correctAnswer": "Narae Chagi",
+      "image": "assets/images/narae_chagi.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'coup de pied sauté' ?",
+      "options": ["Twio Chagi", "Ap Chagi", "Yop Chagi", "Dollyo Chagi"],
+      "correctAnswer": "Twio Chagi",
+      "image": "assets/images/twio_chagi.png"
+    },
+    {
+      "question": "Comment dit-on 'attaque en sautant' en coréen ?",
+      "options": ["Twio Jireugi", "Narae Jireugi", "Twio Chigi", "Gonggyok"],
+      "correctAnswer": "Twio Jireugi",
+      "image": "assets/images/twio_jireugi.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'bras' ?",
+      "options": ["Pal", "Son", "Jumeok", "Palmok"],
+      "correctAnswer": "Pal",
+      "image": "assets/images/pal.png"
+    },
+    {
+      "question": "Comment dit-on 'coup de poing double' en coréen ?",
+      "options": ["Doo Jumeok", "Sang Jireugi", "Doobon Jireugi", "Yeop Jireugi"],
+      "correctAnswer": "Sang Jireugi",
+      "image": "assets/images/sang_jireugi.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'double blocage' ?",
+      "options": ["Sang Makgi", "Doo Makgi", "Yeop Makgi", "Geodeureo Makgi"],
+      "correctAnswer": "Sang Makgi",
+      "image": "assets/images/sang_makgi.png"
+    },
+    {
+      "question": "Comment dit-on 'attaque de pied' en coréen ?",
+      "options": ["Bal Chagi", "Bal Gyeok", "Bal Jireugi", "Bal Makgi"],
+      "correctAnswer": "Bal Chagi",
+      "image": "assets/images/bal_chagi.png"
+    },
+    {
+      "question": "Quel est le terme coréen pour 'technique de coude' ?",
+      "options": ["Palgup Chigi", "Sonkal Chigi", "Bakkat Chigi", "Palmok Chigi"],
+      "correctAnswer": "Palgup Chigi",
+      "image": "assets/images/palgup_chigi.png"
+    },
+    {
+      "question": "Comment dit-on 'coup de pied retourné' en coréen ?",
+      "options": ["Dwiro Chagi", "Bakkat Chagi", "Ap Chagi", "Dollyo Chagi"],
+      "correctAnswer": "Dwiro Chagi",
+      "image": "assets/images/dwiro_chagi.png"
+    }
+  ]
+
+}

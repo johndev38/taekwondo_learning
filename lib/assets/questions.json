@@ -1,0 +1,30 @@
+{
+  "Blanche": [
+    {
+      "question": "Que signifie Taekwondo ?",
+      "options": ["La voie du pied et du poing", "Art de la paix", "Technique de défense"],
+      "correctAnswer": "La voie du pied et du poing",
+      "image": "assets/images/taekwondo_symbol.png"
+    },
+    {
+      "question": "Quelle est la couleur de la ceinture pour un débutant ?",
+      "options": ["Blanche", "Jaune", "Verte"],
+      "correctAnswer": "Blanche",
+      "image": "assets/images/white_belt.png"
+    }
+  ],
+  "Jaune": [
+    {
+      "question": "Combien de coups de pied différents existe-t-il ?",
+      "options": ["5", "10", "15"],
+      "correctAnswer": "10",
+      "image": "assets/images/kicks.png"
+    },
+    {
+      "question": "Quelle est la signification de la ceinture jaune ?",
+      "options": ["Premières connaissances", "Initiation", "Compétence avancée"],
+      "correctAnswer": "Premières connaissances",
+      "image": "assets/images/yellow_belt.png"
+    }
+  ]
+}
