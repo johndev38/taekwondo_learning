@@ -42,16 +42,12 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
           combinedQuestions.addAll(data[belt]);
         }
 
-        // Stop including questions after reaching the selected belt
         if (belt == widget.belt) {
           break;
         }
       }
 
-      // Shuffle the combined questions to randomize them
       combinedQuestions.shuffle();
-
-      // Take 10 random questions
       questions = combinedQuestions.take(10).toList();
 
       if (questions.length < 10) {
@@ -129,6 +125,10 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
         ),
       );
     } else {
+      // Shuffle options for the current question
+      final List<String> options = List<String>.from(questions[currentQuestionIndex]['options']);
+      options.shuffle();
+
       return Scaffold(
         appBar: AppBar(
           title: Text('Question ${currentQuestionIndex + 1}/10'),
@@ -146,7 +146,7 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20),
-              ...questions[currentQuestionIndex]['options']
+              ...options
                   .map<Widget>(
                     (option) => ListTile(
                   title: Text(option),

@@ -1,0 +1,28 @@
+{
+  "rules": [
+    {
+      "title": "Introduction",
+      "content": "Les règles d'arbitrage du taekwondo sont conçues pour assurer la sécurité des compétiteurs tout en maintenant l'intégrité du sport."
+    },
+    {
+      "title": "Catégories de Compétition",
+      "content": "Les compétitions sont divisées en différentes catégories selon l'âge, le poids et le niveau de ceinture des participants."
+    },
+    {
+      "title": "Durée des Rounds",
+      "content": "Chaque match est composé de trois rounds de deux minutes avec une pause d'une minute entre chaque round."
+    },
+    {
+      "title": "Critères de Jugement",
+      "content": "Les points sont attribués pour des coups précis, avec des points supplémentaires pour des coups de pied à la tête ou des techniques tournantes."
+    },
+    {
+      "title": "Fautes et Pénalités",
+      "content": "Les fautes incluent les coups en dessous de la ceinture, les attaques après le signal d'arrêt, et les comportements antisportifs. Les pénalités peuvent aller de la déduction de points à la disqualification."
+    },
+    {
+      "title": "Équipements Requis",
+      "content": "Les compétiteurs doivent porter un dobok, un casque, un plastron, des protège-bras, des protège-tibias et un protège-dents."
+    }
+  ]
+}
