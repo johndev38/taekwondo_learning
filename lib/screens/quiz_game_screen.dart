@@ -5,9 +5,9 @@ import 'home_screen.dart';
 
 class QuizGameScreen extends StatefulWidget {
   final String belt;
-  final List<String> belts;
+  final String fileName;
 
-  QuizGameScreen({required this.belt, required this.belts});
+  QuizGameScreen({required this.belt, required this.fileName});
 
   @override
   _QuizGameScreenState createState() => _QuizGameScreenState();
@@ -26,32 +26,14 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
   }
 
   Future<void> loadQuestions() async {
-    final String response = await rootBundle.loadString('assets/questions.json');
+    final String response = await rootBundle.loadString('assets/${widget.fileName}');
     final data = await json.decode(response);
 
     setState(() {
-      List<dynamic> combinedQuestions = [];
-      bool includeQuestions = true;
-
-      for (String belt in widget.belts) {
-        if (belt == widget.belt) {
-          includeQuestions = true;
-        }
-
-        if (includeQuestions) {
-          combinedQuestions.addAll(data[belt]);
-        }
-
-        if (belt == widget.belt) {
-          break;
-        }
-      }
-
-      combinedQuestions.shuffle();
-      questions = combinedQuestions.take(10).toList();
-
-      if (questions.length < 10) {
-        throw Exception("Not enough questions for the selected belt and its predecessors in the JSON file.");
+      questions = data['questions'];
+      questions.shuffle();  // Mélange les questions
+      if (questions.length > 10) {
+        questions = questions.take(10).toList();  // Limite à 10 questions
       }
     });
   }
@@ -125,7 +107,6 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
         ),
       );
     } else {
-      // Shuffle options for the current question
       final List<String> options = List<String>.from(questions[currentQuestionIndex]['options']);
       options.shuffle();
 
@@ -146,14 +127,12 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20),
-              ...options
-                  .map<Widget>(
+              ...options.map<Widget>(
                     (option) => ListTile(
                   title: Text(option),
                   onTap: () => checkAnswer(option),
                 ),
-              )
-                  .toList(),
+              ).toList(),
             ],
           ),
         ),

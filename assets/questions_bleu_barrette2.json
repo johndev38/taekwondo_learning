@@ -1,0 +1,68 @@
+{"Bleu 2ème barrette (4e keup)": [
+  {
+    "question": "Quelle est la position avec le pied droit en avant ?",
+    "options": ["Oren Seugui", "Owen Seugui", "Dwitt Koa Seugui"],
+    "correctAnswer": "Oren Seugui",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quelle est la position avec le pied gauche en avant ?",
+    "options": ["Owen Seugui", "Oren Seugui", "Dwitt Koa Seugui"],
+    "correctAnswer": "Owen Seugui",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quelle est la position arrière croisée pour esquiver ou contre-attaquer ?",
+    "options": ["Dwitt Koa Seugui", "Oren Seugui", "Owen Seugui"],
+    "correctAnswer": "Dwitt Koa Seugui",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quel coup de coude est effectué en rotation circulaire ?",
+    "options": ["Pal Koup Tolyo", "Pal Koup Yop", "Pal Koup Olio"],
+    "correctAnswer": "Pal Koup Tolyo",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quel coup de coude est latéral et se dirige vers l'extérieur ?",
+    "options": ["Pal Koup Yop", "Pal Koup Tolyo", "Pal Koup Olio"],
+    "correctAnswer": "Pal Koup Yop",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quel coup de coude est dirigé vers le haut, frappant l'adversaire au menton ?",
+    "options": ["Pal Koup Olio", "Pal Koup Yop", "Pal Koup Tolyo"],
+    "correctAnswer": "Pal Koup Olio",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quel coup de pied est un mouvement circulaire avancé avec la jambe avant ?",
+    "options": ["Ap Pal et Koro Tolyo Tchagui", "Ap Pal et Koro Furyeu Tchagui", "Ap Pal et Koro Nelyo Tchagui"],
+    "correctAnswer": "Ap Pal et Koro Tolyo Tchagui",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quel coup de pied est un mouvement de revers circulaire avec la jambe avant ?",
+    "options": ["Ap Pal et Koro Furyeu Tchagui", "Ap Pal et Koro Tolyo Tchagui", "Ap Pal et Koro Nelyo Tchagui"],
+    "correctAnswer": "Ap Pal et Koro Furyeu Tchagui",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quel coup de pied avancé descend de haut en bas avec la jambe avant ?",
+    "options": ["Ap Pal et Koro Nelyo Tchagui", "Ap Pal et Koro Tolyo Tchagui", "Ap Pal et Koro Furyeu Tchagui"],
+    "correctAnswer": "Ap Pal et Koro Nelyo Tchagui",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quel blocage utilise la paume pour bloquer une attaque descendante ?",
+    "options": ["Batangson Nelyo Maki", "Batangson Momtong Maki", "Sonnal Are Maki"],
+    "correctAnswer": "Batangson Nelyo Maki",
+    "image": "assets/images/ceinture_bleu.png"
+  },
+  {
+    "question": "Quel blocage utilise la paume pour protéger la partie médiane du corps ?",
+    "options": ["Batangson Momtong Maki", "Batangson Nelyo Maki", "Kodoro Bakat Maki"],
+    "correctAnswer": "Batangson Momtong Maki",
+    "image": "assets/images/ceinture_bleu.png"
+  }
+]}

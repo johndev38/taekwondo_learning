@@ -1,0 +1,104 @@
+{"Rouge 1ère barrette (2e keup)": [
+  {
+    "question": "Quelle est la position de marche en Taekwondo ?",
+    "options": ["Ap Seugui", "Ap Koubi", "Joutchoum Seugui"],
+    "correctAnswer": "Ap Seugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle position abaisse le centre de gravité pour plus de stabilité ?",
+    "options": ["Ap Koubi", "Joutchoum Seugui", "Dwitt Koubi Seugui"],
+    "correctAnswer": "Ap Koubi",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle est la position du cavalier en Taekwondo ?",
+    "options": ["Joutchoum Seugui", "Narahni Tchoumbi Seugui", "Oren Seugui"],
+    "correctAnswer": "Joutchoum Seugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle position signifie être en attente avec les pieds parallèles ?",
+    "options": ["Narahni Tchoumbi Seugui", "Ap Koubi", "Beum Seugui"],
+    "correctAnswer": "Narahni Tchoumbi Seugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle position est utilisée pour saluer en Taekwondo ?",
+    "options": ["Tchaliot Seugui", "Ap Seugui", "Oren Seugui"],
+    "correctAnswer": "Tchaliot Seugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle est la position arrière utilisée pour stabiliser lors des attaques et des blocages ?",
+    "options": ["Dwitt Koubi Seugui", "Ap Koubi Seugui", "Be Joumok Seugui"],
+    "correctAnswer": "Dwitt Koubi Seugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle est la position avec le pied droit en avant ?",
+    "options": ["Oren Seugui", "Owen Seugui", "Beum Seugui"],
+    "correctAnswer": "Oren Seugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle est la position avec le pied gauche en avant ?",
+    "options": ["Owen Seugui", "Oren Seugui", "Dwitt Koa Seugui"],
+    "correctAnswer": "Owen Seugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle est la position arrière croisée pour esquiver ou contre-attaquer ?",
+    "options": ["Dwitt Koa Seugui", "Oren Seugui", "Be Joumok Seugui"],
+    "correctAnswer": "Dwitt Koa Seugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle est la position où les deux pieds sont en ligne et légèrement pliés ?",
+    "options": ["Beum Seugui", "Owen Seugui", "Ap Koubi"],
+    "correctAnswer": "Beum Seugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle attaque poing est réalisée en remontant de bas en haut ?",
+    "options": ["Je Tcho Jireugui", "Deung Joumok Je Tcho Jireugui", "Do Kyang Teung Je Tcho Jireugui"],
+    "correctAnswer": "Je Tcho Jireugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle attaque poing en remontant utilise le dos du poing ?",
+    "options": ["Deung Joumok Je Tcho Jireugui", "Je Tcho Jireugui", "Do Kyang Teung Je Tcho Jireugui"],
+    "correctAnswer": "Deung Joumok Je Tcho Jireugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quelle attaque poing en remontant utilise la paume de la main ?",
+    "options": ["Do Kyang Teung Je Tcho Jireugui", "Deung Joumok Je Tcho Jireugui", "Je Tcho Jireugui"],
+    "correctAnswer": "Do Kyang Teung Je Tcho Jireugui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quel coup de pied est exécuté sans reposer le pied au sol, avec un mouvement circulaire ?",
+    "options": ["Sohko Tchagui", "Keudop Tchagui", "Momdolyo Tchagui"],
+    "correctAnswer": "Sohko Tchagui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quel coup de pied est exécuté sans reposer le pied au sol, avec un mouvement latéral ?",
+    "options": ["Keudop Tchagui", "Sohko Tchagui", "360 Nelyo Tchagui"],
+    "correctAnswer": "Keudop Tchagui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quel blocage double renforce la défense de la partie médiane avec la paume de la main ?",
+    "options": ["Kodoro Batangson Momtong Maki", "Eut Keuro Are Maki", "Batangson Nelyo Maki"],
+    "correctAnswer": "Kodoro Batangson Momtong Maki",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quel blocage double renforce la défense basse avec les bras croisés ?",
+    "options": ["Eut Keuro Are Maki", "Kodoro Batangson Momtong Maki", "Batangson Nelyo Maki"],
+    "correctAnswer": "Eut Keuro Are Maki",
+    "image": "assets/images/ceinture_rouge.png"
+  }
+]}
