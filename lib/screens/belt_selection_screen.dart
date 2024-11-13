@@ -16,30 +16,67 @@ class BeltSelectionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Sélectionner la ceinture'),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
+        centerTitle: true,
       ),
-      body: ListView.builder(
-        itemCount: belts.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text('Ceinture ${belts[index]['name']}'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => QuizGameScreen(
-                    belt: belts[index]['name']!,
-                    fileName: belts[index]['file']!,
+      body: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: screenWidth > 600 ? 2 : 1,
+            childAspectRatio: 5, // Réduction de la hauteur des cartes
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+          ),
+          itemCount: belts.length,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              onTap: () {
+                List<String> selectedFiles = [];
+                for (int i = 0; i <= index; i++) {
+                  selectedFiles.add(belts[i]['file']!);
+                }
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => QuizGameScreen(
+                      belt: belts[index]['name']!,
+                      fileNames: selectedFiles,
+                    ),
+                  ),
+                );
+              },
+              child: Card(
+                elevation: 3,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12), // Coins arrondis plus subtils
+                ),
+                color: Colors.grey[50], // Couleur de fond légère
+                child: Center(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                    child: Text(
+                      belts[index]['name']!,
+                      style: TextStyle(
+                        fontSize: 16, // Police légèrement réduite
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ),
-              );
-            },
-          );
-        },
+              ),
+            );
+          },
+        ),
       ),
     );
   }

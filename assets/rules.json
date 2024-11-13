@@ -23,6 +23,134 @@
     {
       "title": "Équipements Requis",
       "content": "Les compétiteurs doivent porter un dobok, un casque, un plastron, des protège-bras, des protège-tibias et un protège-dents."
+    },
+    {
+      "title": "ARTICLE 4.2 - Équipements de Compétition et Tenue des Compétiteurs",
+      "content": "Les équipements utilisés lors des compétitions doivent être validés par la F.F.T.D.A, y compris l'aire de compétition, les plastrons électroniques et les équipements pour le recours vidéo. Les compétiteurs doivent porter diverses protections, notamment pour le tronc, la tête, les avant-bras, les tibias, ainsi que des gants, une coquille, et un protège-dents. Les coquilles, protège avant-bras et protège tibias doivent être portés sous le Dobok. Tous les équipements doivent être approuvés par la F.F.T.D.A. Le port d'articles autres que le casque sur la tête n'est pas autorisé en compétition."
+    },
+    {
+      "title": "ARTICLE 4.2.5 - Cahier des Charges pour les Équipements de Compétition",
+      "content": "Le comité organisateur doit respecter le cahier des charges de la F.F.T.D.A concernant les équipements de compétition, qui inclut les plastrons électroniques, les aires de compétition, les casques de protection et autres équipements. Pour les compétitions internationales, un système de recours vidéo instantané doit être mis en place, avec au moins trois caméras par aire de combat. Le comité doit également préparer des équipements de secours et obtenir l'approbation de la F.F.T.D.A pour le nombre d'équipements nécessaires."
+    },
+    {
+      "title": "ARTICLE 4.3 - Contrôle Anti-Dopage",
+      "content": "Les contrôles anti-dopage sont effectués conformément à la réglementation française sur la lutte anti-dopage. Tout compétiteur soumis à un contrôle doit respecter les procédures établies."
+    },
+    {
+      "title": "ARTICLE 5 - Catégories",
+      "content": "Les catégories de compétition sont divisées en divisions masculines et féminines. Elles sont également classées par poids, âge et niveau, conformément aux règles de la F.F.T.D.A et des compétitions internationales."
+    },
+    {
+      "title": "ARTICLE 5.1 - Catégories Générales",
+      "content": "Les catégories incluent les benjamins, minimes, cadets, juniors, seniors, espoirs, et vétérans, pour les divisions masculines et féminines."
+    },
+    {
+      "title": "ARTICLE 5.2 - Catégories de Poids des Jeux Olympiques",
+      "content": "Les catégories de poids pour les divisions masculines et féminines sont définies comme suit :"
+    },
+    {
+      "title": "ARTICLE 5.2.1 - Catégories de Poids Mondial (Masculins)",
+      "content": [
+        {"division": "Under 54kg", "description": "Not exceeding 54kg"},
+        {"division": "Under 58kg", "description": "Over 54kg & Not exceeding 58kg"},
+        {"division": "Under 63kg", "description": "Over 58kg & Not exceeding 63kg"},
+        {"division": "Under 68kg", "description": "Over 63kg & Not exceeding 68kg"},
+        {"division": "Under 74kg", "description": "Over 68kg & Not exceeding 74kg"},
+        {"division": "Under 80kg", "description": "Over 74kg & Not exceeding 80kg"},
+        {"division": "Under 87kg", "description": "Over 80kg & Not exceeding 87kg"},
+        {"division": "Over 87kg", "description": "Over 87kg"}
+      ]
+    },
+    {
+      "title": "ARTICLE 5.2.2 - Catégories de Poids Mondial (Féminins)",
+      "content": [
+        {"division": "Under 46kg", "description": "Not exceeding 46kg"},
+        {"division": "Under 49kg", "description": "Over 46kg & Not exceeding 49kg"},
+        {"division": "Under 53kg", "description": "Over 49kg & Not exceeding 53kg"},
+        {"division": "Under 57kg", "description": "Over 53kg & Not exceeding 57kg"},
+        {"division": "Under 62kg", "description": "Over 57kg & Not exceeding 62kg"},
+        {"division": "Under 67kg", "description": "Over 62kg & Not exceeding 67kg"},
+        {"division": "Under 73kg", "description": "Over 67kg & Not exceeding 73kg"},
+        {"division": "Over 73kg", "description": "Over 73kg"}
+      ]
+    },
+    {
+      "title": "ARTICLE 5.2.3 - Catégories de Poids Olympiques",
+      "content": [
+        {"division": "Under 58kg", "description": "Not exceeding 58kg (Masculins)"},
+        {"division": "Under 68kg", "description": "Over 58kg & Not exceeding 68kg (Masculins)"},
+        {"division": "Under 80kg", "description": "Over 68kg & Not exceeding 80kg (Masculins)"},
+        {"division": "Over 80kg", "description": "Over 80kg (Masculins)"},
+        {"division": "Under 49kg", "description": "Not exceeding 49kg (Féminins)"},
+        {"division": "Under 57kg", "description": "Over 49kg & Not exceeding 57kg (Féminins)"},
+        {"division": "Under 67kg", "description": "Over 57kg & Not exceeding 67kg (Féminins)"},
+        {"division": "Over 67kg", "description": "Over 67kg (Féminins)"}
+      ]
+    },
+    {
+      "title": "ARTICLE 5.2.4 - Catégories de Poids Junior",
+      "content": [
+        {"division": "Under 45kg", "description": "Not exceeding 45kg (Masculins)"},
+        {"division": "Under 48kg", "description": "Over 45kg & Not exceeding 48kg (Masculins)"},
+        {"division": "Under 51kg", "description": "Over 48kg & Not exceeding 51kg (Masculins)"},
+        {"division": "Under 55kg", "description": "Over 51kg & Not exceeding 55kg (Masculins)"},
+        {"division": "Under 59kg", "description": "Over 55kg & Not exceeding 59kg (Masculins)"},
+        {"division": "Under 63kg", "description": "Over 59kg & Not exceeding 63kg (Masculins)"},
+        {"division": "Under 68kg", "description": "Over 63kg & Not exceeding 68kg (Masculins)"},
+        {"division": "Under 73kg", "description": "Over 68kg & Not exceeding 73kg (Masculins)"},
+        {"division": "Under 78kg", "description": "Over 73kg & Not exceeding 78kg (Masculins)"},
+        {"division": "Over 78kg", "description": "Over 78kg (Masculins)"},
+        {"division": "Under 42kg", "description": "Not exceeding 42kg (Féminins)"},
+        {"division": "Under 44kg", "description": "Over 42kg & Not exceeding 44kg (Féminins)"},
+        {"division": "Under 46kg", "description": "Over 44kg & Not exceeding 46kg (Féminins)"},
+        {"division": "Under 49kg", "description": "Over 46kg & Not exceeding 49kg (Féminins)"},
+        {"division": "Under 52kg", "description": "Over 49kg & Not exceeding 52kg (Féminins)"},
+        {"division": "Under 55kg", "description": "Over 52kg & Not exceeding 55kg (Féminins)"},
+        {"division": "Under 59kg", "description": "Over 55kg & Not exceeding 59kg (Féminins)"},
+        {"division": "Under 63kg", "description": "Over 59kg & Not exceeding 63kg (Féminins)"},
+        {"division": "Under 68kg", "description": "Over 63kg & Not exceeding 68kg (Féminins)"},
+        {"division": "Over 68kg", "description": "Over 68kg (Féminins)"}
+      ]
+    },
+    {
+      "title": "ARTICLE 5.2.5 - Catégories de Poids Olympique de la Jeunesse",
+      "content": [
+        {"division": "Under 48kg", "description": "Not exceeding 48kg (Masculins)"},
+        {"division": "Under 55kg", "description": "Over 48kg & Not exceeding 55kg (Masculins)"},
+        {"division": "Under 63kg", "description": "Over 55kg & Not exceeding 63kg (Masculins)"},
+        {"division": "Under 73kg", "description": "Over 63kg & Not exceeding 73kg (Masculins)"},
+        {"division": "Over 73kg", "description": "Over 73kg (Masculins)"},
+        {"division": "Under 44kg", "description": "Not exceeding 44kg (Féminins)"},
+        {"division": "Under 49kg", "description": "Over 44kg & Not exceeding 49kg (Féminins)"},
+        {"division": "Under 55kg", "description": "Over 49kg & Not exceeding 55kg (Féminins)"},
+        {"division": "Under 63kg", "description": "Over 55kg & Not exceeding 63kg (Féminins)"},
+        {"division": "Over 63kg", "description": "Over 63kg (Féminins)"}
+      ]
+    },
+    {
+      "title": "ARTICLE 5.2.6 - Catégories de Poids des Cadets",
+      "content": [
+        {"division": "Under 33kg", "description": "Not exceeding 33kg (Masculins)"},
+        {"division": "Under 37kg", "description": "Over 33kg & Not exceeding 37kg (Masculins)"},
+        {"division": "Under 41kg", "description": "Over 37kg & Not exceeding 41kg (Masculins)"},
+        {"division": "Under 45kg", "description": "Over 41kg & Not exceeding 45kg (Masculins)"},
+        {"division": "Under 49kg", "description": "Over 45kg & Not exceeding 49kg (Masculins)"},
+        {"division": "Under 53kg", "description": "Over 49kg & Not exceeding 53kg (Masculins)"},
+        {"division": "Under 57kg", "description": "Over 53kg & Not exceeding 57kg (Masculins)"},
+        {"division": "Under 61kg", "description": "Over 57kg & Not exceeding 61kg (Masculins)"},
+        {"division": "Under 65kg", "description": "Over 61kg & Not exceeding 65kg (Masculins)"},
+        {"division": "Over 65kg", "description": "Over 65kg (Masculins)"},
+        {"division": "Under 29kg", "description": "Not exceeding 29kg (Féminins)"},
+        {"division": "Under 33kg", "description": "Over 29kg & Not exceeding 33kg (Féminins)"},
+        {"division": "Under 37kg", "description": "Over 33kg & Not exceeding 37kg (Féminins)"},
+        {"division": "Under 41kg", "description": "Over 37kg & Not exceeding 41kg (Féminins)"},
+        {"division": "Under 44kg", "description": "Over 41kg & Not exceeding 44kg (Féminins)"},
+        {"division": "Under 47kg", "description": "Over 44kg & Not exceeding 47kg (Féminins)"},
+        {"division": "Under 51kg", "description": "Over 47kg & Not exceeding 51kg (Féminins)"},
+        {"division": "Under 55kg", "description": "Over 51kg & Not exceeding 55kg (Féminins)"},
+        {"division": "Under 59kg", "description": "Over 55kg & Not exceeding 59kg (Féminins)"},
+        {"division": "Over 59kg", "description": "Over 59kg (Féminins)"}
+      ]
     }
   ]
 }

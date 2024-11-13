@@ -29,6 +29,9 @@ class _TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Histoire du Taekwondo'),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        centerTitle: true,
       ),
       body: history.isEmpty
           ? Center(child: CircularProgressIndicator())

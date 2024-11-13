@@ -1,33 +1,34 @@
 import 'package:flutter/material.dart';
-import 'term_learning_screen.dart';
+import 'video_screen.dart';
 
-class BeltSelectionForLeaningScreen extends StatelessWidget {
-  final List<String> belts = [
-    'Jaune (9e keup)',
-    'Jaune 1ère barrette (8e keup)',
-    'Jaune 2ème barrette (7e keup)',
-    'Bleu (6e keup)',
-    'Bleu 1ère barrette (5e keup)',
-    'Bleu 2ème barrette (4e keup)',
-    'Rouge (3e keup)',
-    'Rouge 1ère barrette (2e keup)',
-    'Noire (1e keup)',
+class HanbanListScreen extends StatelessWidget {
+  final List<Map<String, String>> videos = [
+    {
+      'title': 'Ceinture jaune',
+      'url': 'https://www.youtube.com/watch?v=rfAxpm8Txeg&list=PLXRipegTJj_hVaAYodUbaP5VkxsiPUY_V&index=1'
+    },
+    {
+      'title': 'Ceinture bleu',
+      'url': 'https://www.youtube.com/watch?v=9XWVc8xbEHk&list=PLXRipegTJj_hVaAYodUbaP5VkxsiPUY_V&index=2'
+    },
+    {
+      'title': 'Ceinture rouge',
+      'url': 'https://www.youtube.com/watch?v=2j1xnHPVE8Q&list=PLXRipegTJj_hVaAYodUbaP5VkxsiPUY_V&index=3'
+    },
   ];
 
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-
-    // Taille de police adaptée pour les grands écrans
     final double titleFontSize = screenWidth > 800
         ? 18
         : screenWidth > 600
         ? 16
-        : 14; // Police légèrement réduite pour les cartes compactes
+        : 14; // Ajustement de la taille de police pour les écrans plus petits
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sélectionner la ceinture'),
+        title: Text("Hanbon Kyurugui"),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         centerTitle: true,
@@ -37,20 +38,20 @@ class BeltSelectionForLeaningScreen extends StatelessWidget {
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: screenWidth > 600 ? 2 : 1,
-            childAspectRatio: 5, // Ratio élevé pour réduire la hauteur
+            childAspectRatio: 4.5, // Ratio élevé pour réduire la hauteur
             crossAxisSpacing: 12,
             mainAxisSpacing: 12,
           ),
-          itemCount: belts.length,
+          itemCount: videos.length,
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => TermLearningScreen(
-                      belt: belts[index],
-                      belts: belts,
+                    builder: (context) => VideoScreen(
+                      title: videos[index]['title']!,
+                      videoUrl: videos[index]['url']!,
                     ),
                   ),
                 );
@@ -63,9 +64,9 @@ class BeltSelectionForLeaningScreen extends StatelessWidget {
                 color: Colors.grey[50],
                 child: Center(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                    padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0),
                     child: Text(
-                      belts[index],
+                      videos[index]['title']!,
                       style: TextStyle(
                         fontSize: titleFontSize,
                         fontWeight: FontWeight.w500,

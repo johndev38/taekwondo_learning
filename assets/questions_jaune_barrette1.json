@@ -1,92 +1,87 @@
-{  "Jaune 1ère barrette (8e keup)": [
+{  "Jaune 1ère barrette (8e keup)":[
   {
-    "question": "Quelle est la position utilisée pour marcher en Taekwondo ?",
+    "question": "Quelle est la position avant utilisée pour marcher et attaquer en Taekwondo ?",
     "options": ["Ap Seugui", "Ap Koubi", "Joutchoum Seugui"],
     "correctAnswer": "Ap Seugui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quelle position abaisse le centre de gravité pour plus de stabilité en Taekwondo ?",
-    "options": ["Ap Koubi", "Ap Seugui", "Narahni Tchoumbi Seugui"],
+    "question": "Quelle position permet une base solide pour une attaque basse en Taekwondo ?",
+    "options": ["Ap Koubi", "Ap Seugui", "Joutchoum Seugui"],
     "correctAnswer": "Ap Koubi",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quelle est la position du cavalier en Taekwondo ?",
-    "options": ["Joutchoum Seugui", "Tchaliot Seugui", "Ap Seugui"],
+    "question": "Quel terme désigne la position du cavalier utilisée pour bloquer et attaquer en Taekwondo ?",
+    "options": ["Joutchoum Seugui", "Ap Koubi", "Ap Seugui"],
     "correctAnswer": "Joutchoum Seugui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quelle position signifie être en attente avec les pieds parallèles ?",
-    "options": ["Narahni Tchoumbi Seugui", "Joutchoum Seugui", "Ap Koubi"],
+    "question": "Quelle est la position de préparation avant de commencer un mouvement en Taekwondo ?",
+    "options": ["Narahni Tchoumbi Seugui", "Tchaliot Seugui", "Ap Seugui"],
     "correctAnswer": "Narahni Tchoumbi Seugui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quelle position est utilisée pour le salut en Taekwondo ?",
-    "options": ["Tchaliot Seugui", "Ap Seugui", "Narahni Tchoumbi Seugui"],
+    "question": "Quel est le nom de la position utilisée pour le salut en Taekwondo ?",
+    "options": ["Tchaliot Seugui", "Narahni Tchoumbi Seugui", "Ap Seugui"],
     "correctAnswer": "Tchaliot Seugui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quels sont les coups de poing de base utilisés pour frapper au corps et au visage ?",
+    "question": "Quel est le nom de l'attaque au niveau du torse ou de la tête en Taekwondo ?",
     "options": ["Momtong / Eulgoul Jireugui", "Bandé / Baro Jireugui", "Toubon Jireugui"],
     "correctAnswer": "Momtong / Eulgoul Jireugui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel coup de poing utilise le poing avant pour frapper ?",
-    "options": ["Bandé Jireugui", "Baro Jireugui", "Toubon Jireugui"],
-    "correctAnswer": "Bandé Jireugui",
+    "question": "Quel est le nom de l'attaque opposée ou du même côté que la jambe en avant en Taekwondo ?",
+    "options": ["Bandé / Baro Jireugui", "Momtong / Eulgoul Jireugui", "Toubon Jireugui"],
+    "correctAnswer": "Bandé / Baro Jireugui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel coup de poing utilise le poing arrière pour frapper ?",
-    "options": ["Baro Jireugui", "Bandé Jireugui", "Toubon Jireugui"],
-    "correctAnswer": "Baro Jireugui",
-    "image": "assets/images/ceinture_jaune.png"
-  },
-  {
-    "question": "Quel coup de poing consiste à frapper alternativement avec le poing avant et arrière ?",
-    "options": ["Toubon Jireugui", "Bandé Jireugui", "Baro Jireugui"],
+    "question": "Quel est le nom de l'attaque en double en Taekwondo ?",
+    "options": ["Toubon Jireugui", "Bandé / Baro Jireugui", "Momtong / Eulgoul Jireugui"],
     "correctAnswer": "Toubon Jireugui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel est le coup de pied semi-circulaire réalisé avec la jambe avant ?",
+    "question": "Quel est le coup de pied semi-circulaire avec le pied avant en Taekwondo ?",
     "options": ["Ap Pal Bandal Tchagui", "Ap Bal Ap Tchagui", "Ap Pal Yop Tchagui"],
     "correctAnswer": "Ap Pal Bandal Tchagui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel coup de pied de base frappe directement avec la jambe avant ?",
+    "question": "Quel est le coup de pied avant direct en Taekwondo ?",
     "options": ["Ap Bal Ap Tchagui", "Ap Pal Bandal Tchagui", "Ap Pal Yop Tchagui"],
     "correctAnswer": "Ap Bal Ap Tchagui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel coup de pied latéral est réalisé avec la jambe avant ?",
-    "options": ["Ap Pal Yop Tchagui", "Ap Pal Bandal Tchagui", "Koro Bandal Tchagui"],
+    "question": "Quel est le coup de pied latéral avec le pied avant en Taekwondo ?",
+    "options": ["Ap Pal Yop Tchagui", "Ap Bal Ap Tchagui", "Koro Bandal Tchagui"],
     "correctAnswer": "Ap Pal Yop Tchagui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel est le coup de pied circulaire croisé réalisé avec la jambe avant ?",
-    "options": ["Koro Bandal Tchagui", "Ap Bal Ap Tchagui", "Ap Pal Yop Tchagui"],
+    "question": "Quel est le coup de pied semi-circulaire en déplacement en Taekwondo ?",
+    "options": ["Koro Bandal Tchagui", "Ap Pal Yop Tchagui", "Ap Pal Bandal Tchagui"],
     "correctAnswer": "Koro Bandal Tchagui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel blocage protège la partie médiane du corps de l'extérieur vers l'intérieur avec le bras avant ?",
-    "options": ["Momtong Bakat Maki", "Eulgoul Bakat Maki", "Are Maki"],
+    "question": "Quel est le nom du blocage médian extérieur en Taekwondo ?",
+    "options": ["Momtong Bakat Maki", "Eulgoul Bakat Maki", "Sonnal Are Maki"],
     "correctAnswer": "Momtong Bakat Maki",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel blocage protège la tête de l'extérieur vers l'intérieur avec le bras avant ?",
-    "options": ["Eulgoul Bakat Maki", "Momtong Bakat Maki", "Are Maki"],
+    "question": "Quel est le nom du blocage haut extérieur en Taekwondo ?",
+    "options": ["Eulgoul Bakat Maki", "Momtong Bakat Maki", "Sonnal Are Maki"],
     "correctAnswer": "Eulgoul Bakat Maki",
     "image": "assets/images/ceinture_jaune.png"
   }
-]}
+]
+}

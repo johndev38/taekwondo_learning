@@ -1,62 +1,63 @@
 {"Jaune 2ème barrette (7e keup)": [
   {
-    "question": "Quel est le nom de l'attaque tranchante de la main visant le cou ?",
+    "question": "Quel est le nom de l'attaque tranchante de la main visant le cou en Taekwondo ?",
     "options": ["Han Sonnal Mok Tchigui", "Han Sonnal Je Bi Poum Mok Tchigui", "Han Sonnal Bakat Tchigui"],
     "correctAnswer": "Han Sonnal Mok Tchigui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quelle attaque consiste à utiliser le tranchant de la main avec un mouvement en arc ?",
+    "question": "Quel est le nom de l'attaque tranchante avec un mouvement en arc en Taekwondo ?",
+    "options": ["Han Sonnal Je Bi Poum Mok Tchigui", "Han Sonnal Bakat Tchigui", "Han Sonnal Mok Tchigui"],
+    "correctAnswer": "Han Sonnal Je Bi Poum Mok Tchigui",
+    "image": "assets/images/ceinture_jaune.png"
+  },
+  {
+    "question": "Quel est le nom de l'attaque tranchante vers l'extérieur avec le tranchant de la main en Taekwondo ?",
+    "options": ["Han Sonnal Bakat Tchigui", "Han Sonnal Mok Tchigui", "Je Bi Poum Mok Tchigui"],
+    "correctAnswer": "Han Sonnal Bakat Tchigui",
+    "image": "assets/images/ceinture_jaune.png"
+  },
+  {
+    "question": "Quelle attaque consiste à utiliser le tranchant de la main avec un mouvement en arc en Taekwondo ?",
     "options": ["Je Bi Poum Mok Tchigui", "Han Sonnal Bakat Tchigui", "Han Sonnal Mok Tchigui"],
     "correctAnswer": "Je Bi Poum Mok Tchigui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel est le nom de l'attaque tranchante vers l'extérieur avec le tranchant de la main ?",
-    "options": ["Han Sonnal Bakat Tchigui", "Je Bi Poum Mok Tchigui", "Han Sonnal Mok Tchigui"],
-    "correctAnswer": "Han Sonnal Bakat Tchigui",
-    "image": "assets/images/ceinture_jaune.png"
-  },
-  {
-    "question": "Quel est le nom de l'attaque avec la main tranchante en double arc ?",
-    "options": ["Je Bi Poum Mok Tchigui", "Han Sonnal Mok Tchigui", "Han Sonnal Bakat Tchigui"],
-    "correctAnswer": "Je Bi Poum Mok Tchigui",
-    "image": "assets/images/ceinture_jaune.png"
-  },
-  {
-    "question": "Quel coup de pied sauté est effectué en frappant de face ?",
-    "options": ["Dobal Dansong Ap Tchagui", "Dobal Dansong Bandal Tchagui", "Tuyo Ap Tchagui"],
+    "question": "Quel est le nom du coup de pied avant sauté avec les deux jambes en Taekwondo ?",
+    "options": ["Dobal Dansong Ap Tchagui", "Tuyo Ap Tchagui", "Dobal Dansong Bandal Tchagui"],
     "correctAnswer": "Dobal Dansong Ap Tchagui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel coup de pied sauté consiste en un mouvement semi-circulaire ?",
+    "question": "Quel est le coup de pied circulaire sauté avec les deux jambes en Taekwondo ?",
     "options": ["Dobal Dansong Bandal Tchagui", "Dobal Dansong Ap Tchagui", "Tuyo Ap Tchagui"],
     "correctAnswer": "Dobal Dansong Bandal Tchagui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel est le nom du coup de pied sauté avec un saut avant ?",
-    "options": ["Tuyo Ap Tchagui", "Dobal Dansong Bandal Tchagui", "Dobal Dansong Ap Tchagui"],
+    "question": "Quel est le coup de pied avant sauté en Taekwondo ?",
+    "options": ["Tuyo Ap Tchagui", "Dobal Dansong Ap Tchagui", "Dobal Dansong Bandal Tchagui"],
     "correctAnswer": "Tuyo Ap Tchagui",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel blocage consiste à bloquer en bas avec le tranchant de la main ?",
+    "question": "Quel est le nom du blocage bas avec le tranchant de la main en Taekwondo ?",
     "options": ["Han Sonnal Are Maki", "Han Sonnal Momtong Bakat Maki", "Han Sonnal Eulgoul Maki"],
     "correctAnswer": "Han Sonnal Are Maki",
     "image": "assets/images/ceinture_jaune.png"
   },
   {
-    "question": "Quel blocage consiste à protéger la tête avec le tranchant de la main ?",
-    "options": ["Han Sonnal Eulgoul Maki", "Han Sonnal Momtong Bakat Maki", "Han Sonnal Are Maki"],
-    "correctAnswer": "Han Sonnal Eulgoul Maki",
-    "image": "assets/images/ceinture_jaune.png"
-  },
-  {
-    "question": "Quel est le blocage utilisant le tranchant de la main pour bloquer une attaque moyenne venant de l'extérieur ?",
+    "question": "Quel est le nom du blocage médian avec le tranchant de la main en Taekwondo ?",
     "options": ["Han Sonnal Momtong Bakat Maki", "Han Sonnal Are Maki", "Han Sonnal Eulgoul Maki"],
     "correctAnswer": "Han Sonnal Momtong Bakat Maki",
     "image": "assets/images/ceinture_jaune.png"
+  },
+  {
+    "question": "Quel est le nom du blocage haut avec le tranchant de la main en Taekwondo ?",
+    "options": ["Han Sonnal Eulgoul Maki", "Han Sonnal Are Maki", "Han Sonnal Momtong Bakat Maki"],
+    "correctAnswer": "Han Sonnal Eulgoul Maki",
+    "image": "assets/images/ceinture_jaune.png"
   }
-]}
+]
+}

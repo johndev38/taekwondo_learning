@@ -5,9 +5,9 @@ import 'home_screen.dart';
 
 class QuizGameScreen extends StatefulWidget {
   final String belt;
-  final String fileName;
+  final List<String> fileNames;
 
-  QuizGameScreen({required this.belt, required this.fileName});
+  QuizGameScreen({required this.belt, required this.fileNames});
 
   @override
   _QuizGameScreenState createState() => _QuizGameScreenState();
@@ -26,15 +26,20 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
   }
 
   Future<void> loadQuestions() async {
-    final String response = await rootBundle.loadString('assets/${widget.fileName}');
-    final data = await json.decode(response);
+    List<dynamic> combinedQuestions = [];
+
+    for (String fileName in widget.fileNames) {
+      final String response = await rootBundle.loadString('assets/$fileName');
+      final data = await json.decode(response);
+
+      data.forEach((key, value) {
+        combinedQuestions.addAll(value as List<dynamic>);
+      });
+    }
 
     setState(() {
-      questions = data['questions'];
-      questions.shuffle();  // Mélange les questions
-      if (questions.length > 10) {
-        questions = questions.take(10).toList();  // Limite à 10 questions
-      }
+      combinedQuestions.shuffle();
+      questions = combinedQuestions.take(10).toList();
     });
   }
 
@@ -71,20 +76,37 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+
+    final double questionFontSize = screenWidth > 800
+        ? 26
+        : screenWidth > 600
+        ? 22
+        : 20;
+
+    final double optionFontSize = screenWidth > 800
+        ? 20
+        : screenWidth > 600
+        ? 18
+        : 16;
+
     if (isGameOver) {
       return Scaffold(
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 score >= 8 ? 'Vous avez gagné !' : 'Vous avez perdu.',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: questionFontSize, fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 20),
               Text(
                 'Votre score: $score/10',
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: optionFontSize),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 20),
               ElevatedButton(
@@ -94,7 +116,7 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
                     MaterialPageRoute(builder: (context) => HomeScreen()),
                   );
                 },
-                child: Text('Recommencer'),
+                child: Text('Recommencer', style: TextStyle(fontSize: optionFontSize)),
               ),
             ],
           ),
@@ -113,24 +135,35 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
       return Scaffold(
         appBar: AppBar(
           title: Text('Question ${currentQuestionIndex + 1}/10'),
+          centerTitle: true,
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               if (questions[currentQuestionIndex]['image'] != null)
-                Image.asset(questions[currentQuestionIndex]['image']),
+                Center(child: Image.asset(questions[currentQuestionIndex]['image'])),
               SizedBox(height: 20),
-              Text(
-                questions[currentQuestionIndex]['question'],
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              Center(
+                child: Text(
+                  questions[currentQuestionIndex]['question'],
+                  style: TextStyle(fontSize: questionFontSize, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
               ),
               SizedBox(height: 20),
               ...options.map<Widget>(
-                    (option) => ListTile(
-                  title: Text(option),
-                  onTap: () => checkAnswer(option),
+                    (option) => Center(
+                  child: ListTile(
+                    title: Text(
+                      option,
+                      style: TextStyle(fontSize: optionFontSize),
+                      textAlign: TextAlign.center,
+                    ),
+                    onTap: () => checkAnswer(option),
+                  ),
                 ),
               ).toList(),
             ],

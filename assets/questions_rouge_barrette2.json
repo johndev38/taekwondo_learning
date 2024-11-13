@@ -1,0 +1,39 @@
+{"Rouge 2eme barrette (1e keup)":[
+  {
+    "question": "Quel est le nom du coup de pied latéral sauté en Taekwondo ?",
+    "options": ["Tuyo Yop Tchagui", "Tuyo Tolyo Tchagui", "Tuyo Tuit Tchagui"],
+    "correctAnswer": "Tuyo Yop Tchagui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quel est le nom du coup de pied circulaire sauté en Taekwondo ?",
+    "options": ["Tuyo Tolyo Tchagui", "Tuyo Yop Tchagui", "Tuyo Tuit Tchagui"],
+    "correctAnswer": "Tuyo Tolyo Tchagui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quel est le coup de pied retourné sauté en Taekwondo ?",
+    "options": ["Tuyo Tuit Tchagui", "Tuyo Yop Tchagui", "Tuyo Tolyo Tchagui"],
+    "correctAnswer": "Tuyo Tuit Tchagui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quel est le coup de pied avec rotation complète sauté en Taekwondo ?",
+    "options": ["Tuyo Momdolyo Tchagui", "Tuyo Tolyo Tchagui", "Tuyo Tuit Tchagui"],
+    "correctAnswer": "Tuyo Momdolyo Tchagui",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quel est le blocage avec la jambe en Taekwondo ?",
+    "options": ["Kaki Maki", "Owe San Teul Maki", "Batang Son Nelyo Maki"],
+    "correctAnswer": "Kaki Maki",
+    "image": "assets/images/ceinture_rouge.png"
+  },
+  {
+    "question": "Quel est le nom du blocage haut en Taekwondo, fait avec un bras en position haute et un autre en bas ?",
+    "options": ["Owe San Teul Maki", "Kaki Maki", "Sonnal Momtong Bakat Maki"],
+    "correctAnswer": "Owe San Teul Maki",
+    "image": "assets/images/ceinture_rouge.png"
+  }
+]
+}

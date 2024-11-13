@@ -29,6 +29,9 @@ class _TaekwondoRulesScreenState extends State<TaekwondoRulesScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Règles d\'Arbitrage'),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        centerTitle: true,
       ),
       body: rules.isEmpty
           ? Center(child: CircularProgressIndicator())
@@ -47,7 +50,34 @@ class _TaekwondoRulesScreenState extends State<TaekwondoRulesScreen> {
     );
   }
 
-  Widget _buildSection(BuildContext context, {required String title, required String content}) {
+  Widget _buildSection(BuildContext context, {required String title, dynamic content}) {
+    // Vérification du type de 'content'
+    Widget contentWidget;
+    if (content is List) {
+      contentWidget = Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: content.map<Widget>((item) {
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 8.0),
+            child: Text(
+              "${item['division']}: ${item['description']}",
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+          );
+        }).toList(),
+      );
+    } else if (content is String) {
+      contentWidget = Text(
+        content,
+        style: Theme.of(context).textTheme.bodyMedium,
+      );
+    } else {
+      contentWidget = Text(
+        'Format inconnu',
+        style: Theme.of(context).textTheme.bodyMedium,
+      );
+    }
+
     return Card(
       elevation: 5,
       margin: EdgeInsets.symmetric(vertical: 10.0),
@@ -61,10 +91,7 @@ class _TaekwondoRulesScreenState extends State<TaekwondoRulesScreen> {
               style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
-            Text(
-              content,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
+            contentWidget,
           ],
         ),
       ),
