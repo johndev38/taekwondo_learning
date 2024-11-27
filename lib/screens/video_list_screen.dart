@@ -4,14 +4,15 @@ import 'video_screen.dart';
 class VideoListScreen extends StatelessWidget {
   final List<Map<String, String>> videos = [
     {'title': 'TAEGEUK1JANG', 'url': 'https://www.youtube.com/watch?v=WhkjRruCBTo&t=86s'},
-    {'title': 'TAEGEUK2JANG', 'url': 'https://www.youtube.com/watch?v=tGlrUplKHh8&t=86s'},
+    {'title': 'TAEGEUK2JANG', 'url': 'https://www.youtube.com/watch?v=tGlrUplKHh8&t=70s'},
     {'title': 'TAEGEUK3JANG', 'url': 'https://www.youtube.com/watch?v=ksSqKt0UkWo&t=76s'},
     {'title': 'TAEGEUK4JANG', 'url': 'https://www.youtube.com/watch?v=Lt917gacJho&t=95s'},
     {'title': 'TAEGEUK5JANG', 'url': 'https://www.youtube.com/watch?v=ksSqKt0UkWo&t=76s'},
     {'title': 'TAEGEUK6JANG', 'url': 'https://www.youtube.com/watch?v=jcBwWo4wN7c&t=60s'},
     {'title': 'TAEGEUK7JANG', 'url': 'https://www.youtube.com/watch?v=6FUM1p6qqhQ&t=65s'},
     {'title': 'TAEGEUK8JANG', 'url': 'https://www.youtube.com/watch?v=Gr_Je2ZkgkI&t=70s'},
-    {'title': 'KORYO', 'url': 'https://www.youtube.com/watch?v=mGa60JDtWmg&t=52s'},
+    {'title': 'KORYO', 'url': 'https://www.youtube.com/watch?v=mGa60JDtWmg&t=53s'},
+    {'title': 'GEUMGANG', 'url': 'https://www.youtube.com/watch?v=CRGVSOmaQaY&t=78s'},
   ];
 
   @override

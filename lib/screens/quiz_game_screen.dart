@@ -24,7 +24,6 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
     super.initState();
     loadQuestions();
   }
-
   Future<void> loadQuestions() async {
     List<dynamic> combinedQuestions = [];
 
@@ -37,11 +36,19 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
       });
     }
 
+    // Éliminer les doublons en utilisant les identifiants uniques
+    final Map<int, dynamic> uniqueQuestionsMap = {};
+    for (var question in combinedQuestions) {
+      uniqueQuestionsMap[question['id']] = question;
+    }
+    final uniqueQuestions = uniqueQuestionsMap.values.toList();
+
     setState(() {
-      combinedQuestions.shuffle();
-      questions = combinedQuestions.take(10).toList();
+      uniqueQuestions.shuffle();
+      questions = uniqueQuestions.take(10).toList();
     });
   }
+
 
   void checkAnswer(String selectedAnswer) {
     final correctAnswer = questions[currentQuestionIndex]['correctAnswer'];
@@ -73,7 +80,6 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
       });
     }
   }
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;

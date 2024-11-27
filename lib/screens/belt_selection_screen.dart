@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'quiz_game_screen.dart';
+
+import 'QuestionTypeSelectionScreen.dart';
 
 class BeltSelectionScreen extends StatelessWidget {
   final List<Map<String, String>> belts = [
@@ -30,7 +31,7 @@ class BeltSelectionScreen extends StatelessWidget {
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: screenWidth > 600 ? 2 : 1,
-            childAspectRatio: 5, // Réduction de la hauteur des cartes
+            childAspectRatio: 5,
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
           ),
@@ -38,17 +39,14 @@ class BeltSelectionScreen extends StatelessWidget {
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
-                List<String> selectedFiles = [];
-                for (int i = 0; i <= index; i++) {
-                  selectedFiles.add(belts[i]['file']!);
-                }
-
+                // Naviguer vers le nouvel écran de sélection du type de questions
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => QuizGameScreen(
+                    builder: (context) => QuestionTypeSelectionScreen(
                       belt: belts[index]['name']!,
-                      fileNames: selectedFiles,
+                      beltIndex: index,
+                      belts: belts,
                     ),
                   ),
                 );
@@ -56,16 +54,16 @@ class BeltSelectionScreen extends StatelessWidget {
               child: Card(
                 elevation: 3,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12), // Coins arrondis plus subtils
+                  borderRadius: BorderRadius.circular(12),
                 ),
-                color: Colors.grey[50], // Couleur de fond légère
+                color: Colors.grey[50],
                 child: Center(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                     child: Text(
                       belts[index]['name']!,
                       style: TextStyle(
-                        fontSize: 16, // Police légèrement réduite
+                        fontSize: 16,
                         fontWeight: FontWeight.w500,
                         color: Colors.black87,
                       ),

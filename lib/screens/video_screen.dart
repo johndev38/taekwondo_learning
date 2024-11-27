@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart'; // Package pour intégrer les vidéos YouTube
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class VideoScreen extends StatefulWidget {
   final String title;
@@ -17,17 +17,12 @@ class _VideoScreenState extends State<VideoScreen> {
   @override
   void initState() {
     super.initState();
-
-    final Uri uri = Uri.parse(widget.videoUrl);
-    final String videoId = YoutubePlayer.convertUrlToId(widget.videoUrl)!;
-    final int startAt = int.tryParse(uri.queryParameters['t']?.replaceAll('s', '') ?? '0') ?? 0;
-
+    final videoId = YoutubePlayer.convertUrlToId(widget.videoUrl);
     _controller = YoutubePlayerController(
-      initialVideoId: videoId,
+      initialVideoId: videoId!,
       flags: YoutubePlayerFlags(
         autoPlay: true,
         mute: false,
-        startAt: startAt,
       ),
     );
   }
@@ -43,11 +38,13 @@ class _VideoScreenState extends State<VideoScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        centerTitle: true,
       ),
-      body: YoutubePlayer(
-        controller: _controller,
-        showVideoProgressIndicator: true,
-        progressIndicatorColor: Colors.blueAccent,
+      body: Center(
+        child: YoutubePlayer(
+          controller: _controller,
+          showVideoProgressIndicator: true,
+        ),
       ),
     );
   }
