@@ -123,6 +123,16 @@
           "total": 25
         }
       },
+      "hanbon_kyeurogui": {
+        "description": "Passer du 10e au 9e keup",
+        "requirements": "1 hanbon de son choix avec jirougui (coup de poing)",
+        "evaluation": {
+          "respect_protocole": 5,
+          "precision_riposte": 5,
+          "respect_mouvements": 5,
+          "total": 15
+        }
+      },
       "ho_shin_soul": {
         "requirements": "1 dégagement sur une saisie simple au choix (A ou B)",
         "evaluation": {
@@ -170,6 +180,16 @@
           "position_details": 5,
           "speed_variation": 5,
           "total": 25
+        }
+      },
+      "hanbon_kyeurogui": {
+        "description": "Passer du 9e au 8e keup",
+        "requirements": "1 hanbon de son choix avec membres supérieurs",
+        "evaluation": {
+          "respect_protocole": 5,
+          "precision_riposte": 5,
+          "respect_mouvements": 5,
+          "total": 15
         }
       },
       "ho_shin_soul": {
@@ -223,6 +243,16 @@
           "position_details": 5,
           "speed_variation": 5,
           "total": 25
+        }
+      },
+      "hanbon_kyeurogui": {
+        "description": "Passer du 8e au 7e keup",
+        "requirements": "1 hanbon de son choix avec coup de pied",
+        "evaluation": {
+          "respect_protocole": 10,
+          "precision_riposte": 10,
+          "respect_mouvements": 10,
+          "total": 30
         }
       },
       "ho_shin_soul": {
@@ -280,6 +310,16 @@
           "position_details": 5,
           "speed_variation": 5,
           "total": 25
+        }
+      },
+      "hanbon_kyeurogui": {
+        "description": "Passer du 7e au 6e keup",
+        "requirements": "1 hanbon au choix avec déclage + 1 hanbon au choix par pas de recul",
+        "evaluation": {
+          "respect_protocole": 10,
+          "precision_riposte": 10,
+          "respect_mouvements": 10,
+          "total": 30
         }
       },
       "ho_shin_soul": {
@@ -341,6 +381,16 @@
           "position_details": 5,
           "speed_variation": 5,
           "total": 25
+        }
+      },
+      "hanbon_kyeurogui": {
+        "description": "Passer du 6e au 5e keup",
+        "requirements": "2 hanbons membres supérieurs avec différents niveaux visés + 2 hanbons membres inférieurs de 3 coups de pieds",
+        "evaluation": {
+          "respect_protocole": 10,
+          "precision_riposte": 10,
+          "respect_mouvements": 10,
+          "total": 30
         }
       },
       "ho_shin_soul": {
@@ -408,6 +458,16 @@
           "total": 25
         }
       },
+      "hanbon_kyeurogui": {
+        "description": "Passer du 5e au 4e keup",
+        "requirements": "2 hanbons au choix avec enchaînement membres inférieures + jambe + bras",
+        "evaluation": {
+          "respect_protocole": 10,
+          "precision_riposte": 10,
+          "respect_mouvements": 10,
+          "total": 30
+        }
+      },
       "ho_shin_soul": {
         "requirements": "2 dégagements + contre-attaque sur saisie (1 poing imposé A ou B ou C ou D ou E)",
         "evaluation": {
@@ -459,31 +519,33 @@
         }
       },
       "kibons": {
-        "requirements": [
-          "2 frappes de précision sur partenaire (1 coups de pieds et 1 avec membres supérieur)",
-          "2 enchaînements de 3 techniques différentes membres supérieurs imposées 4 fois en avançant"
-        ],
+        "precision_strikes": {
+          "description": "Passer du 7e au 3e keup",
+          "requirements": "2 frappes de précision sur partenaire (1 coups de pieds et 1 avec membres supérieur)",
+          "note": "NOTE/30"
+        },
+        "combinations": {
+          "description": "Passer du 7e au 3e keup", 
+          "requirements": "2 enchaînements de 3 techniques différentes membres supérieurs imposées 4 fois en avançant",
+          "note": "NOTE/30"
+        },
         "evaluation": {
           "criteria": [
-            "Armement",
-            "Finition",
-            "Retour de frappe",
-            "Précision",
-            "Connaissance des termes",
-            "Symétrie dans la qualité d'exécution"
+            "Armement / Finition de frappe",
+            "Dégagement et poursuite technique après frappe",
+            "Contrôle dans la qualité des exécutions",
+            "Connaissance des termes en coréen au choix du pratiquant, celui-ci énonce les termes technique qu'il pratique. Symétrie dans la qualité d'exécution à gauche et à droite"
           ],
           "total": 30
         }
       },
       "hanbon_kyeurogui": {
-        "requirements": [
-          "2 hanbons avec coup de pieds retourné",
-          "2 hanbons avec coup de pieds sauté"
-        ],
+        "description": "Passer du 4e au 3e keup",
+        "requirements": "2 hanbons avec coup de pieds retourné + 2 hanbons avec coup de pieds sauté",
         "evaluation": {
-          "reactivity": 10,
-          "precision_power": 10,
-          "movement_respect": 10,
+          "respect_protocole": 10,
+          "precision_riposte": 10,
+          "respect_mouvements": 10,
           "total": 30
         }
       },
@@ -562,32 +624,33 @@
         }
       },
       "kibons": {
-        "requirements": [
-          "2 frappes de précision sur partenaire imposées avec coups de pied",
-          "2 enchaînements de 3 techniques membres supérieurs ou inférieures différentes imposées 4 fois en avançant"
-        ],
+        "precision_strikes": {
+          "description": "Passer du 3e au 2e keup",
+          "requirements": "2 frappes de précision sur partenaire imposées avec coups de pied",
+          "note": "NOTE/30"
+        },
+        "combinations": {
+          "description": "Passer du 3e au 2e keup",
+          "requirements": "2 enchaînements de 3 techniques membres supérieurs ou inférieures différentes imposées 4 fois en avançant",
+          "note": "NOTE/30"
+        },
         "evaluation": {
           "criteria": [
-            "Armement",
-            "Finition",
-            "Retour de frappe",
-            "Précision",
-            "Connaissance des termes",
-            "Symétrie dans la qualité d'exécution"
+            "Armement / Finition de frappe",
+            "Dégagement et poursuite technique après frappe",
+            "Contrôle dans la qualité des exécutions",
+            "Connaissance des termes en coréen au choix du pratiquant, celui-ci énonce les termes technique qu'il pratique. Symétrie dans la qualité d'exécution à gauche et à droite"
           ],
           "total": 30
         }
       },
       "hanbon_kyeurogui": {
-        "requirements": [
-          "1 hanbon membres supérieurs",
-          "1 hanbon membres inférieurs",
-          "2 hanbons avec coups de pieds sautés"
-        ],
+        "description": "Passer du 3e au 2e keup",
+        "requirements": "1 hanbon membres supérieurs + 1 hanbon membres inférieurs + 2 hanbons avec coups de pieds sautés",
         "evaluation": {
-          "reactivity": 10,
-          "precision_power": 10,
-          "movement_respect": 10,
+          "respect_protocole": 10,
+          "precision_riposte": 10,
+          "respect_mouvements": 10,
           "total": 30
         }
       },
@@ -669,32 +732,33 @@
         }
       },
       "kibons": {
-        "requirements": [
-          "2 frappes de précision sur partenaire imposées avec coups de pied",
-          "2 enchaînements de 3 techniques membres supérieurs ou inférieures différentes imposées 4 fois en avançant"
-        ],
+        "precision_strikes": {
+          "description": "Passer du 2e au 1e keup",
+          "requirements": "2 frappes de précision sur partenaire imposées avec coups de pied",
+          "note": "NOTE/30"
+        },
+        "combinations": {
+          "description": "Passer du 2e au 1e keup",
+          "requirements": "2 enchaînements de 3 techniques membres supérieurs ou inférieures différentes imposées 4 fois en avançant",
+          "note": "NOTE/30"
+        },
         "evaluation": {
           "criteria": [
-            "Armement",
-            "Finition",
-            "Retour de frappe",
-            "Précision",
-            "Connaissance des termes",
-            "Symétrie dans la qualité d'exécution"
+            "Armement / Finition de frappe",
+            "Dégagement et poursuite technique après frappe",
+            "Contrôle dans la qualité des exécutions",
+            "Connaissance des termes en coréen au choix du pratiquant, celui-ci énonce les termes technique qu'il pratique. Symétrie dans la qualité d'exécution à gauche et à droite"
           ],
           "total": 30
         }
       },
       "hanbon_kyeurogui": {
-        "requirements": [
-          "1 hanbon membres supérieurs",
-          "1 hanbon membres inférieurs",
-          "2 hanbons avec coups de pieds sautés"
-        ],
+        "description": "Passer du 2e au 1e keup",
+        "requirements": "1 hanbon membres supérieurs + 1 hanbon membres inférieurs + 2 hanbons avec coups de pieds sautés",
         "evaluation": {
-          "reactivity": 10,
-          "precision_power": 10,
-          "movement_respect": 10,
+          "respect_protocole": 10,
+          "precision_riposte": 10,
+          "respect_mouvements": 10,
           "total": 30
         }
       },

@@ -434,23 +434,88 @@ class _BeltRequirementsScreenState extends State<BeltRequirementsScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('Exigences:',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
-                ...(kibons['requirements'] as List).map(
-                  (req) => Padding(
-                    padding: const EdgeInsets.only(left: 16, top: 2),
-                    child: Text('• $req'),
+                // Frappes de précision
+                Container(
+                  margin: const EdgeInsets.only(bottom: 12),
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.green.shade50,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        kibons['precision_strikes']['description'],
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14,
+                          color: Colors.green,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(kibons['precision_strikes']['requirements']),
+                      const SizedBox(height: 4),
+                      Text(
+                        kibons['precision_strikes']['note'],
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.green,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                const SizedBox(height: 8),
-                Text('Note: /${kibons['evaluation']['total']}'),
-                const SizedBox(height: 4),
+
+                // Enchaînements
+                Container(
+                  margin: const EdgeInsets.only(bottom: 12),
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.green.shade50,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        kibons['combinations']['description'],
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14,
+                          color: Colors.green,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(kibons['combinations']['requirements']),
+                      const SizedBox(height: 4),
+                      Text(
+                        kibons['combinations']['note'],
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.green,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // Critères d'évaluation
                 const Text('Critères évalués:',
                     style: TextStyle(fontWeight: FontWeight.bold)),
+                const SizedBox(height: 4),
                 ...(kibons['evaluation']['criteria'] as List).map(
                   (criteria) => Padding(
                     padding: const EdgeInsets.only(left: 16, top: 2),
                     child: Text('• $criteria'),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'Note totale: /${kibons['evaluation']['total']}',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.green,
                   ),
                 ),
               ],
@@ -502,22 +567,50 @@ class _BeltRequirementsScreenState extends State<BeltRequirementsScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // Description du niveau
+                if (hanbon['description'] != null) ...[
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 12),
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Colors.purple.shade50,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Text(
+                      hanbon['description'],
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                        color: Colors.purple,
+                      ),
+                    ),
+                  ),
+                ],
+
                 const Text('Exigences:',
                     style: TextStyle(fontWeight: FontWeight.bold)),
-                ...(hanbon['requirements'] as List).map(
-                  (req) => Padding(
-                    padding: const EdgeInsets.only(left: 16, top: 2),
-                    child: Text('• $req'),
+                const SizedBox(height: 4),
+                Text(hanbon['requirements']),
+
+                const SizedBox(height: 12),
+                const Text('Critères évalués:',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                const SizedBox(height: 4),
+                Text(
+                    '• Respect du protocole du hanbon: /${hanbon['evaluation']['respect_protocole']}'),
+                Text(
+                    '• Précision riposte: /${hanbon['evaluation']['precision_riposte']}'),
+                Text(
+                    '• Respect mouvements demandés: /${hanbon['evaluation']['respect_mouvements']}'),
+
+                const SizedBox(height: 8),
+                Text(
+                  'Note totale: /${hanbon['evaluation']['total']}',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple,
                   ),
                 ),
-                const SizedBox(height: 8),
-                Text('Note totale: /${hanbon['evaluation']['total']}'),
-                const SizedBox(height: 4),
-                Text('• Réactivité: /${hanbon['evaluation']['reactivity']}'),
-                Text(
-                    '• Précision et puissance: /${hanbon['evaluation']['precision_power']}'),
-                Text(
-                    '• Respect des mouvements: /${hanbon['evaluation']['movement_respect']}'),
               ],
             ),
           ),
