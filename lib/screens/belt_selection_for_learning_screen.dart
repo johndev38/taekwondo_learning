@@ -14,6 +14,8 @@ class BeltSelectionForLeaningScreen extends StatelessWidget {
     'Noire (1e keup)',
   ];
 
+  BeltSelectionForLeaningScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -22,12 +24,12 @@ class BeltSelectionForLeaningScreen extends StatelessWidget {
     final double titleFontSize = screenWidth > 800
         ? 18
         : screenWidth > 600
-        ? 16
-        : 14; // Police légèrement réduite pour les cartes compactes
+            ? 16
+            : 14; // Police légèrement réduite pour les cartes compactes
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sélectionner la ceinture'),
+        title: const Text('Sélectionner la ceinture'),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         centerTitle: true,
@@ -50,7 +52,6 @@ class BeltSelectionForLeaningScreen extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => TermLearningScreen(
                       belt: belts[index],
-                      belts: belts,
                     ),
                   ),
                 );
@@ -63,7 +64,8 @@ class BeltSelectionForLeaningScreen extends StatelessWidget {
                 color: Colors.grey[50],
                 child: Center(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 8.0, horizontal: 16.0),
                     child: Text(
                       belts[index],
                       style: TextStyle(

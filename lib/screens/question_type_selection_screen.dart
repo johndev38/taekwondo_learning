@@ -6,11 +6,12 @@ class QuestionTypeSelectionScreen extends StatelessWidget {
   final int beltIndex;
   final List<Map<String, String>> belts;
 
-  QuestionTypeSelectionScreen({
+  const QuestionTypeSelectionScreen({
+    Key? key,
     required this.belt,
     required this.beltIndex,
     required this.belts,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +58,8 @@ class QuestionTypeSelectionScreen extends StatelessWidget {
                 ),
                 color: Colors.grey[50],
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 12.0),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 16.0, horizontal: 12.0),
                   child: Center(
                     child: Text(
                       'Questions uniquement pour la ceinture sélectionnée',
@@ -97,7 +99,8 @@ class QuestionTypeSelectionScreen extends StatelessWidget {
                 ),
                 color: Colors.grey[50],
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 12.0),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 16.0, horizontal: 12.0),
                   child: Center(
                     child: Text(
                       'Questions mélangées entre la ceinture blanche et la ceinture sélectionnée',

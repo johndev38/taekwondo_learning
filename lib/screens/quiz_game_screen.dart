@@ -7,13 +7,14 @@ class QuizGameScreen extends StatefulWidget {
   final String belt;
   final List<String> fileNames;
 
-  QuizGameScreen({required this.belt, required this.fileNames});
+  const QuizGameScreen({Key? key, required this.belt, required this.fileNames})
+      : super(key: key);
 
   @override
-  _QuizGameScreenState createState() => _QuizGameScreenState();
+  QuizGameScreenState createState() => QuizGameScreenState();
 }
 
-class _QuizGameScreenState extends State<QuizGameScreen> {
+class QuizGameScreenState extends State<QuizGameScreen> {
   List<dynamic> questions = [];
   int currentQuestionIndex = 0;
   int score = 0;
@@ -24,6 +25,7 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
     super.initState();
     loadQuestions();
   }
+
   Future<void> loadQuestions() async {
     List<dynamic> combinedQuestions = [];
 
@@ -49,14 +51,13 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
     });
   }
 
-
   void checkAnswer(String selectedAnswer) {
     final correctAnswer = questions[currentQuestionIndex]['correctAnswer'];
 
     if (selectedAnswer == correctAnswer) {
       score++;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text('Bonne réponse!'),
           duration: Duration(seconds: 1),
         ),
@@ -64,8 +65,9 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Mauvaise réponse. La bonne réponse est : $correctAnswer'),
-          duration: Duration(seconds: 2),
+          content:
+              Text('Mauvaise réponse. La bonne réponse est : $correctAnswer'),
+          duration: const Duration(seconds: 2),
         ),
       );
     }
@@ -80,6 +82,7 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
       });
     }
   }
+
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -87,14 +90,14 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
     final double questionFontSize = screenWidth > 800
         ? 26
         : screenWidth > 600
-        ? 22
-        : 20;
+            ? 22
+            : 20;
 
     final double optionFontSize = screenWidth > 800
         ? 20
         : screenWidth > 600
-        ? 18
-        : 16;
+            ? 18
+            : 16;
 
     if (isGameOver) {
       return Scaffold(
@@ -105,16 +108,17 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
             children: [
               Text(
                 score >= 8 ? 'Vous avez gagné !' : 'Vous avez perdu.',
-                style: TextStyle(fontSize: questionFontSize, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: questionFontSize, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 'Votre score: $score/10',
                 style: TextStyle(fontSize: optionFontSize),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   Navigator.pushReplacement(
@@ -122,20 +126,22 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
                     MaterialPageRoute(builder: (context) => HomeScreen()),
                   );
                 },
-                child: Text('Recommencer', style: TextStyle(fontSize: optionFontSize)),
+                child: Text('Recommencer',
+                    style: TextStyle(fontSize: optionFontSize)),
               ),
             ],
           ),
         ),
       );
     } else if (questions.isEmpty) {
-      return Scaffold(
+      return const Scaffold(
         body: Center(
           child: CircularProgressIndicator(),
         ),
       );
     } else {
-      final List<String> options = List<String>.from(questions[currentQuestionIndex]['options']);
+      final List<String> options =
+          List<String>.from(questions[currentQuestionIndex]['options']);
       options.shuffle();
 
       return Scaffold(
@@ -150,18 +156,21 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               if (questions[currentQuestionIndex]['image'] != null)
-                Center(child: Image.asset(questions[currentQuestionIndex]['image'])),
-              SizedBox(height: 20),
+                Center(
+                    child:
+                        Image.asset(questions[currentQuestionIndex]['image'])),
+              const SizedBox(height: 20),
               Center(
                 child: Text(
                   questions[currentQuestionIndex]['question'],
-                  style: TextStyle(fontSize: questionFontSize, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: questionFontSize, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ...options.map<Widget>(
-                    (option) => Center(
+                (option) => Center(
                   child: ListTile(
                     title: Text(
                       option,
@@ -171,7 +180,7 @@ class _QuizGameScreenState extends State<QuizGameScreen> {
                     onTap: () => checkAnswer(option),
                   ),
                 ),
-              ).toList(),
+              ),
             ],
           ),
         ),

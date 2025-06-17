@@ -1,0 +1,738 @@
+{
+  "baby_program": {
+    "birds_family": {
+      "hak": {
+        "name": "La Grue",
+        "requirements": {
+          "jump_and_touch": "Sauter et Toucher avec le poing",
+          "turn_and_touch": "Tourner et Toucher avec le pied",
+          "balance": "Tenir 5 secondes sur jambes",
+          "behavior": "Dire Bonjour, Au revoir"
+        }
+      },
+      "doksuri": {
+        "name": "L'Aigle",
+        "requirements": {
+          "jump_and_touch": "Sauter et Toucher avec le pied",
+          "turn_and_touch": "Tourner et Toucher 2 fois avec le pied sans poser",
+          "balance": "3 secondes sur jambe les yeux fermés",
+          "behavior": "Se taire pendant les consignes"
+        }
+      },
+      "bolsajo": {
+        "name": "Le Phoenix",
+        "requirements": {
+          "jump_and_touch": "Courir + Sauter + Toucher avec le pied",
+          "turn_and_touch": "Tourner et Toucher 2 fois avec le pied sans poser - 4 fois",
+          "balance": "5 secondes sur une jambe / saut / 5 secondes sur l'autre",
+          "behavior": "Se taire pendant l'exercice"
+        }
+      }
+    },
+    "felines_family": {
+      "hoyangi": {
+        "name": "Le Chat",
+        "requirements": {
+          "movement": "Suivre une cible vers avant / arrière avec les bras en garde",
+          "speed_variation": "Faire un coup de poing vite ou lent",
+          "body_parts": "Avec pied / poing / coude / Genou",
+          "rituals": "Faire le salut (Ligne / commandement)"
+        }
+      },
+      "shirasoni": {
+        "name": "Le Lynx",
+        "requirements": {
+          "movement": "Idem avant / arrière / côtés",
+          "speed_variation": "Faire un coup de poing ample ou court",
+          "body_parts": "Avec dessus / dessous / pied / poing / paume",
+          "rituals": "Toujours saluer son adversaire"
+        }
+      },
+      "horangi": {
+        "name": "Le Tigre",
+        "requirements": {
+          "movement": "Idem + Toucher la cible quand elle s'arrête",
+          "speed_variation": "Ample / Vite ; Court / Vite ; Ample / Lent ; Court / Lent",
+          "body_parts": "Toucher deux fois avec une partie du membre inférieur et une partie membre sup. ou inversement",
+          "rituals": "Savoir nouer sa ceinture tout seul"
+        }
+      }
+    },
+    "reptiles_family": {
+      "geobugi": {
+        "name": "La Tortue",
+        "requirements": {
+          "anticipation": "Esquiver une frappe qui arrive",
+          "reaction": "Toucher dès qu'une cible apparaît",
+          "communication": "Compter jusqu'à 10",
+          "respect": "Ranger son matériel"
+        }
+      },
+      "baem": {
+        "name": "Le Serpent",
+        "requirements": {
+          "anticipation": "Esquiver + Toucher en même temps",
+          "reaction": "Toucher dès qu'une cible apparaît avec le bon membre",
+          "communication": "Mémoriser et répéter une consigne à 3 étapes",
+          "respect": "Aider un camarade"
+        }
+      },
+      "yong": {
+        "name": "Le Dragon",
+        "requirements": {
+          "anticipation": "Feinter + Esquiver + Toucher",
+          "reaction": "Toucher dès qu'une cible apparaît avec le bon membre et la bonne technique",
+          "communication": "Expliquer une technique",
+          "respect": "Féliciter son adversaire"
+        }
+      }
+    }
+  },
+  "keup_progression": {
+    "10_to_9_keup": {
+      "belt_name": "Ceinture Blanche → Ceinture Jaune (9e keup)",
+      "positions": [
+        "Ap seugui (marche)",
+        "Ap koubi (basse)",
+        "Joutchoum seugui (cavalier)",
+        "Narahni tchoumbi seugui (attente)",
+        "Tchaliot seugui (Salut)"
+      ],
+      "upper_limb_strikes": [
+        "Montante jireugui",
+        "Momtong jireugui",
+        "Are jireugui"
+      ],
+      "lower_limb_strikes": [
+        "Ap tchagui",
+        "Yop tchagui"
+      ],
+      "blocks": [
+        "Are maki",
+        "Momtong an maki",
+        "Olgul maki"
+      ],
+      "movements": "Marche avant / arrière",
+      "poomsae": {
+        "name": "TAEGEUK IL JONG",
+        "evaluation": {
+          "diagram": 10,
+          "execution_quality": 5,
+          "position_details": 5,
+          "speed_variation": 5,
+          "total": 25
+        }
+      },
+      "ho_shin_soul": {
+        "requirements": "1 dégagement sur une saisie simple au choix (A ou B)",
+        "evaluation": {
+          "reactivity": 5,
+          "release": 5,
+          "counter_attack": 0,
+          "control_ground": 0,
+          "total": 10
+        }
+      }
+    },
+    "9_to_8_keup": {
+      "belt_name": "Ceinture Jaune → Ceinture Jaune 1ère barrette (8e keup)",
+      "positions": [
+        "Ap seugui (marche)",
+        "Ap koubi (basse)",
+        "Joutchoum seugui (cavalier)",
+        "Narahni tchoumbi seugui (attente)",
+        "Tchaliot seugui (Salut)",
+        "Dwitt Koubi seugui"
+      ],
+      "upper_limb_strikes": [
+        "Montante jireugui",
+        "Momtong jireugui",
+        "Are jireugui",
+        "Sonnal mok tchigui"
+      ],
+      "lower_limb_strikes": [
+        "Ap tchagui",
+        "Yop tchagui",
+        "Dollyo tchagui"
+      ],
+      "blocks": [
+        "Are maki",
+        "Momtong an maki",
+        "Olgul maki",
+        "Sonnal momtong maki"
+      ],
+      "movements": "Marche avant / arrière / en diagonale",
+      "poomsae": {
+        "name": "TAEGEUK I JONG",
+        "evaluation": {
+          "diagram": 10,
+          "execution_quality": 5,
+          "position_details": 5,
+          "speed_variation": 5,
+          "total": 25
+        }
+      },
+      "ho_shin_soul": {
+        "requirements": "1 dégagement sur une saisie simple imposée (A ou B ou C)",
+        "evaluation": {
+          "reactivity": 5,
+          "release": 5,
+          "counter_attack": 0,
+          "control_ground": 0,
+          "total": 10
+        }
+      }
+    },
+    "8_to_7_keup": {
+      "belt_name": "Ceinture Jaune 1ère barrette → Ceinture Jaune 2ème barrette (7e keup)",
+      "positions": [
+        "Ap seugui (marche)",
+        "Ap koubi (basse)",
+        "Joutchoum seugui (cavalier)",
+        "Narahni tchoumbi seugui (attente)",
+        "Tchaliot seugui (Salut)",
+        "Dwitt Koubi seugui",
+        "Oren seugui"
+      ],
+      "upper_limb_strikes": [
+        "Montante jireugui",
+        "Momtong jireugui",
+        "Are jireugui",
+        "Sonnal mok tchigui",
+        "Han sonnal mok tchigui"
+      ],
+      "lower_limb_strikes": [
+        "Ap tchagui",
+        "Yop tchagui",
+        "Dollyo tchagui",
+        "Tuit tchagui"
+      ],
+      "blocks": [
+        "Are maki",
+        "Momtong an maki",
+        "Olgul maki",
+        "Sonnal momtong maki",
+        "Sonnal olgul maki"
+      ],
+      "movements": "Pas chassés / pas glissés",
+      "poomsae": {
+        "name": "TAEGEUK SAM JONG",
+        "evaluation": {
+          "diagram": 10,
+          "execution_quality": 5,
+          "position_details": 5,
+          "speed_variation": 5,
+          "total": 25
+        }
+      },
+      "ho_shin_soul": {
+        "requirements": "1 dégagement sur saisie simple imposée (A ou B ou C ou D)",
+        "evaluation": {
+          "reactivity": 5,
+          "release": 5,
+          "counter_attack": 0,
+          "control_ground": 0,
+          "total": 10
+        }
+      }
+    },
+    "7_to_6_keup": {
+      "belt_name": "Ceinture Jaune 2ème barrette → Ceinture Bleu (6e keup)",
+      "positions": [
+        "Ap seugui (marche)",
+        "Ap koubi (basse)",
+        "Joutchoum seugui (cavalier)",
+        "Narahni tchoumbi seugui (attente)",
+        "Tchaliot seugui (Salut)",
+        "Dwitt Koubi seugui",
+        "Oren seugui",
+        "Owen seugui"
+      ],
+      "upper_limb_strikes": [
+        "Montante jireugui",
+        "Momtong jireugui",
+        "Are jireugui",
+        "Sonnal mok tchigui",
+        "Han sonnal mok tchigui",
+        "Deung joumok olgul apetchigui"
+      ],
+      "lower_limb_strikes": [
+        "Ap tchagui",
+        "Yop tchagui",
+        "Dollyo tchagui",
+        "Tuit tchagui",
+        "Yop tchagui olgul"
+      ],
+      "blocks": [
+        "Are maki",
+        "Momtong an maki",
+        "Olgul maki",
+        "Sonnal momtong maki",
+        "Sonnal olgul maki",
+        "Palkmok daebi maki"
+      ],
+      "movements": "Pas de déplacement latéral",
+      "poomsae": {
+        "name": "TAEGEUK SA JONG",
+        "evaluation": {
+          "diagram": 10,
+          "execution_quality": 5,
+          "position_details": 5,
+          "speed_variation": 5,
+          "total": 25
+        }
+      },
+      "ho_shin_soul": {
+        "requirements": "1 dégagement + contre-attaque sur saisie simple imposée (A ou B ou C ou D ou E)",
+        "evaluation": {
+          "reactivity": 10,
+          "release": 10,
+          "counter_attack": 10,
+          "control_ground": 0,
+          "total": 30
+        }
+      }
+    },
+    "6_to_5_keup": {
+      "belt_name": "Ceinture Bleu → Ceinture Bleu 1ère barrette (5e keup)",
+      "positions": [
+        "Ap seugui (marche)",
+        "Ap koubi (basse)",
+        "Joutchoum seugui (cavalier)",
+        "Narahni tchoumbi seugui (attente)",
+        "Tchaliot seugui (Salut)",
+        "Dwitt Koubi seugui",
+        "Oren seugui",
+        "Owen seugui",
+        "Dwitt koa seugui"
+      ],
+      "upper_limb_strikes": [
+        "Montante jireugui",
+        "Momtong jireugui",
+        "Are jireugui",
+        "Sonnal mok tchigui",
+        "Han sonnal mok tchigui",
+        "Deung joumok olgul apetchigui",
+        "Palkoop dollyo tchigui"
+      ],
+      "lower_limb_strikes": [
+        "Ap tchagui",
+        "Yop tchagui",
+        "Dollyo tchagui",
+        "Tuit tchagui",
+        "Yop tchagui olgul",
+        "Momdollyo tchagui"
+      ],
+      "blocks": [
+        "Are maki",
+        "Momtong an maki",
+        "Olgul maki",
+        "Sonnal momtong maki",
+        "Sonnal olgul maki",
+        "Palkmok daebi maki",
+        "Hetchyo maki"
+      ],
+      "movements": "Pivots",
+      "poomsae": {
+        "name": "TAEGEUK O JONG",
+        "evaluation": {
+          "diagram": 10,
+          "execution_quality": 5,
+          "position_details": 5,
+          "speed_variation": 5,
+          "total": 25
+        }
+      },
+      "ho_shin_soul": {
+        "requirements": "1 dégagement + contre-attaque sur double saisie imposée (A ou B ou C ou D ou E)",
+        "evaluation": {
+          "reactivity": 10,
+          "release": 10,
+          "counter_attack": 10,
+          "control_ground": 0,
+          "total": 30
+        }
+      }
+    },
+    "5_to_4_keup": {
+      "belt_name": "Ceinture Bleu 1ère barrette → Ceinture Bleu 2ème barrette (4e keup)",
+      "positions": [
+        "Ap seugui (marche)",
+        "Ap koubi (basse)",
+        "Joutchoum seugui (cavalier)",
+        "Narahni tchoumbi seugui (attente)",
+        "Tchaliot seugui (Salut)",
+        "Dwitt Koubi seugui",
+        "Oren seugui",
+        "Owen seugui",
+        "Dwitt koa seugui",
+        "Beum seugui"
+      ],
+      "upper_limb_strikes": [
+        "Montante jireugui",
+        "Momtong jireugui",
+        "Are jireugui",
+        "Sonnal mok tchigui",
+        "Han sonnal mok tchigui",
+        "Deung joumok olgul apetchigui",
+        "Palkoop dollyo tchigui",
+        "Palkoop yop tchigui"
+      ],
+      "lower_limb_strikes": [
+        "Ap tchagui",
+        "Yop tchagui",
+        "Dollyo tchagui",
+        "Tuit tchagui",
+        "Yop tchagui olgul",
+        "Momdollyo tchagui",
+        "Bituro tchagui"
+      ],
+      "blocks": [
+        "Are maki",
+        "Momtong an maki",
+        "Olgul maki",
+        "Sonnal momtong maki",
+        "Sonnal olgul maki",
+        "Palkmok daebi maki",
+        "Hetchyo maki",
+        "Goduro arae maki"
+      ],
+      "movements": "Combinaisons de déplacements",
+      "poomsae": {
+        "name": "TAEGEUK YUK JONG",
+        "evaluation": {
+          "diagram": 10,
+          "execution_quality": 5,
+          "position_details": 5,
+          "speed_variation": 5,
+          "total": 25
+        }
+      },
+      "ho_shin_soul": {
+        "requirements": "2 dégagements + contre-attaque sur saisie (1 poing imposé A ou B ou C ou D ou E)",
+        "evaluation": {
+          "reactivity": 10,
+          "release": 10,
+          "counter_attack": 10,
+          "control_ground": 0,
+          "total": 30
+        }
+      }
+    },
+    "4_to_3_keup": {
+      "belt_name": "Ceinture Bleu 2ème barrette → Ceinture Rouge (3e keup)",
+      "positions": [
+        "Ap seugui (marche)",
+        "Ap koubi (basse)",
+        "Joutchoum seugui (cavalier)",
+        "Narahni tchoumbi seugui (attente)",
+        "Tchaliot seugui (Salut)",
+        "Dwitt Koubi seugui",
+        "Oren seugui",
+        "Owen seugui",
+        "Dwitt koa seugui",
+        "Beum seugui",
+        "Be joumok seugui"
+      ],
+      "upper_limb_strikes": [
+        "Je tcho jireugui",
+        "Deung joumok je tcho jireugui",
+        "Do Kyang teung je tcho jireugui"
+      ],
+      "lower_limb_strikes": [
+        "Sohko tchagui",
+        "Keudop tchagui"
+      ],
+      "blocks": [
+        "Kodoro batangson momtong maki",
+        "Eut keuro are maki"
+      ],
+      "movements": "Combinaison Pas tournant / glissés / pivots",
+      "poomsae": {
+        "name": "TAEGEUK TCHIL JONG",
+        "evaluation": {
+          "diagram": 10,
+          "execution_quality": 5,
+          "position_details": 5,
+          "speed_variation": 5,
+          "total": 25
+        }
+      },
+      "kibons": {
+        "requirements": [
+          "2 frappes de précision sur partenaire (1 coups de pieds et 1 avec membres supérieur)",
+          "2 enchaînements de 3 techniques différentes membres supérieurs imposées 4 fois en avançant"
+        ],
+        "evaluation": {
+          "criteria": [
+            "Armement",
+            "Finition",
+            "Retour de frappe",
+            "Précision",
+            "Connaissance des termes",
+            "Symétrie dans la qualité d'exécution"
+          ],
+          "total": 30
+        }
+      },
+      "hanbon_kyeurogui": {
+        "requirements": [
+          "2 hanbons avec coup de pieds retourné",
+          "2 hanbons avec coup de pieds sauté"
+        ],
+        "evaluation": {
+          "reactivity": 10,
+          "precision_power": 10,
+          "movement_respect": 10,
+          "total": 30
+        }
+      },
+      "kyeurogui": {
+        "rounds": 2,
+        "evaluation": {
+          "fundamentals": {
+            "theme": "Contre = Je touche avant d'être touché avec les poings et les pieds",
+            "instructions": "Exécuter son coup pendant l'attaque adverse pour \"stopper\"",
+            "points": 10
+          },
+          "technical_variety": {
+            "theme": "J'utilise des coups de pieds visage",
+            "instructions": "Toucher ou approcher le plus près possibles son pied du casque de l'adversaire",
+            "points": 10
+          },
+          "tactical_variety": {
+            "theme": "J'attaque et je défends en variant mes choix",
+            "instructions": "Alterner des phases d'attaque sur 1 temps / enchaînées et des phases de défense en riposte / contre / neutralisation",
+            "points": 10
+          },
+          "total": 30
+        }
+      },
+      "ho_shin_soul": {
+        "requirements": "4 dégagements + contre-attaque + mise au sol sur saisie imposée (A ou B ou C ou D ou E)",
+        "evaluation": {
+          "reactivity": 2,
+          "release": 2,
+          "counter_attack": 8,
+          "control_ground": 8,
+          "total": 20
+        }
+      },
+      "theory": "Connaître le fonctionnement du haut niveau en taekwondo"
+    },
+    "3_to_2_keup": {
+      "belt_name": "Ceinture Rouge → Ceinture Rouge 1ère barrette (2e keup)",
+      "positions": [
+        "Ap seugui (marche)",
+        "Ap koubi (basse)",
+        "Joutchoum seugui (cavalier)",
+        "Narahni tchoumbi seugui (attente)",
+        "Tchaliot seugui (Salut)",
+        "Dwitt Koubi seugui",
+        "Oren seugui",
+        "Owen seugui",
+        "Dwitt koa seugui",
+        "Beum seugui",
+        "Be joumok seugui"
+      ],
+      "upper_limb_strikes": [
+        "Je tcho jireugui",
+        "Deung joumok je tcho jireugui",
+        "Do Kyang teung je tcho jireugui"
+      ],
+      "lower_limb_strikes": [
+        "Tuyo yop tchagui",
+        "Tuyo tolyo tchagui",
+        "Tuyo tuit tchagui",
+        "Tuyo momdolyo tchagui"
+      ],
+      "blocks": [
+        "Kaki maki",
+        "Owe san teul maki"
+      ],
+      "movements": "Pas tournants, Pas tournant vers l'avant",
+      "poomsae": {
+        "name": "TAEGEUK PAL JONG",
+        "evaluation": {
+          "diagram": 10,
+          "execution_quality": 5,
+          "position_details": 5,
+          "speed_variation": 5,
+          "total": 25
+        }
+      },
+      "kibons": {
+        "requirements": [
+          "2 frappes de précision sur partenaire imposées avec coups de pied",
+          "2 enchaînements de 3 techniques membres supérieurs ou inférieures différentes imposées 4 fois en avançant"
+        ],
+        "evaluation": {
+          "criteria": [
+            "Armement",
+            "Finition",
+            "Retour de frappe",
+            "Précision",
+            "Connaissance des termes",
+            "Symétrie dans la qualité d'exécution"
+          ],
+          "total": 30
+        }
+      },
+      "hanbon_kyeurogui": {
+        "requirements": [
+          "1 hanbon membres supérieurs",
+          "1 hanbon membres inférieurs",
+          "2 hanbons avec coups de pieds sautés"
+        ],
+        "evaluation": {
+          "reactivity": 10,
+          "precision_power": 10,
+          "movement_respect": 10,
+          "total": 30
+        }
+      },
+      "kyeurogui": {
+        "rounds": 2,
+        "evaluation": {
+          "fundamentals": {
+            "theme": "Contre = Je touche avant d'être touché avec les poings et les pieds",
+            "instructions": "Exécuter son coup pendant l'attaque adverse pour \"stopper\"",
+            "points": 10
+          },
+          "technical_variety": {
+            "theme": "J'utilise des coups de pieds visage",
+            "instructions": "Toucher ou approcher le plus près possibles son pied du casque de l'adversaire",
+            "points": 10
+          },
+          "tactical_variety": {
+            "theme": "J'attaque et je défends en variant mes choix",
+            "instructions": "Alterner des phases d'attaque sur 1 temps / enchaînées et des phases de défense en riposte / contre / neutralisation",
+            "points": 10
+          },
+          "total": 30
+        }
+      },
+      "ho_shin_soul": {
+        "requirements": "4 dégagements + contre-attaque + mise au sol sur saisie imposée (A ou B ou C ou D ou E)",
+        "evaluation": {
+          "reactivity": 2,
+          "release": 2,
+          "counter_attack": 8,
+          "control_ground": 8,
+          "total": 20
+        }
+      },
+      "theory": [
+        "Connaître le fonctionnement de la FFTDA",
+        "Connaître l'historique de la FFTDA"
+      ]
+    },
+    "2_to_1_keup": {
+      "belt_name": "Ceinture Rouge 1ère barrette → Ceinture Rouge 2ème barrette (1e keup)",
+      "positions": [
+        "Ap seugui (marche)",
+        "Ap koubi (basse)",
+        "Joutchoum seugui (cavalier)",
+        "Narahni tchoumbi seugui (attente)",
+        "Tchaliot seugui (Salut)",
+        "Dwitt Koubi seugui",
+        "Oren seugui",
+        "Owen seugui",
+        "Dwitt koa seugui",
+        "Beum seugui",
+        "Be joumok seugui"
+      ],
+      "upper_limb_strikes": [
+        "Je tcho jireugui",
+        "Deung joumok je tcho jireugui",
+        "Do Kyang teung je tcho jireugui"
+      ],
+      "lower_limb_strikes": [
+        "Tuyo yop tchagui",
+        "Tuyo tolyo tchagui",
+        "Tuyo tuit tchagui",
+        "Tuyo momdolyo tchagui"
+      ],
+      "blocks": [
+        "Kaki maki",
+        "Owe san teul maki"
+      ],
+      "movements": "Pas tournants, Pas tournant vers l'avant",
+      "poomsae": {
+        "name": "KORYO",
+        "evaluation": {
+          "diagram": 10,
+          "execution_quality": 5,
+          "position_details": 5,
+          "speed_variation": 5,
+          "total": 25
+        }
+      },
+      "kibons": {
+        "requirements": [
+          "2 frappes de précision sur partenaire imposées avec coups de pied",
+          "2 enchaînements de 3 techniques membres supérieurs ou inférieures différentes imposées 4 fois en avançant"
+        ],
+        "evaluation": {
+          "criteria": [
+            "Armement",
+            "Finition",
+            "Retour de frappe",
+            "Précision",
+            "Connaissance des termes",
+            "Symétrie dans la qualité d'exécution"
+          ],
+          "total": 30
+        }
+      },
+      "hanbon_kyeurogui": {
+        "requirements": [
+          "1 hanbon membres supérieurs",
+          "1 hanbon membres inférieurs",
+          "2 hanbons avec coups de pieds sautés"
+        ],
+        "evaluation": {
+          "reactivity": 10,
+          "precision_power": 10,
+          "movement_respect": 10,
+          "total": 30
+        }
+      },
+      "kyeurogui": {
+        "rounds": 2,
+        "evaluation": {
+          "fundamentals": {
+            "theme": "Contre = Je touche avant d'être touché avec les poings et les pieds",
+            "instructions": "Exécuter son coup pendant l'attaque adverse pour \"stopper\"",
+            "points": 10
+          },
+          "technical_variety": {
+            "theme": "J'utilise des coups de pieds visage",
+            "instructions": "Toucher ou approcher le plus près possibles son pied du casque de l'adversaire",
+            "points": 10
+          },
+          "tactical_variety": {
+            "theme": "J'attaque et je défends en variant mes choix",
+            "instructions": "Alterner des phases d'attaque sur 1 temps / enchaînées et des phases de défense en riposte / contre / neutralisation",
+            "points": 10
+          },
+          "total": 30
+        }
+      },
+      "ho_shin_soul": {
+        "requirements": "4 dégagements + contre-attaque + mise au sol sur saisie imposée (A ou B ou C ou D ou E)",
+        "evaluation": {
+          "reactivity": 2,
+          "release": 2,
+          "counter_attack": 8,
+          "control_ground": 8,
+          "total": 20
+        }
+      },
+      "theory": [
+        "Connaître le fonctionnement de la FFTDA",
+        "Connaître l'historique de la FFTDA"
+      ]
+    }
+  }
+} 

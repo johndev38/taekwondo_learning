@@ -1,19 +1,36 @@
 import 'package:flutter/material.dart';
 
-import 'QuestionTypeSelectionScreen.dart';
+import 'question_type_selection_screen.dart';
 
 class BeltSelectionScreen extends StatelessWidget {
   final List<Map<String, String>> belts = [
     {'name': 'Jaune (9e keup)', 'file': 'questions_jaune.json'},
-    {'name': 'Jaune 1ère barrette (8e keup)', 'file': 'questions_jaune_barrette1.json'},
-    {'name': 'Jaune 2ème barrette (7e keup)', 'file': 'questions_jaune_barrette2.json'},
+    {
+      'name': 'Jaune 1ère barrette (8e keup)',
+      'file': 'questions_jaune_barrette1.json'
+    },
+    {
+      'name': 'Jaune 2ème barrette (7e keup)',
+      'file': 'questions_jaune_barrette2.json'
+    },
     {'name': 'Bleu (6e keup)', 'file': 'questions_bleu.json'},
-    {'name': 'Bleu 1ère barrette (5e keup)', 'file': 'questions_bleu_barrette1.json'},
-    {'name': 'Bleu 2ème barrette (4e keup)', 'file': 'questions_bleu_barrette2.json'},
+    {
+      'name': 'Bleu 1ère barrette (5e keup)',
+      'file': 'questions_bleu_barrette1.json'
+    },
+    {
+      'name': 'Bleu 2ème barrette (4e keup)',
+      'file': 'questions_bleu_barrette2.json'
+    },
     {'name': 'Rouge (3e keup)', 'file': 'questions_rouge.json'},
-    {'name': 'Rouge 1ère barrette (2e keup)', 'file': 'questions_rouge_barrette1.json'},
+    {
+      'name': 'Rouge 1ère barrette (2e keup)',
+      'file': 'questions_rouge_barrette1.json'
+    },
     {'name': 'Noire (1e keup)', 'file': 'questions_noire.json'},
   ];
+
+  BeltSelectionScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +38,7 @@ class BeltSelectionScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sélectionner la ceinture'),
+        title: const Text('Sélectionner la ceinture'),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         centerTitle: true,
@@ -59,10 +76,11 @@ class BeltSelectionScreen extends StatelessWidget {
                 color: Colors.grey[50],
                 child: Center(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 8.0, horizontal: 16.0),
                     child: Text(
                       belts[index]['name']!,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
                         color: Colors.black87,

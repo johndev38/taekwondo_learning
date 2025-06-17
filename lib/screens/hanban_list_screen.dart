@@ -5,17 +5,22 @@ class HanbanListScreen extends StatelessWidget {
   final List<Map<String, String>> videos = [
     {
       'title': 'Ceinture jaune',
-      'url': 'https://www.youtube.com/watch?v=rfAxpm8Txeg&list=PLXRipegTJj_hVaAYodUbaP5VkxsiPUY_V&index=1'
+      'url':
+          'https://www.youtube.com/watch?v=rfAxpm8Txeg&list=PLXRipegTJj_hVaAYodUbaP5VkxsiPUY_V&index=1'
     },
     {
       'title': 'Ceinture bleu',
-      'url': 'https://www.youtube.com/watch?v=9XWVc8xbEHk&list=PLXRipegTJj_hVaAYodUbaP5VkxsiPUY_V&index=2'
+      'url':
+          'https://www.youtube.com/watch?v=9XWVc8xbEHk&list=PLXRipegTJj_hVaAYodUbaP5VkxsiPUY_V&index=2'
     },
     {
       'title': 'Ceinture rouge',
-      'url': 'https://www.youtube.com/watch?v=2j1xnHPVE8Q&list=PLXRipegTJj_hVaAYodUbaP5VkxsiPUY_V&index=3'
+      'url':
+          'https://www.youtube.com/watch?v=2j1xnHPVE8Q&list=PLXRipegTJj_hVaAYodUbaP5VkxsiPUY_V&index=3'
     },
   ];
+
+  HanbanListScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,12 +28,12 @@ class HanbanListScreen extends StatelessWidget {
     final double titleFontSize = screenWidth > 800
         ? 18
         : screenWidth > 600
-        ? 16
-        : 14; // Ajustement de la taille de police pour les écrans plus petits
+            ? 16
+            : 14; // Ajustement de la taille de police pour les écrans plus petits
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Hanbon Kyurugui"),
+        title: const Text("Hanbon Kyurugui"),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         centerTitle: true,
@@ -64,7 +69,8 @@ class HanbanListScreen extends StatelessWidget {
                 color: Colors.grey[50],
                 child: Center(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 12.0, horizontal: 16.0),
                     child: Text(
                       videos[index]['title']!,
                       style: TextStyle(

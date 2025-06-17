@@ -132,34 +132,6 @@
       "options": ["Momtong An Maki", "Momtong Maki", "Are Maki"],
       "correctAnswer": "Momtong An Maki",
       "image": "assets/images/ceinture_jaune.png"
-    },
-    {
-      "id": 2020,
-      "question": "Quel mouvement consiste à pivoter vers l'avant ?",
-      "options": ["Pas pivot vers l'avant", "Retrait pivot", "Pas glissé vers l'avant"],
-      "correctAnswer": "Pas pivot vers l'avant",
-      "image": "assets/images/ceinture_jaune.png"
-    },
-    {
-      "id": 2021,
-      "question": "Quel est le mouvement qui consiste à retirer le pivot vers l'arrière ?",
-      "options": ["Retrait pivot", "Pas pivot vers l'avant", "Pas glissé vers l'avant"],
-      "correctAnswer": "Retrait pivot",
-      "image": "assets/images/ceinture_jaune.png"
-    },
-    {
-      "id": 2022,
-      "question": "Quel mouvement consiste à glisser vers l'avant ?",
-      "options": ["Pas glissé vers l'avant", "Pas pivot vers l'avant", "Retrait glissé"],
-      "correctAnswer": "Pas glissé vers l'avant",
-      "image": "assets/images/ceinture_jaune.png"
-    },
-    {
-      "id": 2023,
-      "question": "Quel est le mouvement qui consiste à glisser en arrière ?",
-      "options": ["Retrait glissé", "Pas glissé vers l'avant", "Retrait pivot"],
-      "correctAnswer": "Retrait glissé",
-      "image": "assets/images/ceinture_jaune.png"
     }
   ]
 }

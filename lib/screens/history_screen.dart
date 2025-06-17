@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 class TaekwondoHistoryScreen extends StatefulWidget {
+  const TaekwondoHistoryScreen({Key? key}) : super(key: key);
+
   @override
-  _TaekwondoHistoryScreenState createState() => _TaekwondoHistoryScreenState();
+  TaekwondoHistoryScreenState createState() => TaekwondoHistoryScreenState();
 }
 
-class _TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
+class TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
   List<dynamic> history = [];
 
   @override
@@ -28,42 +30,46 @@ class _TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Histoire du Taekwondo'),
+        title: const Text('Histoire du Taekwondo'),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
       body: history.isEmpty
-          ? Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator())
           : ListView.builder(
-        padding: EdgeInsets.all(16.0),
-        itemCount: history.length,
-        itemBuilder: (context, index) {
-          final section = history[index];
-          return _buildSection(
-            context,
-            title: section['title'],
-            content: section['content'],
-          );
-        },
-      ),
+              padding: const EdgeInsets.all(16.0),
+              itemCount: history.length,
+              itemBuilder: (context, index) {
+                final section = history[index];
+                return _buildSection(
+                  context,
+                  title: section['title'],
+                  content: section['content'],
+                );
+              },
+            ),
     );
   }
 
-  Widget _buildSection(BuildContext context, {required String title, required String content}) {
+  Widget _buildSection(BuildContext context,
+      {required String title, required String content}) {
     return Card(
       elevation: 5,
-      margin: EdgeInsets.symmetric(vertical: 10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               title,
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge
+                  ?.copyWith(fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
               content,
               style: Theme.of(context).textTheme.bodyMedium,

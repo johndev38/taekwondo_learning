@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 class TaekwondoRulesScreen extends StatefulWidget {
+  const TaekwondoRulesScreen({Key? key}) : super(key: key);
+
   @override
-  _TaekwondoRulesScreenState createState() => _TaekwondoRulesScreenState();
+  TaekwondoRulesScreenState createState() => TaekwondoRulesScreenState();
 }
 
-class _TaekwondoRulesScreenState extends State<TaekwondoRulesScreen> {
+class TaekwondoRulesScreenState extends State<TaekwondoRulesScreen> {
   List<dynamic> rules = [];
 
   @override
@@ -28,29 +30,30 @@ class _TaekwondoRulesScreenState extends State<TaekwondoRulesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Règles d\'Arbitrage'),
+        title: const Text('Règles d\'Arbitrage'),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
       body: rules.isEmpty
-          ? Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator())
           : ListView.builder(
-        padding: EdgeInsets.all(16.0),
-        itemCount: rules.length,
-        itemBuilder: (context, index) {
-          final rule = rules[index];
-          return _buildSection(
-            context,
-            title: rule['title'],
-            content: rule['content'],
-          );
-        },
-      ),
+              padding: const EdgeInsets.all(16.0),
+              itemCount: rules.length,
+              itemBuilder: (context, index) {
+                final rule = rules[index];
+                return _buildSection(
+                  context,
+                  title: rule['title'],
+                  content: rule['content'],
+                );
+              },
+            ),
     );
   }
 
-  Widget _buildSection(BuildContext context, {required String title, dynamic content}) {
+  Widget _buildSection(BuildContext context,
+      {required String title, dynamic content}) {
     // Vérification du type de 'content'
     Widget contentWidget;
     if (content is List) {
@@ -80,17 +83,20 @@ class _TaekwondoRulesScreenState extends State<TaekwondoRulesScreen> {
 
     return Card(
       elevation: 5,
-      margin: EdgeInsets.symmetric(vertical: 10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               title,
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge
+                  ?.copyWith(fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             contentWidget,
           ],
         ),

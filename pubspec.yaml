@@ -31,6 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
   youtube_player_flutter: ^8.1.0
+  shared_preferences: ^2.0.15
+  provider: ^6.0.3
 
 
 
@@ -76,6 +78,7 @@ flutter:
     - assets/questions_rouge.json
     - assets/questions_rouge_barrette1.json
     - assets/questions_noire.json
+    - assets/belt_requirements.json
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
