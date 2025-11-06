@@ -180,20 +180,20 @@ class HomeScreen extends StatelessWidget {
                                   builder: (context) => VideoListScreen()),
                             );
                           },
-                        ),
-                        _buildModuleCard(
-                          context,
-                          title: 'Vidéo Hanbon',
-                          icon: Icons.sports_martial_arts,
-                          color: Colors.purple.shade600,
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => HanbanListScreen()),
-                            );
-                          },
-                        ),
+                        )
+                        // _buildModuleCard(
+                        //   context,
+                        //   title: 'Vidéo Hanbon',
+                        //   icon: Icons.sports_martial_arts,
+                        //   color: Colors.purple.shade600,
+                        //   onTap: () {
+                        //     Navigator.push(
+                        //       context,
+                        //       MaterialPageRoute(
+                        //           builder: (context) => HanbanListScreen()),
+                        //     );
+                        //   },
+                        // ),
                       ],
                     ),
 

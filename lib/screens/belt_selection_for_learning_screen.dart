@@ -38,8 +38,6 @@ class _BeltSelectionForLeaningScreenState
     final screenWidth = MediaQuery.of(context).size.width;
     final beltNotifier = Provider.of<BeltNotifier>(context);
     final currentBelt = widget.selectedBelt ?? beltNotifier.currentBelt;
-    final recommendedKibon =
-        currentBelt != null ? beltNotifier.getKibonForBelt(currentBelt) : null;
 
     final double titleFontSize = screenWidth > 800
         ? 18
@@ -56,48 +54,6 @@ class _BeltSelectionForLeaningScreenState
       ),
       body: Column(
         children: [
-          // Bandeau de recommandation si une ceinture est sélectionnée
-          if (recommendedKibon != null)
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Colors.green.shade100, Colors.teal.shade100],
-                ),
-                border: Border(
-                  bottom: BorderSide(color: Colors.green.shade200),
-                ),
-              ),
-              child: Row(
-                children: [
-                  Icon(Icons.star, color: Colors.green.shade600, size: 24),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Recommandé pour votre ceinture',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.green.shade700,
-                          ),
-                        ),
-                        Text(
-                          '$currentBelt → $recommendedKibon',
-                          style: TextStyle(
-                            color: Colors.green.shade600,
-                            fontSize: 13,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
           // Liste des ceintures
           Expanded(
             child: Padding(
@@ -111,8 +67,6 @@ class _BeltSelectionForLeaningScreenState
                 ),
                 itemCount: belts.length,
                 itemBuilder: (context, index) {
-                  final isRecommended = belts[index] == recommendedKibon;
-
                   return GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -125,50 +79,27 @@ class _BeltSelectionForLeaningScreenState
                       );
                     },
                     child: Card(
-                      elevation: isRecommended ? 8 : 3,
+                      elevation: 3,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
-                        side: isRecommended
-                            ? BorderSide(color: Colors.green.shade400, width: 2)
-                            : BorderSide.none,
+                        side: BorderSide.none,
                       ),
-                      color: isRecommended
-                          ? Colors.green.shade50
-                          : Colors.grey[50],
+                      color: Colors.grey[50],
                       child: Container(
-                        decoration: isRecommended
-                            ? BoxDecoration(
-                                borderRadius: BorderRadius.circular(12),
-                                gradient: LinearGradient(
-                                  colors: [
-                                    Colors.green.shade50,
-                                    Colors.teal.shade50
-                                  ],
-                                ),
-                              )
-                            : null,
+                        decoration: null,
                         child: Center(
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
                                 vertical: 8.0, horizontal: 16.0),
                             child: Row(
                               children: [
-                                if (isRecommended) ...[
-                                  Icon(Icons.star,
-                                      color: Colors.green.shade600, size: 20),
-                                  const SizedBox(width: 8),
-                                ],
                                 Expanded(
                                   child: Text(
                                     belts[index],
                                     style: TextStyle(
                                       fontSize: titleFontSize,
-                                      fontWeight: isRecommended
-                                          ? FontWeight.bold
-                                          : FontWeight.w500,
-                                      color: isRecommended
-                                          ? Colors.green.shade700
-                                          : Colors.black87,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black87,
                                     ),
                                     textAlign: TextAlign.center,
                                   ),

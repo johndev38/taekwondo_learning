@@ -106,23 +106,6 @@ class _VideoListScreenState extends State<VideoListScreen> {
       ),
       body: Column(
         children: [
-          // Bandeau de recommandation si une ceinture est sélectionnée
-          if (recommendedPoomsae != null)
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Colors.amber.shade100, Colors.orange.shade100],
-                ),
-                border: Border(
-                  bottom: BorderSide(color: Colors.orange.shade200),
-                ),
-              ),
-              
-              ),
-            ),
-
           // Liste des vidéos
           Expanded(
             child: Padding(
@@ -154,51 +137,27 @@ class _VideoListScreenState extends State<VideoListScreen> {
                       );
                     },
                     child: Card(
-                      elevation: isRecommended ? 8 : 3,
+                      elevation: 3,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
-                        side: isRecommended
-                            ? BorderSide(
-                                color: Colors.orange.shade400, width: 2)
-                            : BorderSide.none,
+                        side: BorderSide.none,
                       ),
-                      color: isRecommended
-                          ? Colors.orange.shade50
-                          : Colors.grey[50],
+                      color: Colors.grey[50],
                       child: Container(
-                        decoration: isRecommended
-                            ? BoxDecoration(
-                                borderRadius: BorderRadius.circular(12),
-                                gradient: LinearGradient(
-                                  colors: [
-                                    Colors.orange.shade50,
-                                    Colors.amber.shade50
-                                  ],
-                                ),
-                              )
-                            : null,
+                        decoration: null,
                         child: Center(
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
                                 vertical: 12.0, horizontal: 16.0),
                             child: Row(
                               children: [
-                                if (isRecommended) ...[
-                                  Icon(Icons.star,
-                                      color: Colors.orange.shade600, size: 20),
-                                  const SizedBox(width: 8),
-                                ],
                                 Expanded(
                                   child: Text(
                                     videos[index]['title']!,
                                     style: TextStyle(
                                       fontSize: titleFontSize,
-                                      fontWeight: isRecommended
-                                          ? FontWeight.bold
-                                          : FontWeight.w500,
-                                      color: isRecommended
-                                          ? Colors.orange.shade700
-                                          : Colors.black87,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black87,
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
