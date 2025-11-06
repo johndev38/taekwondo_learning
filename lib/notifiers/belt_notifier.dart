@@ -10,6 +10,7 @@ class BeltNotifier with ChangeNotifier {
 
   // Liste des ceintures disponibles (vous pouvez la charger depuis une autre source si nécessaire)
   final List<String> belts = [
+    'Blanche (10e keup)',
     'Jaune (9e keup)',
     'Jaune 1ère barrette (8e keup)',
     'Jaune 2ème barrette (7e keup)',
@@ -19,7 +20,7 @@ class BeltNotifier with ChangeNotifier {
     'Rouge (3e keup)',
     'Rouge 1ère barrette (2e keup)',
     'Rouge 2ème barrette (1e keup)',
-    'Noire 1er Dan'
+    'Noire',
   ];
 
   BeltNotifier() {
@@ -27,8 +28,10 @@ class BeltNotifier with ChangeNotifier {
   }
 
   Future<void> setCurrentBelt(String belt) async {
-    _currentBelt = belt;
-    await _saveCurrentBelt();
+    if (belts.contains(belt)) {
+      _currentBelt = belt;
+      await _saveCurrentBelt();
+    }
     notifyListeners();
   }
 
@@ -71,5 +74,82 @@ class BeltNotifier with ChangeNotifier {
       await _saveCurrentBelt();
     }
     notifyListeners();
+  }
+
+  // Méthode pour obtenir le poomsae correspondant à la ceinture
+  String? getPoomsaeForBelt(String? belt) {
+    if (belt == null) return null;
+
+    final Map<String, String> beltToPoomsae = {
+      'Blanche (10e keup)': 'TAEGEUK1JANG',
+      'Jaune (9e keup)': 'TAEGEUK1JANG',
+      'Jaune 1ère barrette (8e keup)': 'TAEGEUK2JANG',
+      'Jaune 2ème barrette (7e keup)': 'TAEGEUK3JANG',
+      'Bleu (6e keup)': 'TAEGEUK4JANG',
+      'Bleu 1ère barrette (5e keup)': 'TAEGEUK5JANG',
+      'Bleu 2ème barrette (4e keup)': 'TAEGEUK6JANG',
+      'Rouge (3e keup)': 'TAEGEUK7JANG',
+      'Rouge 1ère barrette (2e keup)': 'TAEGEUK8JANG',
+      'Rouge 2ème barrette (1e keup)': 'KORYO',
+      'Noire': 'KORYO',
+    };
+
+    return beltToPoomsae[belt];
+  }
+
+  // Méthode pour obtenir le niveau hanbon correspondant à la ceinture
+  String? getHanbonForBelt(String? belt) {
+    if (belt == null) return null;
+
+    if (belt.contains('Jaune')) {
+      return 'Ceinture jaune';
+    } else if (belt.contains('Bleu')) {
+      return 'Ceinture bleu';
+    } else if (belt.contains('Rouge') || belt.contains('Noire')) {
+      return 'Ceinture rouge';
+    }
+
+    return null;
+  }
+
+  // Méthode pour obtenir le niveau kibon correspondant à la ceinture
+  String? getKibonForBelt(String? belt) {
+    if (belt == null) return null;
+
+    final Map<String, String> beltToKibon = {
+      'Blanche (10e keup)': 'Jaune (9e keup)',
+      'Jaune (9e keup)': 'Jaune (9e keup)',
+      'Jaune 1ère barrette (8e keup)': 'Jaune 1ère barrette (8e keup)',
+      'Jaune 2ème barrette (7e keup)': 'Jaune 2ème barrette (7e keup)',
+      'Bleu (6e keup)': 'Bleu (6e keup)',
+      'Bleu 1ère barrette (5e keup)': 'Bleu 1ère barrette (5e keup)',
+      'Bleu 2ème barrette (4e keup)': 'Bleu 2ème barrette (4e keup)',
+      'Rouge (3e keup)': 'Rouge (3e keup)',
+      'Rouge 1ère barrette (2e keup)': 'Rouge 1ère barrette (2e keup)',
+      'Rouge 2ème barrette (1e keup)': 'Noire (1e keup)',
+      'Noire': 'Noire (1e keup)',
+    };
+
+    return beltToKibon[belt];
+  }
+
+  // Méthode pour obtenir la progression de ceinture correspondante pour les exigences
+  String? getBeltTransitionKey(String? belt) {
+    if (belt == null) return null;
+
+    final Map<String, String> beltToTransition = {
+      'Blanche (10e keup)': '10_to_9_keup',
+      'Jaune (9e keup)': '9_to_8_keup',
+      'Jaune 1ère barrette (8e keup)': '8_to_7_keup',
+      'Jaune 2ème barrette (7e keup)': '7_to_6_keup',
+      'Bleu (6e keup)': '6_to_5_keup',
+      'Bleu 1ère barrette (5e keup)': '5_to_4_keup',
+      'Bleu 2ème barrette (4e keup)': '4_to_3_keup',
+      'Rouge (3e keup)': '3_to_2_keup',
+      'Rouge 1ère barrette (2e keup)': '2_to_1_keup',
+      'Rouge 2ème barrette (1e keup)': '1_to_dan_keup',
+    };
+
+    return beltToTransition[belt];
   }
 }

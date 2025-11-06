@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 class TaekwondoHistoryScreen extends StatefulWidget {
-  const TaekwondoHistoryScreen({Key? key}) : super(key: key);
+  const TaekwondoHistoryScreen({super.key});
 
   @override
   TaekwondoHistoryScreenState createState() => TaekwondoHistoryScreenState();

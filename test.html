@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CM2 – Homophones & orthographe (exercices à trous)</title>
+  <style>
+    :root{
+      --bg:#0f172a; --card:#111827; --muted:#94a3b8; --text:#e5e7eb;
+      --accent:#10b981; --accent-2:#60a5fa; --danger:#ef4444; --warn:#f59e0b;
+      --shadow:0 10px 30px rgba(0,0,0,.25); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{ margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1f2937 0, #0b1022 55%, #080a16 100%);
+      color:var(--text);
+    }
+    header{ padding:28px 16px 10px; text-align:center }
+    h1{ margin:.2rem 0 .6rem; font-size:clamp(22px,3.4vw,36px) }
+    p.subtitle{ margin:0 auto 18px; color:var(--muted); max-width:980px; line-height:1.5 }
+    .wrap{ max-width:1200px; margin:0 auto; padding:14px 16px 40px }
+    .toolbar{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:8px 0 18px }
+    button{ border:0; border-radius:12px; padding:12px 16px; font-weight:600; cursor:pointer;
+      background:linear-gradient(135deg, var(--accent-2), #2563eb); color:white; box-shadow:var(--shadow);
+      transition:.2s transform ease,.2s opacity ease,.2s box-shadow ease;
+    }
+    button.secondary{ background:linear-gradient(135deg, #22c55e, var(--accent)) }
+    button.ghost{ background:#1f2937; color:#d1d5db; border:1px solid #374151 }
+    button:hover{ transform:translateY(-1px) }
+    button:disabled{ opacity:.55; cursor:not-allowed; transform:none }
+    .rules{ display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin:10px 0 6px }
+    .chip{ padding:6px 10px; border-radius:999px; font-size:12px; color:#dbeafe;
+      background:linear-gradient(135deg,#0ea5e9,#6366f1); border:1px solid rgba(255,255,255,.08)
+    }
+    .grid{ display:grid; grid-template-columns:repeat(1,minmax(0,1fr)); gap:14px }
+    @media(min-width:900px){ .grid{ grid-template-columns:repeat(2,minmax(0,1fr)) } }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border:1px solid rgba(148,163,184,.18); border-radius:var(--radius);
+      box-shadow:var(--shadow); padding:14px 14px 12px; position:relative; overflow:hidden;
+    }
+    .q-head{ display:flex; align-items:center; gap:8px; margin-bottom:8px; color:var(--muted);
+      font-size:13px; letter-spacing:.2px }
+    .idx{ display:inline-grid; place-items:center; width:26px; height:26px; border-radius:50%;
+      background:#1f2937; border:1px solid #334155; color:#e5e7eb; font-weight:700; font-size:13px }
+    .sentence{ line-height:1.5; font-size:16px; margin-bottom:10px }
+    .blank{ min-width:120px; padding:10px 12px; border-radius:10px; border:1px solid #334155;
+      background:#0b1220; color:#e5e7eb; font-weight:600; box-shadow:inset 0 0 0 1px rgba(255,255,255,.02) }
+    .helper{ font-size:12px; color:#93c5fd; margin-top:6px }
+    .explain{ font-size:13px; color:#c7d2fe; margin-top:8px; display:none }
+    .explain.visible{ display:block }
+    .result{ margin:18px auto 0; max-width:980px; background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
+      border:1px solid rgba(148,163,184,.22); border-radius:18px; padding:16px 16px }
+    .score{ display:flex; gap:14px; align-items:center; justify-content:center; flex-wrap:wrap;
+      font-size:clamp(16px,2.2vw,20px) }
+    .badge{ padding:6px 10px; border-radius:999px; font-weight:700; color:white; box-shadow:var(--shadow) }
+    .ok{ background:linear-gradient(135deg,#22c55e,#16a34a) }
+    .ko{ background:linear-gradient(135deg,#ef4444,#dc2626) }
+    .warn{ background:linear-gradient(135deg,#f59e0b,#d97706) }
+    details{ margin-top:10px; border-top:1px dashed #374151; padding-top:10px }
+    summary{ cursor:pointer; color:#c7d2fe }
+    .mistake{ margin-top:10px; padding:10px; border:1px solid #374151; border-radius:12px; background:#0b1220 }
+    .mistake b{ color:#fca5a5 }
+    footer{ text-align:center; color:var(--muted); font-size:12px; margin:28px 0 10px }
+    .tiny{ font-size:11px; color:#9ca3af }
+  </style>
+</head>
+<body>
+<header>
+  <h1>CM2 — Homophones & orthographe : exercices à trous</h1>
+  <p class="subtitle">
+    Entraînement sur <b>ses/ces/c’est</b>, <b>ou/où</b>, <b>la/là</b>, <b>et/est</b>, <b>a/à</b>,
+    <b>leur/leurs</b>, <b>avoir/à voir</b>, <b>s/ss</b>, <b>on/ont</b>, <b>infinitif (-er) / participe passé (-é)</b>,
+    <b>c/ç</b>, <b>g/gu/ge</b>. Chaque session propose <b>20 questions</b>. Réussite : <b>> 15/20</b>.
+  </p>
+  <div class="rules">
+    <span class="chip">ses / ces / c’est</span><span class="chip">ou / où</span><span class="chip">la / là</span>
+    <span class="chip">et / est</span><span class="chip">a / à</span><span class="chip">leur / leurs</span>
+    <span class="chip">avoir / à voir</span><span class="chip">s / ss</span><span class="chip">on / ont</span>
+    <span class="chip">-er / -é</span><span class="chip">c / ç</span><span class="chip">g / gu / ge</span>
+  </div>
+  <div class="toolbar">
+    <button id="btnNew" class="secondary">Nouvelle série (20 questions)</button>
+    <button id="btnCheck" class="ghost" disabled>Valider mes réponses</button>
+    <button id="btnShowExplain" class="ghost" disabled>Afficher / masquer les explications</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="questions" class="grid" aria-live="polite"></div>
+
+  <div id="result" class="result" style="display:none">
+    <div class="score" id="scoreLine"></div>
+    <details id="mistakesBox" style="display:none">
+      <summary>Voir mes erreurs et les explications</summary>
+      <div id="mistakes"></div>
+    </details>
+    <div style="text-align:center; margin-top:12px">
+      <button id="btnRetry" class="secondary">Relancer une nouvelle série</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="tiny">Astuce : remplacez par « cela est », « à quel endroit », ou conjuguez le verbe pour vérifier.</div>
+</footer>
+
+<script>
+  // ==========
+  // UTILITAIRES
+  // ==========
+  const rnd = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+  const pick = arr => arr[rnd(0, arr.length - 1)];
+  const shuffle = arr => arr.map(v => [Math.random(), v]).sort((a,b)=>a[0]-b[0]).map(p=>p[1]);
+
+  // Banques pour générer des variantes
+  const prenoms = ["Léa","Noah","Inès","Tom","Lucas","Emma","Sofia","Jules","Lina","Adam","Nora","Chloé","Malo","Nina","Ethan","Camille","Aya","Sacha","Maël","Zoé"];
+  const lieux = ["la bibliothèque","la cantine","le gymnase","le musée","la cour","la montagne","la plage","le marché","le parc","le théâtre","la mairie","la médiathèque","le port","le stade","la piscine","le lac"];
+  const objetsPluriel = ["cahiers","feutres","chaussures","lunettes","ciseaux","dossiers","cartes","bougies","gants","affiches","clés","photos","perles","fleurs","jouets"];
+  const choses = ["magnifique","lourde","étrange","utile","délicate","importante","drôle","ancienne","neuve","cassée","ouverte","fermée"];
+  const aliments = ["pain","fromage","salade","gâteau","yaourt","chocolat","pomme","banane","pizza","soupe"];
+  const activites = ["réviser","dessiner","nager","marcher","chanter","courir","cuisiner","lire","jouer","danser"];
+
+  // ==========
+  // GÉNÉRATEURS EXISTANTS
+  // ==========
+  function genOuOu(){
+    const out = [];
+    out.push({ t:`Tu préfères du ${pick(aliments)} ___ du ${pick(aliments)} ?`, opts:["ou","où"], ans:"ou", rule:"ou / où",
+      exp:"« ou » exprime une alternative ; « où » indique un lieu." });
+    out.push({ t:`Sais-tu ___ se trouve ${pick(lieux)} ?`, opts:["ou","où"], ans:"où", rule:"ou / où",
+      exp:"« où » marque le lieu ; on peut remplacer par « à quel endroit »." });
+    for(let i=0;i<14;i++){
+      out.push({ t:`${pick(prenoms)} hésite : piscine ___ cinéma ce soir ?`, opts:["ou","où"], ans:"ou", rule:"ou / où", exp:"Alternative -> « ou »." });
+      out.push({ t:`Savez-vous ___ est la sortie pour ${pick(lieux)} ?`, opts:["ou","où"], ans:"où", rule:"ou / où", exp:"On demande un lieu -> « où »." });
+    }
+    return out;
+  }
+  function genLaLa(){
+    const out=[];
+    out.push({ t:`Posez le sac ___, près de la fenêtre.`, opts:["la","là"], ans:"là", rule:"la / là", exp:"« là » indique un lieu ; « la » est un article." });
+    out.push({ t:`___ maîtresse arrive bientôt.`, opts:["La","Là"], ans:"La", rule:"la / là", exp:"Article défini devant un nom : « La »." });
+    for(let i=0;i<16;i++){
+      out.push({ t:`Mettez vos ${pick(objetsPluriel)} ___, sur la table.`, opts:["la","là"], ans:"là", rule:"la / là", exp:"Emplacement -> « là »." });
+      out.push({ t:`___ porte est trop lourde pour un enfant.`, opts:["La","Là"], ans:"La", rule:"la / là", exp:"Article défini -> « La »." });
+    }
+    return out;
+  }
+  function genEtEst(){
+    const out=[];
+    out.push({ t:`Il ___ en retard ___ fatigué.`, opts:["est / et","et / est"], ans:"est / et", rule:"et / est", exp:"« est » (verbe être) + « et » (coordination)." });
+    for(let i=0;i<18;i++){
+      out.push({ t:`Le livre ___ long ___ passionnant.`, opts:["est / et","et / est"], ans:"est / et", rule:"et / est", exp:"« est » + adjectif ; « et » relie deux idées." });
+      out.push({ t:`${pick(prenoms)} ___ concentré ___ silencieux pour ${pick(activites)}.`, opts:["est / et","et / est"], ans:"est / et", rule:"et / est", exp:"« est » (être) puis « et » coordonne." });
+    }
+    return out;
+  }
+  function genAA(){
+    const out=[];
+    out.push({ t:`Il ___ perdu sa trousse près d’___ arbre.`, opts:["a / à","à / a"], ans:"a / à", rule:"a / à",
+      exp:"« a » = verbe avoir ; « à » = préposition." });
+    for(let i=0;i<18;i++){
+      out.push({ t:`${pick(prenoms)} ___ rendez-vous ___ ${pick(lieux)}.`, opts:["a / à","à / a"], ans:"a / à", rule:"a / à", exp:"« a rendez-vous » ; « à » marque le lieu." });
+      out.push({ t:`La classe va ___ la montagne, chacun ___ son pique-nique.`, opts:["à / a","a / à"], ans:"à / a", rule:"a / à", exp:"Déplacement « à » ; « a » (avoir)." });
+    }
+    return out;
+  }
+  function genSesCesCest(){
+    const out=[];
+    out.push({ t:`___ cahiers sont sur la table : ils sont à Tom.`, opts:["Ces","Ses","C’est"], ans:"Ses",
+      rule:"ses / ces / c’est", exp:"Possession -> « ses » (les siens)." });
+    out.push({ t:`___ cahiers sont sur la table : prends-les.`, opts:["Ses","Ces","C’est"], ans:"Ces",
+      rule:"ses / ces / c’est", exp:"On désigne -> « ces »." });
+    out.push({ t:`___ un bon exercice de grammaire !`, opts:["Ses","Ces","C’est"], ans:"C’est",
+      rule:"ses / ces / c’est", exp:"= « cela est »." });
+    for(let i=0;i<26;i++){
+      const p=pick(prenoms), o=pick(objetsPluriel);
+      out.push({ t:`${p} a perdu ___ ${o} pendant la récréation.`, opts:["ses","ces","c’est"], ans:"ses", rule:"ses / ces / c’est", exp:"Possession : « ses »." });
+      out.push({ t:`Regarde ___ ${o} sur l’étagère, ils sont colorés.`, opts:["ses","ces","c’est"], ans:"ces", rule:"ses / ces / c’est", exp:"Démonstratif : « ces »." });
+      out.push({ t:`___ incroyable comme vous progressez !`, opts:["Ses","Ces","C’est"], ans:"C’est", rule:"ses / ces / c’est", exp:"Remplacez par « cela est »." });
+    }
+    return out;
+  }
+
+  // ==========
+  // NOUVELLES RÈGLES DEMANDÉES
+  // ==========
+  function genLeurLeurs(){
+    const out=[];
+    out.push({ t:`Les élèves rangent ___ affaires.`, opts:["leur","leurs"], ans:"leurs", rule:"leur / leurs",
+      exp:"Au pluriel devant un nom comptable au pluriel → « leurs affaires »." });
+    out.push({ t:`Chaque enfant prend ___ goûter.`, opts:["leur","leurs"], ans:"leur", rule:"leur / leurs",
+      exp:"Singulier quand on parle d’un objet propre à chacun : « leur goûter » (chacun le sien)." });
+    for(let i=0;i<18;i++){
+      out.push({ t:`Les parents attendent ___ enfants devant ${pick(lieux)}.`, opts:["leur","leurs"], ans:"leurs", rule:"leur / leurs",
+        exp:"Plusieurs enfants → « leurs »." });
+      out.push({ t:`Chacun protège ___ cahier de liaison.`, opts:["leur","leurs"], ans:"leur", rule:"leur / leurs",
+        exp:"Chacun + nom singulier → « leur »." });
+    }
+    return out;
+  }
+
+  // Interprétation utile CM2 de « eur et oir » : homophones « avoir / à voir »
+  function genAvoirAVoir(){
+    const out=[];
+    out.push({ t:`Cela n’a rien ___ avec le sujet.`, opts:["à voir","avoir"], ans:"à voir", rule:"avoir / à voir",
+      exp:"« à voir » = en rapport avec. « avoir » est le verbe." });
+    out.push({ t:`Il pense ___ oublié son cahier.`, opts:["avoir","à voir"], ans:"avoir", rule:"avoir / à voir",
+      exp:"Après un verbe conjugué (« pense »), on met l’infinitif « avoir »." });
+    out.push({ t:`C’est intéressant ___ plus tard.`, opts:["à voir","avoir"], ans:"à voir", rule:"avoir / à voir",
+      exp:"Expression figée : « à voir » (à examiner)." });
+    out.push({ t:`Ils semblent ___ terminé.`, opts:["avoir","à voir"], ans:"avoir", rule:"avoir / à voir",
+      exp:"Après « sembler », on emploie l’infinitif « avoir »." });
+    return out;
+  }
+
+  function genOnOnt(){
+    const out=[];
+    out.push({ t:`___ fini leurs exercices.`, opts:["On","Ont"], ans:"Ont", rule:"on / ont",
+      exp:"« ont » = verbe avoir (ils/elles). « on » = pronom indéfini." });
+    out.push({ t:`___ dit qu’il allait pleuvoir.`, opts:["On","Ont"], ans:"On", rule:"on / ont",
+      exp:"Sujet indéfini : « On dit… »." });
+    for(let i=0;i<18;i++){
+      out.push({ t:`___ a rangé la salle, puis ___ distribué les feuilles.`, opts:["On / ont","Ont / on","On / on","Ont / ont"], ans:"On / ont", rule:"on / ont",
+        exp:"« On a… » (pronom) puis « ont distribué » (ils/elles)." });
+    }
+    return out;
+  }
+
+  // Infinitif (-er) ou participe passé (-é, -ée, -és, -ées) avec verbes en -er
+  function genInfinitifParticipe(){
+    const out=[];
+    out.push({ t:`Il a bien ___ (manger).`, opts:["mangé","manger"], ans:"mangé", rule:"-er / -é",
+      exp:"Après l’auxiliaire « a », on met le participe passé « mangé »." });
+    out.push({ t:`Il va ___ (jouer) au parc.`, opts:["jouer","joué"], ans:"jouer", rule:"-er / -é",
+      exp:"Après un verbe de mouvement/aller → infinitif." });
+    out.push({ t:`Elles ont ___ (danser) toute la soirée.`, opts:["dansé","danser"], ans:"dansé", rule:"-er / -é",
+      exp:"Après « ont », participe passé « dansé »." });
+    out.push({ t:`Il préfère ___ (dessiner).`, opts:["dessiner","dessiné"], ans:"dessiner", rule:"-er / -é",
+      exp:"Après « préférer » → infinitif." });
+    // Variantes
+    const base = [
+      ["a ___ (ranger) ses affaires.", "rangé","ranger"],
+      ["doit ___ (réviser) ses leçons.", "réviser","révisé"],
+      ["ont ___ (jouer) dans la cour.", "joué","jouer"],
+      ["a ___ (marcher) longtemps.", "marché","marcher"],
+      ["va ___ (nager) au lac.", "nager","nagé"],
+      ["a ___ (chanter) doucement.", "chanté","chanter"],
+      ["peut ___ (cuisiner) seul.", "cuisiner","cuisiné"],
+      ["a ___ (dessiner) un plan.", "dessiné","dessiner"],
+      ["va ___ (lire) ce livre.", "lire","lu"] // bonus non -er pour piéger
+    ];
+    for(let i=0;i<base.length;i++){
+      const [tail, good, alt] = base[i];
+      out.push({ t:`${pick(prenoms)} ${tail}`, opts:[good,alt], ans:good, rule:"-er / -é",
+        exp: good.endsWith("é") ? "Après l’auxiliaire → participe passé en « é »."
+                                 : "Après un verbe modal/déplacement → infinitif en « er »." });
+    }
+    return out;
+  }
+
+  // s ou ss (choix de mot complet pour éviter l’ambiguïté)
+  function genS_SS(){
+    const out=[];
+    out.push({ t:`Il commande un ___ au chocolat.`, opts:["dessert","désert"], ans:"dessert", rule:"s / ss",
+      exp:"« dessert » (à la fin du repas) s’écrit avec « ss » ; « désert » n’a qu’un « s »." });
+    out.push({ t:`Le ___ du Sahara est immense.`, opts:["désert","dessert"], ans:"désert", rule:"s / ss",
+      exp:"Le lieu « désert » prend un seul « s »." });
+    out.push({ t:`Attention au ___ !`, opts:["poison","poisson"], ans:"poison", rule:"s / ss",
+      exp:"« poison » avec un seul « s » ; « poisson » avec « ss » désigne l’animal." });
+    out.push({ t:`Il a pêché un gros ___.`, opts:["poisson","poison"], ans:"poisson", rule:"s / ss",
+      exp:"L’animal : « poisson » avec « ss »." });
+    out.push({ t:`Faut-il ___ la planche ou la réparer ?`, opts:["casser","caser"], ans:"casser", rule:"s / ss",
+      exp:"« casser » a « ss » (briser) ; « caser » un seul « s » (ranger, loger)." });
+    out.push({ t:`On va ___ l’objet dans la boîte.`, opts:["caser","casser"], ans:"caser", rule:"s / ss",
+      exp:"« caser » = mettre, ranger ; un seul « s »." });
+    return out;
+  }
+
+  // c ou ç (lettre soumise au choix par mot complet)
+  function genC_Cedille(){
+    const out=[];
+    out.push({ t:`Le ___ est tombé par terre.`, opts:["glaçon","glacon"], ans:"glaçon", rule:"c / ç",
+      exp:"Devant « o », on met « ç » pour garder le son [s] → « glaçon »." });
+    out.push({ t:`La ___ de la maison a été repeinte.`, opts:["façade","facade"], ans:"façade", rule:"c / ç",
+      exp:"Devant « a/o/u », on met « ç » : « façade »." });
+    out.push({ t:`Il a bien ___ sa leçon.`, opts:["révisé","revissé","reçu","recu"], ans:"reçu", rule:"c / ç",
+      exp:"« reçu » s’écrit avec « ç » pour le son [s] devant « u »." });
+    out.push({ t:`J’écris ma ___ de mathématiques.`, opts:["leçon","lecon"], ans:"leçon", rule:"c / ç",
+      exp:"« leçon » prend « ç » devant « o »." });
+    return out;
+  }
+
+  // g / gu / ge (conserver le son [g] dur ou [ʒ] doux)
+  function genG_GU_GE(){
+    const out=[];
+    out.push({ t:`Nous ___ à la cantine.`, opts:["mangeons","mangons","mangeaons"], ans:"mangeons", rule:"g / gu / ge",
+      exp:"On ajoute un « e » : « mangeons » pour garder le son [ʒ] devant « ons »." });
+    out.push({ t:`Il ___ en mer sur un voilier.`, opts:["navigue","navige"], ans:"navigue", rule:"g / gu / ge",
+      exp:"« navigue » garde le son [g] dur grâce à « gu » devant « e »." });
+    out.push({ t:`Cette randonnée nous ___ beaucoup.`, opts:["fatigue","fatige"], ans:"fatigue", rule:"g / gu / ge",
+      exp:"Son [g] dur devant « e » → « gue » : « fatigue »." });
+    out.push({ t:`Ils ___ des légumes ensemble.`, opts:["mangent","mangents"], ans:"mangent", rule:"g / gu / ge",
+      exp:"« mangent » (3ᵖˡ) s’écrit sans « s » final après « -ent »." });
+    return out;
+  }
+
+  // ==========
+  // CONSTRUCTION DE LA BANQUE & RENDU
+  // ==========
+  function buildBank(){
+    return shuffle([]
+      .concat(genOuOu())
+      .concat(genLaLa())
+      .concat(genEtEst())
+      .concat(genAA())
+      .concat(genSesCesCest())
+      // nouvelles
+      .concat(genLeurLeurs())
+      .concat(genAvoirAVoir())
+      .concat(genOnOnt())
+      .concat(genInfinitifParticipe())
+      .concat(genS_SS())
+      .concat(genC_Cedille())
+      .concat(genG_GU_GE())
+    );
+  }
+
+  function pickTwenty(bank){
+    const seen = new Set();
+    const chosen = [];
+    for(const q of bank){
+      const key = q.t;
+      if(!seen.has(key)){ seen.add(key); chosen.push(q); }
+      if(chosen.length===20) break;
+    }
+    while(chosen.length<20){
+      chosen.push({
+        t:"Bonus : ___ vous allez, on révise !",
+        opts:["où","ou","est","et","à","a","La","Là","Ses","Ces","C’est"],
+        ans:"où", rule:"ou / où", exp:"On demande un lieu → « où »."
+      });
+    }
+    return chosen;
+  }
+
+  function renderQuestion(q, idx){
+    const id = `q_${idx}`;
+    return `
+      <div class="card" data-rule="${q.rule}">
+        <div class="q-head"><span class="idx">${idx+1}</span><span>${q.rule}</span></div>
+        <div class="sentence">
+          ${q.t.replace("___", `<select id="${id}" class="blank" aria-label="Choix pour la question ${idx+1}">
+            ${q.opts.map(o=>`<option value="${o}">${o}</option>`).join("")}
+          </select>`)}
+        </div>
+        <div class="helper">Astuce : essayez des remplacements (« cela est », « à quel endroit », conjugaison du verbe…).</div>
+        <div class="explain" id="${id}_exp"></div>
+      </div>
+    `;
+  }
+
+  // ÉTAT
+  let BANK = []; let CURRENT = []; let LOCKED = false;
+
+  const $questions = document.getElementById("questions");
+  const $btnNew = document.getElementById("btnNew");
+  const $btnRetry = document.getElementById("btnRetry");
+  const $btnCheck = document.getElementById("btnCheck");
+  const $btnExplain = document.getElementById("btnShowExplain");
+  const $result = document.getElementById("result");
+  const $scoreLine = document.getElementById("scoreLine");
+  const $mistakes = document.getElementById("mistakes");
+  const $mistakesBox = document.getElementById("mistakesBox");
+
+  function newSet(){
+    LOCKED = false;
+    $result.style.display = "none";
+    $mistakesBox.open = false;
+    $mistakesBox.style.display = "none";
+    $mistakes.innerHTML = "";
+
+    BANK = buildBank();               // grande banque (plusieurs centaines)
+    CURRENT = pickTwenty(BANK);       // sélection de 20
+
+    $questions.innerHTML = CURRENT.map((q,i)=>renderQuestion(q,i)).join("");
+    CURRENT.forEach((q,i)=>{
+      const sel = document.getElementById(`q_${i}`);
+      sel.selectedIndex = rnd(0, q.opts.length-1); // pré-sélection aléatoire
+    });
+    $btnCheck.disabled = false;
+    $btnExplain.disabled = false;
+    document.getElementById("q_0").focus();
+  }
+
+  function toggleExplanations(){
+    CURRENT.forEach((q,i)=>{
+      document.getElementById(`q_${i}_exp`).classList.toggle("visible");
+    });
+  }
+
+  function correct(){
+    if(LOCKED) return;
+    LOCKED = true;
+    $btnCheck.disabled = true;
+
+    let score = 0; const mistakes = [];
+    CURRENT.forEach((q,i)=>{
+      const sel = document.getElementById(`q_${i}`);
+      const user = sel.value; const correct = q.ans;
+      const exp = document.getElementById(`q_${i}_exp`);
+      exp.innerHTML = `<b>Correction :</b> « ${correct} ». ${q.exp}`;
+      exp.classList.add("visible");
+
+      if(user === correct){
+        score++; sel.style.borderColor = "rgba(34,197,94,.85)"; sel.style.boxShadow = "0 0 0 2px rgba(34,197,94,.25)";
+      }else{
+        sel.style.borderColor = "rgba(239,68,68,.9)"; sel.style.boxShadow = "0 0 0 2px rgba(239,68,68,.22)";
+        mistakes.push({ index:i, user, correct, rule:q.rule, phrase:q.t });
+      }
+      sel.disabled = true;
+    });
+
+    const passed = score > 15;
+    const badge = passed ? `<span class="badge ok">Réussi</span>`
+               : (score >= 12 ? `<span class="badge warn">À deux doigts !</span>`
+                              : `<span class="badge ko">À retravailler</span>`);
+    $scoreLine.innerHTML = `${badge} Votre score : <b>${score}/20</b> — ${passed ? "Bravo, objectif atteint !" : "Vous ferez mieux à la prochaine série."}`;
+    $result.style.display = "block";
+
+    if(mistakes.length){
+      $mistakesBox.style.display = "block";
+      $mistakes.innerHTML = mistakes.map(m => {
+        const rendered = m.phrase.replace("___", `<b>${m.user}</b>`);
+        const corrected = m.phrase.replace("___", `<b>${m.correct}</b>`);
+        return `<div class="mistake">
+          <div><b>Question ${m.index+1}</b> — règle : ${m.rule}</div>
+          <div style="margin-top:6px">Votre réponse : ${rendered}</div>
+          <div>Bonne réponse : ${corrected}</div>
+        </div>`;
+      }).join("");
+    } else {
+      $mistakesBox.style.display = "none"; $mistakes.innerHTML = "";
+    }
+    $result.scrollIntoView({behavior:"smooth", block:"center"});
+  }
+
+  // ÉVÉNEMENTS
+  $btnNew.addEventListener("click", newSet);
+  $btnRetry.addEventListener("click", newSet);
+  $btnCheck.addEventListener("click", correct);
+  $btnExplain.addEventListener("click", toggleExplanations);
+
+  // Démarrage
+  window.addEventListener("DOMContentLoaded", newSet);
+</script>
+</body>
+</html>

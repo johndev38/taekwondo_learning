@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:taekwondo_knowledge/notifiers/belt_notifier.dart';
-import 'package:taekwondo_knowledge/notifiers/theme_notifier.dart';
 import 'package:taekwondo_knowledge/screens/hanban_list_screen.dart';
 import 'package:taekwondo_knowledge/screens/rules_screen.dart';
 import 'package:taekwondo_knowledge/screens/belt_requirements_screen.dart';
@@ -11,251 +8,206 @@ import 'belt_selection_screen.dart';
 import 'history_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final themeNotifier = Provider.of<ThemeNotifier>(context);
-    final beltNotifier = Provider.of<BeltNotifier>(context);
-
-    // Récupération des dimensions de l'écran
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
 
-    // Définition des hauteurs dynamiques pour l'image de fond
-    final topImageHeight = screenHeight * 0.25; // 25% de la hauteur de l'écran
-    final itemFontSize =
-        screenWidth * 0.045; // Taille de police relative à la largeur
-
-    // Taille des icônes ajustée selon les dimensions de l'écran
-    double iconSize;
-    if (screenWidth > 800) {
-      iconSize = screenWidth * 0.05;
-    } else if (screenWidth > 600) {
-      iconSize = screenWidth * 0.06;
-    } else {
-      iconSize = screenWidth * 0.07;
-    }
-
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text('Profil & Thème'),
-      //   actions: [
-      //     IconButton(
-      //       icon: Icon(themeNotifier.darkTheme ? Icons.wb_sunny : Icons.nightlight_round),
-      //       onPressed: () {
-      //         themeNotifier.toggleTheme();
-      //       },
-      //     ),
-      //   ],
-      // ),
-      // Retrait de backgroundColor: Colors.white, pour utiliser le thème
       body: SafeArea(
-        child: Column(
-          children: [
-            // Partie supérieure avec l'image de fond et sélecteur de ceinture + switch de thème
-            Container(
-              height: topImageHeight, // Hauteur de l'image ajustée
-              padding: EdgeInsets.all(screenWidth * 0.03),
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/background_poster.png'),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      DropdownButton<String>(
-                        value: beltNotifier.currentBelt,
-                        hint: const Text("Ceinture",
-                            style: TextStyle(color: Colors.white70)),
-                        dropdownColor: Colors.black87,
-                        icon: const Icon(Icons.arrow_drop_down,
-                            color: Colors.white),
-                        style: TextStyle(
-                            color: Colors.white, fontSize: itemFontSize * 0.8),
-                        underline: Container(
-                          height: 2,
-                          color: Colors.white70,
-                        ),
-                        items: beltNotifier.belts
-                            .map<DropdownMenuItem<String>>((String value) {
-                          return DropdownMenuItem<String>(
-                            value: value,
-                            child: Text(value),
-                          );
-                        }).toList(),
-                        onChanged: (String? newValue) {
-                          if (newValue != null) {
-                            beltNotifier.setCurrentBelt(newValue);
-                          }
-                        },
-                      ),
-                      Row(
-                        children: [
-                          Text(themeNotifier.darkTheme ? "Clair" : "Sombre",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: itemFontSize * 0.8)),
-                          Switch(
-                            value: themeNotifier.darkTheme,
-                            onChanged: (value) {
-                              themeNotifier.toggleTheme();
-                            },
-                            activeTrackColor: Colors.white70,
-                            activeColor: Colors.blueAccent,
-                          ),
-                        ],
-                      ),
-                    ],
+        child: CustomScrollView(
+          slivers: [
+            // Header avec titre, logo et image de fond
+            SliverAppBar(
+              expandedHeight: screenHeight * 0.35,
+              floating: false,
+              pinned: true,
+              elevation: 0,
+              backgroundColor: Colors.transparent,
+              flexibleSpace: FlexibleSpaceBar(
+                background: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Colors.red.shade700,
+                        Colors.red.shade400,
+                        Colors.orange.shade400,
+                      ],
+                    ),
+                    image: const DecorationImage(
+                      image: AssetImage('assets/images/background_poster.png'),
+                      fit: BoxFit.cover,
+                      opacity: 0.4,
+                    ),
                   ),
-                  Text(
-                    'Taekwondo learning',
-                    style: TextStyle(
-                      fontSize:
-                          screenWidth * 0.06, // Taille de police adaptative
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      shadows: [
-                        Shadow(
-                          blurRadius: 10.0,
-                          color: Colors.black.withOpacity(0.5),
-                          offset: const Offset(2.0, 2.0),
+                  child: Padding(
+                    padding: EdgeInsets.all(screenWidth * 0.04),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        // Logo et titre
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 60,
+                              height: 60,
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.2),
+                                borderRadius: BorderRadius.circular(30),
+                                border: Border.all(
+                                  color: Colors.white.withOpacity(0.3),
+                                  width: 2,
+                                ),
+                              ),
+                              child: const Icon(
+                                Icons.sports_martial_arts,
+                                color: Colors.white,
+                                size: 30,
+                              ),
+                            ),
+                            const SizedBox(width: 16),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Taekwondo',
+                                  style: TextStyle(
+                                    fontSize: screenWidth * 0.08,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    letterSpacing: 1.2,
+                                  ),
+                                ),
+                                Text(
+                                  'Knowledge',
+                                  style: TextStyle(
+                                    fontSize: screenWidth * 0.06,
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white.withOpacity(0.9),
+                                    letterSpacing: 1.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Text(
+                          'Votre guide d\'apprentissage du Taekwondo',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.04,
+                            color: Colors.white.withOpacity(0.9),
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
                       ],
                     ),
                   ),
-                ],
+                ),
               ),
             ),
-            // Section des onglets avec coins arrondis
-            Expanded(
-              child: Container(
-                // Retrait de la couleur fixe pour utiliser celle du thème
-                // decoration: BoxDecoration(
-                //   color: Colors.white, <- Supprimé
-                // ...
-                // ),
-                padding: EdgeInsets.symmetric(
-                  horizontal: screenWidth * 0.03,
-                  vertical: screenHeight * 0.02,
-                ),
-                decoration: BoxDecoration(
-                  // Utilise la couleur de fond du thème actuel
-                  color: Theme.of(context).scaffoldBackgroundColor,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black12,
-                      blurRadius: 10,
-                      offset: Offset(0, -5),
-                    ),
-                  ],
-                ),
-                child: ListView(
-                  padding: EdgeInsets.zero,
+
+            // Section principale avec modules réorganisés
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: EdgeInsets.all(screenWidth * 0.04),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    _buildListTile(
-                      context,
-                      icon: Icons.directions_run,
-                      iconColor: Colors.red,
-                      text: 'Poomse',
-                      fontSize: itemFontSize,
-                      iconSize: iconSize,
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => VideoListScreen()),
-                        );
-                      },
+                    // Section Entraînement
+                    Text(
+                      'Modules d\'Entraînement',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color:
+                            Theme.of(context).textTheme.headlineMedium?.color,
+                      ),
                     ),
-                    _buildListTile(
-                      context,
-                      icon: Icons.directions_run,
-                      iconColor: Colors.pinkAccent,
-                      text: 'HANBON KYEUROGUI',
-                      fontSize: itemFontSize,
-                      iconSize: iconSize,
-                      onTap: () {
-                        Navigator.push(
+                    const SizedBox(height: 20),
+
+                    // Grid des modules d'entraînement réorganisé
+                    GridView.count(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 16,
+                      mainAxisSpacing: 16,
+                      childAspectRatio: 1.1,
+                      children: [
+                        _buildModuleCard(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => HanbanListScreen()),
-                        );
-                      },
-                    ),
-                    _buildListTile(
-                      context,
-                      icon: Icons.school,
-                      iconColor: Colors.green,
-                      text: 'Kibon',
-                      fontSize: itemFontSize,
-                      iconSize: iconSize,
-                      onTap: () {
-                        Navigator.push(
+                          title: 'QCM',
+                          icon: Icons.quiz,
+                          color: Colors.blue.shade600,
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => BeltSelectionScreen()),
+                            );
+                          },
+                        ),
+                        _buildModuleCard(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  BeltSelectionForLeaningScreen()),
-                        );
-                      },
-                    ),
-                    _buildListTile(
-                      context,
-                      icon: Icons.history_edu,
-                      iconColor: Colors.orange,
-                      text: 'Histoire du Taekwondo',
-                      fontSize: itemFontSize,
-                      iconSize: iconSize,
-                      onTap: () {
-                        Navigator.push(
+                          title: 'Kibon',
+                          icon: Icons.school,
+                          color: Colors.green.shade600,
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      BeltSelectionForLeaningScreen()),
+                            );
+                          },
+                        ),
+                        _buildModuleCard(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => TaekwondoHistoryScreen()),
-                        );
-                      },
-                    ),
-                    _buildListTile(
-                      context,
-                      icon: Icons.gavel,
-                      iconColor: Colors.brown,
-                      text: 'Arbitrage',
-                      fontSize: itemFontSize,
-                      iconSize: iconSize,
-                      onTap: () {
-                        Navigator.push(
+                          title: 'Vidéo Poomsae',
+                          icon: Icons.directions_run,
+                          color: Colors.red.shade600,
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => VideoListScreen()),
+                            );
+                          },
+                        ),
+                        _buildModuleCard(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => TaekwondoRulesScreen()),
-                        );
-                      },
+                          title: 'Vidéo Hanbon',
+                          icon: Icons.sports_martial_arts,
+                          color: Colors.purple.shade600,
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HanbanListScreen()),
+                            );
+                          },
+                        ),
+                      ],
                     ),
-                    _buildListTile(
+
+                    const SizedBox(height: 24),
+
+                    // Card principale passage de ceinture
+                    _buildFeatureCard(
                       context,
-                      icon: Icons.quiz,
-                      iconColor: Colors.blue,
-                      text: 'QCM',
-                      fontSize: itemFontSize,
-                      iconSize: iconSize,
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => BeltSelectionScreen()),
-                        );
-                      },
-                    ),
-                    _buildListTile(
-                      context,
+                      title: 'Critères de passage de ceinture',
+                      subtitle: 'Consultez les exigences pour chaque niveau',
                       icon: Icons.emoji_events,
-                      iconColor: Colors.amber,
-                      text: 'Passage de Ceinture',
-                      fontSize: itemFontSize,
-                      iconSize: iconSize,
+                      gradient: LinearGradient(
+                        colors: [Colors.amber.shade600, Colors.orange.shade600],
+                      ),
                       onTap: () {
                         Navigator.push(
                           context,
@@ -265,6 +217,55 @@ class HomeScreen extends StatelessWidget {
                         );
                       },
                     ),
+
+                    const SizedBox(height: 24),
+
+                    // Section Connaissances
+                    Text(
+                      'Connaissances',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color:
+                            Theme.of(context).textTheme.headlineMedium?.color,
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Cards horizontales pour les connaissances
+                    _buildHorizontalCard(
+                      context,
+                      title: 'Histoire du Taekwondo',
+                      subtitle: 'Découvrez les origines et l\'évolution',
+                      icon: Icons.history_edu,
+                      color: Colors.orange.shade600,
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const TaekwondoHistoryScreen()),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 12),
+                    _buildHorizontalCard(
+                      context,
+                      title: 'Règles d\'Arbitrage',
+                      subtitle: 'Maîtrisez les règles de compétition',
+                      icon: Icons.gavel,
+                      color: Colors.brown.shade600,
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const TaekwondoRulesScreen()),
+                        );
+                      },
+                    ),
+
+                    const SizedBox(height: 32),
                   ],
                 ),
               ),
@@ -275,48 +276,206 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildListTile(BuildContext context,
-      {required IconData icon,
-      required Color iconColor,
-      required String text,
-      required double fontSize,
-      required double iconSize,
-      required VoidCallback onTap}) {
-    final screenWidth = MediaQuery.of(context).size.width;
-
-    return Card(
-      elevation: 4.0,
-      margin: EdgeInsets.symmetric(
-        vertical: screenWidth * 0.015, // Marges verticales adaptatives
-        horizontal: screenWidth * 0.04, // Marges horizontales adaptatives
-      ),
-      // Amélioration du feedback visuel avec InkWell pour l'effet "ripple"
+  Widget _buildFeatureCard(
+    BuildContext context, {
+    required String title,
+    required String subtitle,
+    required IconData icon,
+    required Gradient gradient,
+    required VoidCallback onTap,
+  }) {
+    return Material(
+      borderRadius: BorderRadius.circular(20),
+      elevation: 8,
       child: InkWell(
         onTap: onTap,
-        splashColor: iconColor.withOpacity(0.3), // Couleur de l'effet ripple
-        highlightColor:
-            iconColor.withOpacity(0.1), // Couleur au survol/appui long
-        child: ListTile(
-          leading: CircleAvatar(
-            radius: iconSize, // Taille de l'icône adaptative
-            backgroundColor: iconColor.withOpacity(0.2),
-            child: Icon(icon, color: iconColor, size: iconSize),
+        borderRadius: BorderRadius.circular(20),
+        child: Container(
+          constraints: const BoxConstraints(minHeight: 120),
+          decoration: BoxDecoration(
+            gradient: gradient,
+            borderRadius: BorderRadius.circular(20),
           ),
-          title: Text(
-            text,
-            style: TextStyle(
-              fontSize: fontSize,
-              fontWeight: FontWeight.w600,
-              // La couleur du texte s'adaptera au thème (clair/sombre)
-              // color: Colors.black87, // <- Supprimé pour utiliser la couleur par défaut du thème
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Icon(
+                  icon,
+                  size: 28,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      title,
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                    if (subtitle.isNotEmpty) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        subtitle,
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.white.withOpacity(0.9),
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+              const Icon(
+                Icons.arrow_forward_ios,
+                color: Colors.white,
+                size: 18,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildModuleCard(
+    BuildContext context, {
+    required String title,
+    required IconData icon,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return Material(
+      borderRadius: BorderRadius.circular(16),
+      elevation: 4,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(16),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: color.withOpacity(0.2),
+              width: 1,
             ),
           ),
-          trailing: const Icon(
-            Icons.arrow_forward_ios,
-            // La couleur de l'icône s'adaptera également
-            // color: Colors.black87 // <- Supprimé
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: color.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Icon(
+                  icon,
+                  size: 32,
+                  color: color,
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                title,
+                textAlign: TextAlign.center,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: Theme.of(context).textTheme.bodyLarge?.color,
+                ),
+              ),
+            ],
           ),
-          // onTap: onTap, // Déplacé vers InkWell
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHorizontalCard(
+    BuildContext context, {
+    required String title,
+    required String subtitle,
+    required IconData icon,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return Material(
+      borderRadius: BorderRadius.circular(12),
+      elevation: 2,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(12),
+        child: Container(
+          padding: const EdgeInsets.all(16),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: color.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Icon(
+                  icon,
+                  size: 24,
+                  color: color,
+                ),
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                        color: Theme.of(context).textTheme.bodyLarge?.color,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      subtitle,
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: Theme.of(context)
+                            .textTheme
+                            .bodyMedium
+                            ?.color
+                            ?.withOpacity(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(
+                Icons.arrow_forward_ios,
+                size: 16,
+                color: Theme.of(context)
+                    .textTheme
+                    .bodyMedium
+                    ?.color
+                    ?.withOpacity(0.5),
+              ),
+            ],
+          ),
         ),
       ),
     );

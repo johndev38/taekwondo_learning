@@ -5,7 +5,7 @@ import 'package:taekwondo_knowledge/notifiers/theme_notifier.dart';
 import 'screens/home_screen.dart'; // Importation du fichier où HomeScreen est défini
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

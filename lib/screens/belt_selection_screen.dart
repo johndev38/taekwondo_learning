@@ -30,7 +30,7 @@ class BeltSelectionScreen extends StatelessWidget {
     {'name': 'Noire (1e keup)', 'file': 'questions_noire.json'},
   ];
 
-  BeltSelectionScreen({Key? key}) : super(key: key);
+  BeltSelectionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

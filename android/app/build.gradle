@@ -52,10 +52,11 @@ android {
 
     defaultConfig {
         applicationId = "com.johndev38.taekwondo_knowledge"
-        minSdk = flutter.minSdkVersion
+        minSdk = 21  // Requis pour youtube_player_flutter
         targetSdk = flutter.targetSdkVersion
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
+        multiDexEnabled true
     }
 
     buildTypes {

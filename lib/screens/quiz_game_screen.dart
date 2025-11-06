@@ -7,8 +7,7 @@ class QuizGameScreen extends StatefulWidget {
   final String belt;
   final List<String> fileNames;
 
-  const QuizGameScreen({Key? key, required this.belt, required this.fileNames})
-      : super(key: key);
+  const QuizGameScreen({super.key, required this.belt, required this.fileNames});
 
   @override
   QuizGameScreenState createState() => QuizGameScreenState();
@@ -123,7 +122,7 @@ class QuizGameScreenState extends State<QuizGameScreen> {
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                    MaterialPageRoute(builder: (context) => const HomeScreen()),
                   );
                 },
                 child: Text('Recommencer',
