@@ -66,21 +66,6 @@ class _VideoScreenState extends State<VideoScreen> {
       ),
       body: Column(
         children: [
-          // Informations sur la vidéo bornée si applicable
-          if (widget.endAt != null)
-            Container(
-              padding: const EdgeInsets.all(8.0),
-              color: Colors.black87,
-              child: Center(
-                child: Text(
-                  'Vidéo bornée: ${widget.startAt}s → ${widget.endAt}s',
-                  style: TextStyle(
-                    color: Colors.orange[300],
-                    fontSize: 12,
-                  ),
-                ),
-              ),
-            ),
           // Lecteur vidéo local
           Expanded(
             child: Stack(

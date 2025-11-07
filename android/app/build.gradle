@@ -61,15 +61,43 @@ android {
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
         multiDexEnabled true
+        
+        // Activer les symboles de débogage natifs
+        ndk {
+            debugSymbolLevel 'FULL'
+        }
     }
 
     buildTypes {
         release {
             signingConfig = signingConfigs.release
+            // Symboles de débogage sans minification (pour éviter les problèmes ProGuard)
+            // Réactivez minifyEnabled true pour plus d'optimisation une fois le Mode Dev activé
+            minifyEnabled false
+            shrinkResources false
+            // proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    // Split APK par architecture pour réduire la taille de téléchargement
+    bundle {
+        language {
+            enableSplit = true
+        }
+        density {
+            enableSplit = true
+        }
+        abi {
+            enableSplit = true
         }
     }
 }
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // Les splits d'app bundle fonctionnent automatiquement sans Play Core
+    // Play Core n'est nécessaire que pour les fonctionnalités avancées (deferred components, etc.)
 }

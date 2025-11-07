@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:taekwondo_knowledge/screens/hanban_list_screen.dart';
 import 'package:taekwondo_knowledge/screens/rules_screen.dart';
 import 'package:taekwondo_knowledge/screens/belt_requirements_screen.dart';
 import 'belt_selection_for_learning_screen.dart';
@@ -75,23 +74,14 @@ class HomeScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Taekwondo',
+                                  'DOJANG',
                                   style: TextStyle(
                                     fontSize: screenWidth * 0.08,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
                                     letterSpacing: 1.2,
                                   ),
-                                ),
-                                Text(
-                                  'Knowledge',
-                                  style: TextStyle(
-                                    fontSize: screenWidth * 0.06,
-                                    fontWeight: FontWeight.w300,
-                                    color: Colors.white.withOpacity(0.9),
-                                    letterSpacing: 1.0,
-                                  ),
-                                ),
+                                )
                               ],
                             ),
                           ],
@@ -130,17 +120,30 @@ class HomeScreen extends StatelessWidget {
                             Theme.of(context).textTheme.headlineMedium?.color,
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 10),
 
                     // Grid des modules d'entraînement réorganisé
                     GridView.count(
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics(),
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                      childAspectRatio: 1.1,
+                      crossAxisCount: 3,
+                      crossAxisSpacing: 12,
+                      mainAxisSpacing: 12,
+                      childAspectRatio: 1.0,
                       children: [
+                        _buildModuleCard(
+                          context,
+                          title: 'Poomsae',
+                          icon: Icons.directions_run,
+                          color: Colors.red.shade600,
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => VideoListScreen()),
+                            );
+                          },
+                        ),
                         _buildModuleCard(
                           context,
                           title: 'QCM',
@@ -165,19 +168,6 @@ class HomeScreen extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: (context) =>
                                       BeltSelectionForLeaningScreen()),
-                            );
-                          },
-                        ),
-                        _buildModuleCard(
-                          context,
-                          title: 'Vidéo Poomsae',
-                          icon: Icons.directions_run,
-                          color: Colors.red.shade600,
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => VideoListScreen()),
                             );
                           },
                         )
@@ -372,30 +362,30 @@ class HomeScreen extends StatelessWidget {
               width: 1,
             ),
           ),
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(12),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                padding: const EdgeInsets.all(12),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   color: color.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Icon(
                   icon,
-                  size: 32,
+                  size: 28,
                   color: color,
                 ),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 8),
               Text(
                 title,
                 textAlign: TextAlign.center,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 13,
                   fontWeight: FontWeight.w600,
                   color: Theme.of(context).textTheme.bodyLarge?.color,
                 ),
