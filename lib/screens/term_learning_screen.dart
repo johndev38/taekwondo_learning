@@ -209,44 +209,44 @@ class TermLearningScreenState extends State<TermLearningScreen>
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: Colors.grey.shade300),
           ),
-          child: TextField(
-            onChanged: (value) => setState(() => _searchQuery = value),
-            decoration: InputDecoration(
-              hintText: 'Rechercher un terme...',
-              prefixIcon: Icon(Icons.search, color: Colors.grey.shade600),
-              border: InputBorder.none,
-              suffixIcon: _searchQuery.isNotEmpty
-                  ? IconButton(
-                      icon: const Icon(Icons.clear),
-                      onPressed: () => setState(() => _searchQuery = ''),
-                    )
-                  : null,
-            ),
-          ),
+          // child: TextField(
+          //   onChanged: (value) => setState(() => _searchQuery = value),
+          //   decoration: InputDecoration(
+          //     hintText: 'Rechercher un terme...',
+          //     prefixIcon: Icon(Icons.search, color: Colors.grey.shade600),
+          //     border: InputBorder.none,
+          //     suffixIcon: _searchQuery.isNotEmpty
+          //         ? IconButton(
+          //             icon: const Icon(Icons.clear),
+          //             onPressed: () => setState(() => _searchQuery = ''),
+          //           )
+          //         : null,
+          //   ),
+          // ),
         ),
 
-        // Statistiques
-        Container(
-          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Colors.green.shade100, Colors.teal.shade100],
-            ),
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              _buildStatistic('Total', allTermsForBelt.length.toString(),
-                  Icons.library_books),
-              _buildStatistic('Catégories', categorizedTerms.length.toString(),
-                  Icons.category),
-              _buildStatistic(
-                  'Affichés', filtered.length.toString(), Icons.visibility),
-            ],
-          ),
-        ),
+        // // Statistiques
+        // Container(
+        //   margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        //   padding: const EdgeInsets.all(16),
+        //   decoration: BoxDecoration(
+        //     gradient: LinearGradient(
+        //       colors: [Colors.green.shade100, Colors.teal.shade100],
+        //     ),
+        //     borderRadius: BorderRadius.circular(12),
+        //   ),
+        //   child: Row(
+        //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //     children: [
+        //       _buildStatistic('Total', allTermsForBelt.length.toString(),
+        //           Icons.library_books),
+        //       _buildStatistic('Catégories', categorizedTerms.length.toString(),
+        //           Icons.category),
+        //       _buildStatistic(
+        //           'Affichés', filtered.length.toString(), Icons.visibility),
+        //     ],
+        //   ),
+        // ),
 
         // Liste des termes
         Expanded(
