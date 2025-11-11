@@ -16,7 +16,7 @@ class Term {
       term: json['term'] ?? '',
       explanation: json['explanation'] ?? '',
       category:
-          json['category'] ?? 'Techniques', // Catégorie par défaut améliorée
+          json['category'] ?? 'Techniquess', // Catégorie par défaut améliorée
     );
   }
 }

@@ -19,7 +19,7 @@ class QuestionTypeSelectionScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.blue.shade600,
         foregroundColor: Colors.white,
         title: const Text('Type de Questions'),
         centerTitle: true,

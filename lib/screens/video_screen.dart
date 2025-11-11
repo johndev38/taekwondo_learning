@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoScreen extends StatefulWidget {
@@ -26,6 +27,12 @@ class _VideoScreenState extends State<VideoScreen> {
   @override
   void initState() {
     super.initState();
+
+    // Mode plein écran immersif : cache la barre de statut + barre de navigation
+    SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.immersiveSticky,
+    );
+
     _initializePlayer();
   }
 
@@ -134,7 +141,8 @@ class _VideoScreenState extends State<VideoScreen> {
                             ),
                           ),
                           Text(
-                            '${_controller.value.position.inMinutes}:${(_controller.value.position.inSeconds % 60).toString().padLeft(2, '0')} / ${_controller.value.duration.inMinutes}:${(_controller.value.duration.inSeconds % 60).toString().padLeft(2, '0')}',
+                            '${_controller.value.position.inMinutes}:${(_controller.value.position.inSeconds % 60).toString().padLeft(2, '0')} / '
+                            '${_controller.value.duration.inMinutes}:${(_controller.value.duration.inSeconds % 60).toString().padLeft(2, '0')}',
                             style: const TextStyle(color: Colors.white),
                           ),
                         ],
@@ -152,6 +160,12 @@ class _VideoScreenState extends State<VideoScreen> {
   @override
   void dispose() {
     _controller.dispose();
+
+    // Rétablir l’UI système quand on quitte l’écran vidéo
+    SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.edgeToEdge, // ou SystemUiMode.manual avec overlays
+    );
+
     super.dispose();
   }
 }

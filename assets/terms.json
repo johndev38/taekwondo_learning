@@ -2,544 +2,674 @@
   "Jaune (9e keup)": [
     {
       "term": "Momtong jireugui",
-      "explanation": "Coup de poing au niveau moyen"
+      "explanation": "Coup de poing au niveau moyen",
+      "category": "frappes"
     },
     {
       "term": "Eulgoul jireugui",
-      "explanation": "Coup de poing au niveau haut"
+      "explanation": "Coup de poing au niveau haut",
+      "category": "frappes"
     },
     {
       "term": "Bandé jireugui",
-      "explanation": "Coup de poing avec le poing avant"
+      "explanation": "Coup de poing avec le poing avant",
+      "category": "frappes"
     },
     {
       "term": "Baro jireugui",
-      "explanation": "Coup de poing avec le poing arrière"
+      "explanation": "Coup de poing avec le poing arrière",
+      "category": "frappes"
     },
     {
       "term": "Toubon jireugui",
-      "explanation": "Coup de poing avant/arrière ou arrière/avant"
+      "explanation": "Coup de poing avant/arrière ou arrière/avant",
+      "category": "frappes"
     },
     {
       "term": "Ap tchagui",
-      "explanation": "Coup de pied de face"
+      "explanation": "Coup de pied de face",
+      "category": "techniques"
     },
     {
       "term": "Bandal tchagui",
-      "explanation": "Coup de pied semi-circulaire"
+      "explanation": "Coup de pied semi-circulaire",
+      "category": "techniques"
     },
     {
       "term": "Mireu tchagui",
-      "explanation": "Coup de pied poussé de face"
+      "explanation": "Coup de pied poussé de face",
+      "category": "techniques"
     },
     {
       "term": "An tchagui",
-      "explanation": "Coup de pied balancé de l'extérieur vers l'intérieur"
+      "explanation": "Coup de pied balancé de l'extérieur vers l'intérieur",
+      "category": "techniques"
     },
     {
       "term": "Bakat tchgui",
-      "explanation": "Coup de pied balancé de l'intérieur vers l'extérieur"
+      "explanation": "Coup de pied balancé de l'intérieur vers l'extérieur",
+      "category": "techniques"
     },
     {
       "term": "Are maki",
-      "explanation": "Blocage bas"
+      "explanation": "Blocage bas",
+      "category": "blocages"
     },
     {
       "term": "Eulgoul maki",
-      "explanation": "Blocage haut"
+      "explanation": "Blocage haut",
+      "category": "blocages"
     },
     {
       "term": "Momtong maki",
-      "explanation": "Blocage moyen avec le bras avant"
+      "explanation": "Blocage moyen avec le bras avant",
+      "category": "blocages"
     },
     {
       "term": "Momtong an maki",
-      "explanation": "Blocage moyen avec le bras arrière"
+      "explanation": "Blocage moyen avec le bras arrière",
+      "category": "blocages"
     },
     {
       "term": "Ap seugui",
-      "explanation": "Position de marche"
+      "explanation": "Position de marche",
+      "category": "positions"
     },
     {
       "term": "Ap koubi",
-      "explanation": "Position basse"
+      "explanation": "Position basse",
+      "category": "positions"
     },
     {
       "term": "Joutchoum seugui",
-      "explanation": "Position de cavalier"
+      "explanation": "Position de cavalier",
+      "category": "positions"
     },
     {
       "term": "Narahni tchoumbi seugui",
-      "explanation": "Position d'attente"
+      "explanation": "Position d'attente",
+      "category": "positions"
     },
     {
       "term": "Tchaliot seugui",
-      "explanation": "Position de salut"
+      "explanation": "Position de salut",
+      "category": "positions"
     }
   ],
   "Jaune 1ère barrette (8e keup)": [
     {
       "term": "Ap seugui",
-      "explanation": "Position de marche"
+      "explanation": "Position de marche",
+      "category": "positions"
     },
     {
       "term": "Ap koubi",
-      "explanation": "Position basse"
+      "explanation": "Position basse",
+      "category": "positions"
     },
     {
       "term": "Joutchoum seugui",
-      "explanation": "Position de cavalier"
+      "explanation": "Position de cavalier",
+      "category": "positions"
     },
     {
       "term": "Narahni tchoumbi seugui",
-      "explanation": "Position d'attente"
+      "explanation": "Position d'attente",
+      "category": "positions"
     },
     {
       "term": "Tchaliot seugui",
-      "explanation": "Position de salut"
+      "explanation": "Position de salut",
+      "category": "positions"
     },
     {
       "term": "Momtong / Eulgoul jireugui",
-      "explanation": "Coup de poing au niveau moyen/haut"
+      "explanation": "Coup de poing au niveau moyen/haut",
+      "category": "frappes"
     },
     {
       "term": "Bandé / Baro jireugui",
-      "explanation": "Coup de poing avec le poing avant/arrière"
+      "explanation": "Coup de poing avec le poing avant/arrière",
+      "category": "frappes"
     },
     {
       "term": "Toubon jireugui",
-      "explanation": "Coup de poing avant/arrière ou arrière/avant"
+      "explanation": "Coup de poing avant/arrière ou arrière/avant",
+      "category": "frappes"
     },
     {
       "term": "Ap pal bandal tchagui",
-      "explanation": "Coup de pied semi-circulaire avec la jambe avant"
+      "explanation": "Coup de pied semi-circulaire avec la jambe avant",
+      "category": "techniques"
     },
     {
       "term": "Ap bal ap tchagui",
-      "explanation": "Coup de pied de face avec la jambe avant"
+      "explanation": "Coup de pied de face avec la jambe avant",
+      "category": "techniques"
     },
     {
       "term": "Ap pal yop tchagui",
-      "explanation": "Coup de pied de côté avec la jambe avant"
+      "explanation": "Coup de pied de côté avec la jambe avant",
+      "category": "techniques"
     },
     {
       "term": "Koro bandal tchagui",
-      "explanation": "Coup de pied semi-circulaire en marche"
+      "explanation": "Coup de pied semi-circulaire en marche",
+      "category": "techniques"
     },
     {
       "term": "Momtong bakat maki",
-      "explanation": "Blocage extérieur au niveau moyen"
+      "explanation": "Blocage extérieur au niveau moyen",
+      "category": "blocages"
     },
     {
       "term": "Eulgoul bakat maki",
-      "explanation": "Blocage extérieur au niveau haut"
+      "explanation": "Blocage extérieur au niveau haut",
+      "category": "blocages"
     }
   ],
   "Jaune 2ème barrette (7e keup)": [
     {
       "term": "Han sonnal mok tchigui",
-      "explanation": "Attaque tranchant de la main au cou"
+      "explanation": "Attaque tranchant de la main au cou",
+      "category": "frappes"
     },
     {
       "term": "Han sonnal je bi poum mok tchigui",
-      "explanation": "Attaque tranchant de la main avec forme de je bi au cou"
+      "explanation": "Attaque tranchant de la main avec forme de je bi au cou",
+      "category": "frappes"
     },
     {
       "term": "Han sonnal bakat tchigui",
-      "explanation": "Attaque tranchant de la main de l'intérieur vers l'extérieur"
+      "explanation": "Attaque tranchant de la main de l'intérieur vers l'extérieur",
+      "category": "frappes"
     },
     {
       "term": "Je bi poum mok tchigui",
-      "explanation": "Attaque tranchant de la main avec forme de je bi au cou"
+      "explanation": "Attaque tranchant de la main avec forme de je bi au cou",
+      "category": "frappes"
     },
     {
       "term": "Dobal dansong ap tchagui",
-      "explanation": "Coup de pied sauté de face avec les deux pieds"
+      "explanation": "Coup de pied sauté de face avec les deux pieds",
+      "category": "techniques"
     },
     {
       "term": "Dobal dansong bandal tchagui",
-      "explanation": "Coup de pied sauté semi-circulaire avec les deux pieds"
+      "explanation": "Coup de pied sauté semi-circulaire avec les deux pieds",
+      "category": "techniques"
     },
     {
       "term": "Tuyo ap tchagui",
-      "explanation": "Coup de pied sauté de face"
+      "explanation": "Coup de pied sauté de face",
+      "category": "techniques"
     },
     {
       "term": "Han sonnal are maki",
-      "explanation": "Blocage bas avec une main ouverte"
+      "explanation": "Blocage bas avec une main ouverte",
+      "category": "blocages"
     },
     {
       "term": "Han sonnal momtong bakat maki",
-      "explanation": "Blocage extérieur au niveau moyen avec une main ouverte"
+      "explanation": "Blocage extérieur au niveau moyen avec une main ouverte",
+      "category": "blocages"
     },
     {
       "term": "Han sonnal eulgoul maki",
-      "explanation": "Blocage haut avec une main ouverte"
+      "explanation": "Blocage haut avec une main ouverte",
+      "category": "blocages"
     }
   ],
   "Bleu (6e keup)": [
     {
       "term": "Dwitt Koubi seugui",
-      "explanation": "Position basse de dos"
+      "explanation": "Position basse de dos",
+      "category": "positions"
     },
     {
       "term": "Han sonnal mok tchigui",
-      "explanation": "Attaque tranchant de la main au cou"
+      "explanation": "Attaque tranchant de la main au cou",
+      "category": "frappes"
     },
     {
       "term": "Han sonnal je bi poum mok tchigui",
-      "explanation": "Attaque tranchant de la main avec forme de je bi au cou"
+      "explanation": "Attaque tranchant de la main avec forme de je bi au cou",
+      "category": "frappes"
     },
     {
       "term": "Han sonnal bakat tchigui",
-      "explanation": "Attaque tranchant de la main de l'intérieur vers l'extérieur"
+      "explanation": "Attaque tranchant de la main de l'intérieur vers l'extérieur",
+      "category": "frappes"
     },
     {
       "term": "Je bi poum mok tchigui",
-      "explanation": "Attaque tranchant de la main avec forme de je bi au cou"
+      "explanation": "Attaque tranchant de la main avec forme de je bi au cou",
+      "category": "frappes"
     },
     {
       "term": "Tuit tchagui",
-      "explanation": "Coup de pied retourné de base"
+      "explanation": "Coup de pied retourné de base",
+      "category": "techniques"
     },
     {
       "term": "360 bandal tchagui",
-      "explanation": "Coup de pied semi-circulaire à 360 degrés"
+      "explanation": "Coup de pied semi-circulaire à 360 degrés",
+      "category": "techniques"
     },
     {
       "term": "Dwidora yop tchagui",
-      "explanation": "Coup de pied retourné de côté"
+      "explanation": "Coup de pied retourné de côté",
+      "category": "techniques"
     },
     {
       "term": "Hetcho are maki",
-      "explanation": "Blocage bas double symétrique"
+      "explanation": "Blocage bas double symétrique",
+      "category": "blocages"
     },
     {
       "term": "Hetcho momtong bakat maki",
-      "explanation": "Blocage moyen extérieur double symétrique"
+      "explanation": "Blocage moyen extérieur double symétrique",
+      "category": "blocages"
     },
     {
       "term": "Hetcho an palmok momtong",
-      "explanation": "Blocage moyen avec l'intérieur de l'avant-bras, double symétrique"
+      "explanation": "Blocage moyen avec l'intérieur de l'avant-bras, double symétrique",
+      "category": "blocages"
     }
   ],
   "Bleu 1ère barrette (5e keup)": [
     {
       "term": "Ap seugui",
-      "explanation": "Position de marche"
+      "explanation": "Position de marche",
+      "category": "positions"
     },
     {
       "term": "Ap koubi",
-      "explanation": "Position basse"
+      "explanation": "Position basse",
+      "category": "positions"
     },
     {
       "term": "Joutchoum seugui",
-      "explanation": "Position de cavalier"
+      "explanation": "Position de cavalier",
+      "category": "positions"
     },
     {
       "term": "Narahni tchoumbi seugui",
-      "explanation": "Position d'attente"
+      "explanation": "Position d'attente",
+      "category": "positions"
     },
     {
       "term": "Tchaliot seugui",
-      "explanation": "Position de salut"
+      "explanation": "Position de salut",
+      "category": "positions"
     },
     {
       "term": "Dwitt Koubi seugui",
-      "explanation": "Position basse de dos"
+      "explanation": "Position basse de dos",
+      "category": "positions"
     },
     {
       "term": "Deung joumok",
-      "explanation": "Attaque avec le dos du poing"
+      "explanation": "Attaque avec le dos du poing",
+      "category": "frappes"
     },
     {
       "term": "Me joumok",
-      "explanation": "Attaque avec le poing marteau"
+      "explanation": "Attaque avec le poing marteau",
+      "category": "frappes"
     },
     {
       "term": "Bakat joumok",
-      "explanation": "Attaque avec le poing à l'extérieur"
+      "explanation": "Attaque avec le poing à l'extérieur",
+      "category": "frappes"
     },
     {
       "term": "Tolyo tchagui (circulaire)",
-      "explanation": "Coup de pied circulaire avec la jambe arrière"
+      "explanation": "Coup de pied circulaire avec la jambe arrière",
+      "category": "techniques"
     },
     {
       "term": "Yop tchagui (latéral)",
-      "explanation": "Coup de pied latéral avec la jambe arrière"
+      "explanation": "Coup de pied latéral avec la jambe arrière",
+      "category": "techniques"
     },
     {
       "term": "Nelyo tchagui (descendant)",
-      "explanation": "Coup de pied descendant avec la jambe arrière"
+      "explanation": "Coup de pied descendant avec la jambe arrière",
+      "category": "techniques"
     },
     {
       "term": "Furyeu tchagui (circulaire revers)",
-      "explanation": "Coup de pied circulaire en revers avec la jambe arrière"
+      "explanation": "Coup de pied circulaire en revers avec la jambe arrière",
+      "category": "techniques"
     },
     {
       "term": "Sonnal momtong bakat maki",
-      "explanation": "Blocage moyen extérieur avec le tranchant de la main"
+      "explanation": "Blocage moyen extérieur avec le tranchant de la main",
+      "category": "blocages"
     },
     {
       "term": "Sonnal are maki",
-      "explanation": "Blocage bas avec le tranchant de la main"
+      "explanation": "Blocage bas avec le tranchant de la main",
+      "category": "blocages"
     },
     {
       "term": "Kodoro bakat maki",
-      "explanation": "Blocage extérieur renforcé au niveau moyen"
+      "explanation": "Blocage extérieur renforcé au niveau moyen",
+      "category": "blocages"
     },
     {
       "term": "Kodoro are maki",
-      "explanation": "Blocage bas renforcé"
+      "explanation": "Blocage bas renforcé",
+      "category": "blocages"
     }
   ],
   "Bleu 2ème barrette (4e keup)": [
     {
       "term": "Oren seugui",
-      "explanation": "Position à droite"
+      "explanation": "Position à droite",
+      "category": "positions"
     },
     {
       "term": "Owen seugui",
-      "explanation": "Position à gauche"
+      "explanation": "Position à gauche",
+      "category": "positions"
     },
     {
       "term": "Dwitt koa seugui",
-      "explanation": "Position croisée de dos"
+      "explanation": "Position croisée de dos",
+      "category": "positions"
     },
     {
       "term": "Pal koup tolyo",
-      "explanation": "Attaque avec le coude en rotation"
+      "explanation": "Attaque avec le coude en rotation",
+      "category": "frappes"
     },
     {
       "term": "Pal koup yop",
-      "explanation": "Attaque avec le coude de côté"
+      "explanation": "Attaque avec le coude de côté",
+      "category": "frappes"
     },
     {
       "term": "Pal koup olio",
-      "explanation": "Attaque avec le coude en montant"
+      "explanation": "Attaque avec le coude en montant",
+      "category": "frappes"
     },
     {
       "term": "Ap pal et koro tolyo tchagui",
-      "explanation": "Coup de pied circulaire avancé avec la jambe avant"
+      "explanation": "Coup de pied circulaire avancé avec la jambe avant",
+      "category": "techniques"
     },
     {
       "term": "Ap pal et koro furyeu tchagui",
-      "explanation": "Coup de pied circulaire en revers avancé avec la jambe avant"
+      "explanation": "Coup de pied circulaire en revers avancé avec la jambe avant",
+      "category": "techniques"
     },
     {
       "term": "Ap pal et koro nelyo tchagui",
-      "explanation": "Coup de pied descendant avancé avec la jambe avant"
+      "explanation": "Coup de pied descendant avancé avec la jambe avant",
+      "category": "techniques"
     },
     {
       "term": "Batang son nelyo maki",
-      "explanation": "Blocage descendant avec la paume de la main"
+      "explanation": "Blocage descendant avec la paume de la main",
+      "category": "blocages"
     },
     {
       "term": "Batangson momtong maki",
-      "explanation": "Blocage moyen avec la paume de la main"
+      "explanation": "Blocage moyen avec la paume de la main",
+      "category": "blocages"
     }
   ],
   "Rouge (3e keup)": [
     {
       "term": "Oren seugui",
-      "explanation": "Position à droite"
+      "explanation": "Position à droite",
+      "category": "positions"
     },
     {
       "term": "Owen seugui",
-      "explanation": "Position à gauche"
+      "explanation": "Position à gauche",
+      "category": "positions"
     },
     {
       "term": "Dwitt koa seugui",
-      "explanation": "Position croisée de dos"
+      "explanation": "Position croisée de dos",
+      "category": "positions"
     },
     {
       "term": "Pal koup tolyo",
-      "explanation": "Attaque avec le coude en rotation"
+      "explanation": "Attaque avec le coude en rotation",
+      "category": "frappes"
     },
     {
       "term": "Pal koup yop",
-      "explanation": "Attaque avec le coude de côté"
+      "explanation": "Attaque avec le coude de côté",
+      "category": "frappes"
     },
     {
       "term": "Pal koup olio",
-      "explanation": "Attaque avec le coude en montant"
+      "explanation": "Attaque avec le coude en montant",
+      "category": "frappes"
     },
     {
       "term": "Momdolyo tchagui",
-      "explanation": "Coup de pied retourné"
+      "explanation": "Coup de pied retourné",
+      "category": "techniques"
     },
     {
       "term": "360 tolyo tchagui",
-      "explanation": "Coup de pied circulaire à 360 degrés"
+      "explanation": "Coup de pied circulaire à 360 degrés",
+      "category": "techniques"
     },
     {
       "term": "360 nelyo tchagui",
-      "explanation": "Coup de pied descendant à 360 degrés"
+      "explanation": "Coup de pied descendant à 360 degrés",
+      "category": "techniques"
     },
     {
       "term": "Batang son nelyo maki",
-      "explanation": "Blocage descendant avec la paume de la main"
+      "explanation": "Blocage descendant avec la paume de la main",
+      "category": "blocages"
     },
     {
       "term": "Batangson momtong maki",
-      "explanation": "Blocage moyen avec la paume de la main"
+      "explanation": "Blocage moyen avec la paume de la main",
+      "category": "blocages"
     }
   ],
   "Rouge 1ère barrette (2e keup)": [
     {
       "term": "Ap seugui",
-      "explanation": "Position de marche"
+      "explanation": "Position de marche",
+      "category": "positions"
     },
     {
       "term": "Ap koubi",
-      "explanation": "Position basse"
+      "explanation": "Position basse",
+      "category": "positions"
     },
     {
       "term": "Joutchoum seugui",
-      "explanation": "Position de cavalier"
+      "explanation": "Position de cavalier",
+      "category": "positions"
     },
     {
       "term": "Narahni tchoumbi seugui",
-      "explanation": "Position d'attente"
+      "explanation": "Position d'attente",
+      "category": "positions"
     },
     {
       "term": "Tchaliot seugui",
-      "explanation": "Position de salut"
+      "explanation": "Position de salut",
+      "category": "positions"
     },
     {
       "term": "Dwitt Koubi seugui",
-      "explanation": "Position basse de dos"
+      "explanation": "Position basse de dos",
+      "category": "positions"
     },
     {
       "term": "Oren seugui",
-      "explanation": "Position à droite"
+      "explanation": "Position à droite",
+      "category": "positions"
     },
     {
       "term": "Owen seugui",
-      "explanation": "Position à gauche"
+      "explanation": "Position à gauche",
+      "category": "positions"
     },
     {
       "term": "Dwitt koa seugui",
-      "explanation": "Position croisée de dos"
+      "explanation": "Position croisée de dos",
+      "category": "positions"
     },
     {
       "term": "Beum seugui",
-      "explanation": "Position du tigre"
+      "explanation": "Position du tigre",
+      "category": "positions"
     },
     {
       "term": "Be joumok seugui",
-      "explanation": "Position avec le poing serré"
+      "explanation": "Position avec le poing serré",
+      "category": "positions"
     },
     {
       "term": "Je tcho jireugui",
-      "explanation": "Attaque de poing en remontant"
+      "explanation": "Attaque de poing en remontant",
+      "category": "frappes"
     },
     {
       "term": "Deung joumok je tcho jireugui",
-      "explanation": "Attaque de poing en remontant avec le dos du poing"
+      "explanation": "Attaque de poing en remontant avec le dos du poing",
+      "category": "frappes"
     },
     {
       "term": "Do Kyang teung je tcho jireugui",
-      "explanation": "Attaque de poing en remontant avec le poing en marteau"
+      "explanation": "Attaque de poing en remontant avec le poing en marteau",
+      "category": "frappes"
     },
     {
       "term": "Sohko tchagui",
-      "explanation": "Coup de pied sans reposer"
+      "explanation": "Coup de pied sans reposer",
+      "category": "techniques"
     },
     {
       "term": "Keudop tchagui",
-      "explanation": "Coup de pied enchaîné sans reposer"
+      "explanation": "Coup de pied enchaîné sans reposer",
+      "category": "techniques"
     },
     {
       "term": "Kodoro batangson momtong maki",
-      "explanation": "Blocage moyen renforcé avec la paume de la main"
+      "explanation": "Blocage moyen renforcé avec la paume de la main",
+      "category": "blocages"
     },
     {
       "term": "Eut keuro are maki",
-      "explanation": "Blocage bas en croisant les bras"
+      "explanation": "Blocage bas en croisant les bras",
+      "category": "blocages"
     }
   ],
-    "Noire (1e keup)": [
-      {
-        "term": "Ap seugui",
-        "explanation": "Position de marche"
-      },
-      {
-        "term": "Ap koubi",
-        "explanation": "Position basse"
-      },
-      {
-        "term": "Joutchoum seugui",
-        "explanation": "Position de cavalier"
-      },
-      {
-        "term": "Narahni tchoumbi seugui",
-        "explanation": "Position d'attente"
-      },
-      {
-        "term": "Tchaliot seugui",
-        "explanation": "Position de salut"
-      },
-      {
-        "term": "Dwitt Koubi seugui",
-        "explanation": "Position basse de dos"
-      },
-      {
-        "term": "Oren seugui",
-        "explanation": "Position à droite"
-      },
-      {
-        "term": "Owen seugui",
-        "explanation": "Position à gauche"
-      },
-      {
-        "term": "Dwitt koa seugui",
-        "explanation": "Position croisée de dos"
-      },
-      {
-        "term": "Beum seugui",
-        "explanation": "Position du tigre"
-      },
-      {
-        "term": "Be joumok seugui",
-        "explanation": "Position avec le poing serré"
-      },
-      {
-        "term": "Je tcho jireugui",
-        "explanation": "Attaque de poing en remontant"
-      },
-      {
-        "term": "Deung joumok je tcho jireugui",
-        "explanation": "Attaque de poing en remontant avec le dos du poing"
-      },
-      {
-        "term": "Do Kyang teung je tcho jireugui",
-        "explanation": "Attaque de poing en remontant avec le poing en marteau"
-      },
-      {
-        "term": "Tuyo yop tchagui",
-        "explanation": "Coup de pied sauté latéral avancé"
-      },
-      {
-        "term": "Tuyo tolyo tchagui",
-        "explanation": "Coup de pied sauté circulaire avancé"
-      },
-      {
-        "term": "Tuyo tuit tchagui",
-        "explanation": "Coup de pied sauté retourné avancé"
-      },
-      {
-        "term": "Tuyo momdolyo tchagui",
-        "explanation": "Coup de pied sauté retourné avancé avec rotation"
-      },
-      {
-        "term": "Kaki maki",
-        "explanation": "Blocage asymétrique"
-      },
-      {
-        "term": "Owe san teul maki",
-        "explanation": "Blocage en croix asymétrique"
-      }
-    ]
-
+  "Noire (1e keup)": [
+    {
+      "term": "Ap seugui",
+      "explanation": "Position de marche",
+      "category": "positions"
+    },
+    {
+      "term": "Ap koubi",
+      "explanation": "Position basse",
+      "category": "positions"
+    },
+    {
+      "term": "Joutchoum seugui",
+      "explanation": "Position de cavalier",
+      "category": "positions"
+    },
+    {
+      "term": "Narahni tchoumbi seugui",
+      "explanation": "Position d'attente",
+      "category": "positions"
+    },
+    {
+      "term": "Tchaliot seugui",
+      "explanation": "Position de salut",
+      "category": "positions"
+    },
+    {
+      "term": "Dwitt Koubi seugui",
+      "explanation": "Position basse de dos",
+      "category": "positions"
+    },
+    {
+      "term": "Oren seugui",
+      "explanation": "Position à droite",
+      "category": "positions"
+    },
+    {
+      "term": "Owen seugui",
+      "explanation": "Position à gauche",
+      "category": "positions"
+    },
+    {
+      "term": "Dwitt koa seugui",
+      "explanation": "Position croisée de dos",
+      "category": "positions"
+    },
+    {
+      "term": "Beum seugui",
+      "explanation": "Position du tigre",
+      "category": "positions"
+    },
+    {
+      "term": "Be joumok seugui",
+      "explanation": "Position avec le poing serré",
+      "category": "positions"
+    },
+    {
+      "term": "Je tcho jireugui",
+      "explanation": "Attaque de poing en remontant",
+      "category": "frappes"
+    },
+    {
+      "term": "Deung joumok je tcho jireugui",
+      "explanation": "Attaque de poing en remontant avec le dos du poing",
+      "category": "frappes"
+    },
+    {
+      "term": "Do Kyang teung je tcho jireugui",
+      "explanation": "Attaque de poing en remontant avec le poing en marteau",
+      "category": "frappes"
+    },
+    {
+      "term": "Tuyo yop tchagui",
+      "explanation": "Coup de pied sauté latéral avancé",
+      "category": "techniques"
+    },
+    {
+      "term": "Tuyo tolyo tchagui",
+      "explanation": "Coup de pied sauté circulaire avancé",
+      "category": "techniques"
+    },
+    {
+      "term": "Tuyo tuit tchagui",
+      "explanation": "Coup de pied sauté retourné avancé",
+      "category": "techniques"
+    },
+    {
+      "term": "Tuyo momdolyo tchagui",
+      "explanation": "Coup de pied sauté retourné avancé avec rotation",
+      "category": "techniques"
+    },
+    {
+      "term": "Kaki maki",
+      "explanation": "Blocage asymétrique",
+      "category": "blocages"
+    },
+    {
+      "term": "Owe san teul maki",
+      "explanation": "Blocage en croix asymétrique",
+      "category": "blocages"
+    }
+  ]
 }

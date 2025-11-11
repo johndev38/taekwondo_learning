@@ -146,19 +146,6 @@ class HomeScreen extends StatelessWidget {
                         ),
                         _buildModuleCard(
                           context,
-                          title: 'QCM',
-                          icon: Icons.quiz,
-                          color: Colors.blue.shade600,
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => BeltSelectionScreen()),
-                            );
-                          },
-                        ),
-                        _buildModuleCard(
-                          context,
                           title: 'Kibon',
                           icon: Icons.school,
                           color: Colors.green.shade600,
@@ -170,7 +157,20 @@ class HomeScreen extends StatelessWidget {
                                       BeltSelectionForLeaningScreen()),
                             );
                           },
-                        )
+                        ),
+                        _buildModuleCard(
+                          context,
+                          title: 'QCM',
+                          icon: Icons.quiz,
+                          color: Colors.blue.shade600,
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => BeltSelectionScreen()),
+                            );
+                          },
+                        ),
                         // _buildModuleCard(
                         //   context,
                         //   title: 'Vidéo Hanbon',

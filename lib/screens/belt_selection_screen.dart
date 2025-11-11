@@ -38,8 +38,8 @@ class BeltSelectionScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sélectionner la ceinture'),
-        backgroundColor: Colors.black,
+        title: const Text('Sélectionnez votre ceinture'),
+        backgroundColor: Colors.blue.shade600,
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
