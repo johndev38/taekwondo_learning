@@ -304,6 +304,8 @@ class _BeltRequirementsScreenState extends State<BeltRequirementsScreen>
                 style: TextStyle(color: Colors.grey),
               ),
               isExpanded: true,
+              isDense: false, // pour ne pas compacter verticalement
+              itemHeight: null, // <== hauteur libre, s'adapte au contenu
               underline: Container(),
               icon: const Icon(Icons.keyboard_arrow_down),
               items: beltRequirements!['keup_progression']

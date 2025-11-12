@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import '../notifiers/belt_notifier.dart';
 import 'term_learning_screen.dart';
 
 class BeltSelectionForLeaningScreen extends StatefulWidget {
-  final String? selectedBelt;
-
-  const BeltSelectionForLeaningScreen({super.key, this.selectedBelt});
+  const BeltSelectionForLeaningScreen({super.key});
 
   @override
-  _BeltSelectionForLeaningScreenState createState() =>
+  State<BeltSelectionForLeaningScreen> createState() =>
       _BeltSelectionForLeaningScreenState();
 }
 
@@ -30,8 +26,6 @@ class _BeltSelectionForLeaningScreenState
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    final beltNotifier = Provider.of<BeltNotifier>(context);
-    final String currentBelt = widget.selectedBelt ?? beltNotifier.currentBelt ?? belts.first;
 
     final double titleFontSize = screenWidth > 800
         ? 18
@@ -67,16 +61,10 @@ class _BeltSelectionForLeaningScreenState
         child: SafeArea(
           child: Column(
             children: [
-              // Bandeau d’intro + ceinture actuelle
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12),
-                child: _HeaderSection(
-                  currentBelt: currentBelt,
-                  onReset: () {
-                    beltNotifier.setCurrentBelt(currentBelt);
-                  },
-                ),
+              // En-tête neutre (aucune mention de ceinture actuelle)
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 12),
+                child: _HeaderSection(),
               ),
 
               Expanded(
@@ -93,12 +81,10 @@ class _BeltSelectionForLeaningScreenState
                     itemCount: belts.length,
                     itemBuilder: (context, index) {
                       final String belt = belts[index];
-                      final bool isCurrent = belt == currentBelt;
                       final Color beltColor = _getBeltColor(belt);
 
                       return _BeltCard(
                         belt: belt,
-                        isCurrent: isCurrent,
                         beltColor: beltColor,
                         titleFontSize: titleFontSize,
                         onTap: () {
@@ -138,13 +124,7 @@ class _BeltSelectionForLeaningScreenState
 }
 
 class _HeaderSection extends StatelessWidget {
-  final String currentBelt;
-  final VoidCallback? onReset;
-
-  const _HeaderSection({
-    required this.currentBelt,
-    this.onReset,
-  });
+  const _HeaderSection();
 
   @override
   Widget build(BuildContext context) {
@@ -166,43 +146,10 @@ class _HeaderSection extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             Text(
-              "Travaillez le vocabulaire spécifique à chaque niveau. "
-              "Commencez par la ceinture recommandée, puis explorez les autres.",
+              "Travaillez les termes spécifique à chaque niveau. ",
               style: textTheme.bodyMedium?.copyWith(
                 color: Colors.grey[700],
               ),
-            ),
-            const SizedBox(height: 10),
-            Row(
-              children: [
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                  decoration: BoxDecoration(
-                    color: Colors.green.shade50,
-                    borderRadius: BorderRadius.circular(30),
-                    border: Border.all(color: Colors.green.shade400, width: 1),
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(
-                        Icons.star_rounded,
-                        size: 18,
-                        color: Colors.green.shade700,
-                      ),
-                      const SizedBox(width: 6),
-                      Text(
-                        'Ceinture actuelle : $currentBelt',
-                        style: textTheme.bodySmall?.copyWith(
-                          fontWeight: FontWeight.w600,
-                          color: Colors.green.shade800,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
             ),
           ],
         ),
@@ -213,14 +160,12 @@ class _HeaderSection extends StatelessWidget {
 
 class _BeltCard extends StatelessWidget {
   final String belt;
-  final bool isCurrent;
   final Color beltColor;
   final double titleFontSize;
   final VoidCallback onTap;
 
   const _BeltCard({
     required this.belt,
-    required this.isCurrent,
     required this.beltColor,
     required this.titleFontSize,
     required this.onTap,
@@ -234,12 +179,12 @@ class _BeltCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(16),
       onTap: onTap,
       child: Card(
-        elevation: isCurrent ? 5 : 2,
+        elevation: 2,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
           side: BorderSide(
-            color: isCurrent ? beltColor : Colors.grey.shade300,
-            width: isCurrent ? 2 : 1,
+            color: Colors.grey.shade300,
+            width: 1,
           ),
         ),
         child: Row(
@@ -280,33 +225,21 @@ class _BeltCard extends StatelessWidget {
                             belt,
                             style: textTheme.bodyMedium?.copyWith(
                               fontSize: titleFontSize,
-                              fontWeight:
-                                  isCurrent ? FontWeight.w700 : FontWeight.w500,
+                              fontWeight: FontWeight.w600,
                               color: Colors.black87,
                             ),
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
                           const SizedBox(height: 4),
-                          Text(
-                            isCurrent
-                                ? 'Ceinture recommandée pour vous'
-                                : 'Réviser le vocabulaire de ce niveau',
-                            style: textTheme.bodySmall?.copyWith(
-                              color: isCurrent
-                                  ? beltColor.withOpacity(0.9)
-                                  : Colors.grey[600],
-                            ),
-                          ),
                         ],
                       ),
                     ),
                     const SizedBox(width: 8),
-                    Icon(
+                    const Icon(
                       Icons.arrow_forward_ios_rounded,
                       size: 16,
-                      color:
-                          isCurrent ? beltColor : Colors.grey.withOpacity(0.7),
+                      color: Colors.black38,
                     ),
                   ],
                 ),
