@@ -61,11 +61,11 @@ class _BeltSelectionForLeaningScreenState
         child: SafeArea(
           child: Column(
             children: [
-              // En-tête neutre (aucune mention de ceinture actuelle)
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 12),
-                child: _HeaderSection(),
-              ),
+              // // En-tête neutre (aucune mention de ceinture actuelle)
+              // const Padding(
+              //   padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 12),
+              //   child: _HeaderSection(),
+              // ),
 
               Expanded(
                 child: Padding(

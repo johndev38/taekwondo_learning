@@ -4,27 +4,27 @@
       "hak": {
         "name": "La Grue",
         "requirements": {
-          "jump_and_touch": "Sauter et Toucher avec le poing",
-          "turn_and_touch": "Tourner et Toucher avec le pied",
-          "balance": "Tenir 5 secondes sur jambes",
-          "behavior": "Dire Bonjour, Au revoir"
+          "jump_and_touch": "Sauter et toucher avec le poing",
+          "turn_and_touch": "Tourner et toucher avec le pied",
+          "balance": "Tenir 5 secondes sur une jambe",
+          "behavior": "Dire Bonjour / Au revoir"
         }
       },
       "doksuri": {
         "name": "L'Aigle",
         "requirements": {
-          "jump_and_touch": "Sauter et Toucher avec le pied",
-          "turn_and_touch": "Tourner et Toucher 2 fois avec le pied sans poser",
-          "balance": "3 secondes sur jambe les yeux fermés",
+          "jump_and_touch": "Sauter et toucher avec le pied",
+          "turn_and_touch": "Tourner et toucher 2 fois avec le pied sans poser",
+          "balance": "Tenir 5 secondes sur une jambe les yeux fermés",
           "behavior": "Se taire pendant les consignes"
         }
       },
       "bolsajo": {
         "name": "Le Phoenix",
         "requirements": {
-          "jump_and_touch": "Courir + Sauter + Toucher avec le pied",
-          "turn_and_touch": "Tourner et Toucher 2 fois avec le pied sans poser - 4 fois",
-          "balance": "5 secondes sur une jambe / saut / 5 secondes sur l'autre",
+          "jump_and_touch": "Courir + sauter + toucher avec le pied",
+          "turn_and_touch": "Tourner et toucher 4 fois avec le pied sans poser",
+          "balance": "Tenir 5 secondes sur une jambe / saut / 5 secondes sur l'autre jambe",
           "behavior": "Se taire pendant l'exercice"
         }
       }
@@ -35,25 +35,25 @@
         "requirements": {
           "movement": "Suivre une cible vers avant / arrière avec les bras en garde",
           "speed_variation": "Faire un coup de poing vite ou lent",
-          "body_parts": "Avec pied / poing / coude / Genou",
-          "rituals": "Faire le salut (Ligne / commandement)"
+          "body_parts": "Toucher une cible avec le pied, le poing, le coude ou le genou",
+          "rituals": "Faire le salut (ligne / commandement)"
         }
       },
       "shirasoni": {
         "name": "Le Lynx",
         "requirements": {
-          "movement": "Idem avant / arrière / côtés",
+          "movement": "Suivre une cible vers avant / arrière / côtés avec les bras en garde",
           "speed_variation": "Faire un coup de poing ample ou court",
-          "body_parts": "Avec dessus / dessous / pied / poing / paume",
+          "body_parts": "Toucher une cible avec le dessus ou le dessous du pied, le poing ou la paume",
           "rituals": "Toujours saluer son adversaire"
         }
       },
       "horangi": {
         "name": "Le Tigre",
         "requirements": {
-          "movement": "Idem + Toucher la cible quand elle s'arrête",
+          "movement": "Suivre une cible vers avant / arrière / côtés avec les bras en garde et toucher la cible quand elle s'arrête",
           "speed_variation": "Ample / Vite ; Court / Vite ; Ample / Lent ; Court / Lent",
-          "body_parts": "Toucher deux fois avec une partie du membre inférieur et une partie membre sup. ou inversement",
+          "body_parts": "Toucher deux fois avec une partie du membre inférieur et une partie du membre supérieur ou inversement",
           "rituals": "Savoir nouer sa ceinture tout seul"
         }
       }
@@ -62,28 +62,28 @@
       "geobugi": {
         "name": "La Tortue",
         "requirements": {
-          "anticipation": "Esquiver une frappe qui arrive",
-          "reaction": "Toucher dès qu'une cible apparaît",
-          "communication": "Compter jusqu'à 10",
-          "respect": "Ranger son matériel"
+          "anticipation": "Au signal du professeur, réaliser un tchagui, un jireugui ou un maki",
+          "reaction": "Imiter un partenaire qui réalise 1 ou 2 tchagui ou 1 ou 2 jireugui",
+          "communication": "Rester avec son équipe pendant un jeu",
+          "respect": "Citer un terme du code moral"
         }
       },
       "baem": {
         "name": "Le Serpent",
         "requirements": {
-          "anticipation": "Esquiver + Toucher en même temps",
-          "reaction": "Toucher dès qu'une cible apparaît avec le bon membre",
-          "communication": "Mémoriser et répéter une consigne à 3 étapes",
-          "respect": "Aider un camarade"
+          "anticipation": "Au signal, réaliser un Ap ou Nelyo tchagui, un Are/Eulgoul maki ou un Momtong/Eulgoul jireugui",
+          "reaction": "Imiter un partenaire qui réalise un tchagui et un jireugui ou inversement",
+          "communication": "Rester avec son partenaire pendant un jeu",
+          "respect": "Citer 3 termes du code moral"
         }
       },
       "yong": {
         "name": "Le Dragon",
         "requirements": {
-          "anticipation": "Feinter + Esquiver + Toucher",
-          "reaction": "Toucher dès qu'une cible apparaît avec le bon membre et la bonne technique",
-          "communication": "Expliquer une technique",
-          "respect": "Féliciter son adversaire"
+          "anticipation": "Au signal, réaliser deux mouvements à enchaîner",
+          "reaction": "Imiter un partenaire qui réalise trois mouvements",
+          "communication": "Tenir correctement la cible pour son partenaire",
+          "respect": "Citer 4 termes du code moral et en expliquer un"
         }
       }
     }
@@ -96,7 +96,7 @@
         "Ap koubi (basse)",
         "Joutchoum seugui (cavalier)",
         "Narahni tchoumbi seugui (attente)",
-        "Tchaliot seugui (Salut)"
+        "Tchaliot seugui (salut)"
       ],
       "upper_limb_strikes": [
         "Montante jireugui",
@@ -151,8 +151,8 @@
         "Ap koubi (basse)",
         "Joutchoum seugui (cavalier)",
         "Narahni tchoumbi seugui (attente)",
-        "Tchaliot seugui (Salut)",
-        "Dwitt Koubi seugui"
+        "Tchaliot seugui (salut)",
+        "Dwitt koubi seugui"
       ],
       "upper_limb_strikes": [
         "Montante jireugui",
@@ -210,8 +210,8 @@
         "Ap koubi (basse)",
         "Joutchoum seugui (cavalier)",
         "Narahni tchoumbi seugui (attente)",
-        "Tchaliot seugui (Salut)",
-        "Dwitt Koubi seugui",
+        "Tchaliot seugui (salut)",
+        "Dwitt koubi seugui",
         "Oren seugui"
       ],
       "upper_limb_strikes": [
@@ -267,14 +267,14 @@
       }
     },
     "7_to_6_keup": {
-      "belt_name": "Ceinture Jaune 2ème barrette → Ceinture Bleu (6e keup)",
+      "belt_name": "Ceinture Jaune 2ème barrette → Ceinture Bleue (6e keup)",
       "positions": [
         "Ap seugui (marche)",
         "Ap koubi (basse)",
         "Joutchoum seugui (cavalier)",
         "Narahni tchoumbi seugui (attente)",
-        "Tchaliot seugui (Salut)",
-        "Dwitt Koubi seugui",
+        "Tchaliot seugui (salut)",
+        "Dwitt koubi seugui",
         "Oren seugui",
         "Owen seugui"
       ],
@@ -314,7 +314,7 @@
       },
       "hanbon_kyeurogui": {
         "description": "Passer du 7e au 6e keup",
-        "requirements": "1 hanbon au choix avec déclage + 1 hanbon au choix par pas de recul",
+        "requirements": "1 hanbon au choix avec décalage + 1 hanbon au choix par pas de recul",
         "evaluation": {
           "respect_protocole": 10,
           "precision_riposte": 10,
@@ -334,14 +334,14 @@
       }
     },
     "6_to_5_keup": {
-      "belt_name": "Ceinture Bleu → Ceinture Bleu 1ère barrette (5e keup)",
+      "belt_name": "Ceinture Bleue → Ceinture Bleue 1ère barrette (5e keup)",
       "positions": [
         "Ap seugui (marche)",
         "Ap koubi (basse)",
         "Joutchoum seugui (cavalier)",
         "Narahni tchoumbi seugui (attente)",
-        "Tchaliot seugui (Salut)",
-        "Dwitt Koubi seugui",
+        "Tchaliot seugui (salut)",
+        "Dwitt koubi seugui",
         "Oren seugui",
         "Owen seugui",
         "Dwitt koa seugui"
@@ -385,7 +385,7 @@
       },
       "hanbon_kyeurogui": {
         "description": "Passer du 6e au 5e keup",
-        "requirements": "2 hanbons membres supérieurs avec différents niveaux visés + 2 hanbons membres inférieurs de 3 coups de pieds",
+        "requirements": "2 hanbons membres supérieurs avec différents niveaux visés + 2 hanbons membres inférieurs de 3 coups de pied",
         "evaluation": {
           "respect_protocole": 10,
           "precision_riposte": 10,
@@ -405,14 +405,14 @@
       }
     },
     "5_to_4_keup": {
-      "belt_name": "Ceinture Bleu 1ère barrette → Ceinture Bleu 2ème barrette (4e keup)",
+      "belt_name": "Ceinture Bleue 1ère barrette → Ceinture Bleue 2ème barrette (4e keup)",
       "positions": [
         "Ap seugui (marche)",
         "Ap koubi (basse)",
         "Joutchoum seugui (cavalier)",
         "Narahni tchoumbi seugui (attente)",
-        "Tchaliot seugui (Salut)",
-        "Dwitt Koubi seugui",
+        "Tchaliot seugui (salut)",
+        "Dwitt koubi seugui",
         "Oren seugui",
         "Owen seugui",
         "Dwitt koa seugui",
@@ -460,7 +460,7 @@
       },
       "hanbon_kyeurogui": {
         "description": "Passer du 5e au 4e keup",
-        "requirements": "2 hanbons au choix avec enchaînement membres inférieures + jambe + bras",
+        "requirements": "2 hanbons au choix avec enchaînement membres inférieurs + jambe + bras",
         "evaluation": {
           "respect_protocole": 10,
           "precision_riposte": 10,
@@ -480,14 +480,14 @@
       }
     },
     "4_to_3_keup": {
-      "belt_name": "Ceinture Bleu 2ème barrette → Ceinture Rouge (3e keup)",
+      "belt_name": "Ceinture Bleue 2ème barrette → Ceinture Rouge (3e keup)",
       "positions": [
         "Ap seugui (marche)",
         "Ap koubi (basse)",
         "Joutchoum seugui (cavalier)",
         "Narahni tchoumbi seugui (attente)",
-        "Tchaliot seugui (Salut)",
-        "Dwitt Koubi seugui",
+        "Tchaliot seugui (salut)",
+        "Dwitt koubi seugui",
         "Oren seugui",
         "Owen seugui",
         "Dwitt koa seugui",
@@ -497,7 +497,7 @@
       "upper_limb_strikes": [
         "Je tcho jireugui",
         "Deung joumok je tcho jireugui",
-        "Do Kyang teung je tcho jireugui"
+        "Do kyang teung je tcho jireugui"
       ],
       "lower_limb_strikes": [
         "Sohko tchagui",
@@ -521,11 +521,11 @@
       "kibons": {
         "precision_strikes": {
           "description": "Passer du 7e au 3e keup",
-          "requirements": "2 frappes de précision sur partenaire (1 coups de pieds et 1 avec membres supérieur)",
+          "requirements": "2 frappes de précision sur partenaire (1 coup de pied et 1 avec membre supérieur)",
           "note": "NOTE/30"
         },
         "combinations": {
-          "description": "Passer du 7e au 3e keup", 
+          "description": "Passer du 7e au 3e keup",
           "requirements": "2 enchaînements de 3 techniques différentes membres supérieurs imposées 4 fois en avançant",
           "note": "NOTE/30"
         },
@@ -534,14 +534,14 @@
             "Armement / Finition de frappe",
             "Dégagement et poursuite technique après frappe",
             "Contrôle dans la qualité des exécutions",
-            "Connaissance des termes en coréen au choix du pratiquant, celui-ci énonce les termes technique qu'il pratique. Symétrie dans la qualité d'exécution à gauche et à droite"
+            "Connaissance des termes en coréen au choix du pratiquant, celui-ci énonce les termes techniques qu'il pratique. Symétrie dans la qualité d'exécution à gauche et à droite"
           ],
           "total": 30
         }
       },
       "hanbon_kyeurogui": {
         "description": "Passer du 4e au 3e keup",
-        "requirements": "2 hanbons avec coup de pieds retourné + 2 hanbons avec coup de pieds sauté",
+        "requirements": "2 hanbons avec coup de pied retourné + 2 hanbons avec coup de pied sauté",
         "evaluation": {
           "respect_protocole": 10,
           "precision_riposte": 10,
@@ -554,12 +554,12 @@
         "evaluation": {
           "fundamentals": {
             "theme": "Contre = Je touche avant d'être touché avec les poings et les pieds",
-            "instructions": "Exécuter son coup pendant l'attaque adverse pour \"stopper\"",
+            "instructions": "Exécuter son coup pendant l'attaque adverse pour stopper",
             "points": 10
           },
           "technical_variety": {
             "theme": "J'utilise des coups de pieds visage",
-            "instructions": "Toucher ou approcher le plus près possibles son pied du casque de l'adversaire",
+            "instructions": "Toucher ou approcher le plus près possible son pied du casque de l'adversaire",
             "points": 10
           },
           "tactical_variety": {
@@ -589,8 +589,8 @@
         "Ap koubi (basse)",
         "Joutchoum seugui (cavalier)",
         "Narahni tchoumbi seugui (attente)",
-        "Tchaliot seugui (Salut)",
-        "Dwitt Koubi seugui",
+        "Tchaliot seugui (salut)",
+        "Dwitt koubi seugui",
         "Oren seugui",
         "Owen seugui",
         "Dwitt koa seugui",
@@ -600,7 +600,7 @@
       "upper_limb_strikes": [
         "Je tcho jireugui",
         "Deung joumok je tcho jireugui",
-        "Do Kyang teung je tcho jireugui"
+        "Do kyang teung je tcho jireugui"
       ],
       "lower_limb_strikes": [
         "Tuyo yop tchagui",
@@ -612,7 +612,7 @@
         "Kaki maki",
         "Owe san teul maki"
       ],
-      "movements": "Pas tournants, Pas tournant vers l'avant",
+      "movements": "Pas tournants, pas tournant vers l'avant",
       "poomsae": {
         "name": "TAEGEUK PAL JONG",
         "evaluation": {
@@ -631,7 +631,7 @@
         },
         "combinations": {
           "description": "Passer du 3e au 2e keup",
-          "requirements": "2 enchaînements de 3 techniques membres supérieurs ou inférieures différentes imposées 4 fois en avançant",
+          "requirements": "2 enchaînements de 3 techniques membres supérieurs ou inférieurs différentes imposées 4 fois en avançant",
           "note": "NOTE/30"
         },
         "evaluation": {
@@ -639,14 +639,14 @@
             "Armement / Finition de frappe",
             "Dégagement et poursuite technique après frappe",
             "Contrôle dans la qualité des exécutions",
-            "Connaissance des termes en coréen au choix du pratiquant, celui-ci énonce les termes technique qu'il pratique. Symétrie dans la qualité d'exécution à gauche et à droite"
+            "Connaissance des termes en coréen au choix du pratiquant, celui-ci énonce les termes techniques qu'il pratique. Symétrie dans la qualité d'exécution à gauche et à droite"
           ],
           "total": 30
         }
       },
       "hanbon_kyeurogui": {
         "description": "Passer du 3e au 2e keup",
-        "requirements": "1 hanbon membres supérieurs + 1 hanbon membres inférieurs + 2 hanbons avec coups de pieds sautés",
+        "requirements": "1 hanbon membres supérieurs + 1 hanbon membres inférieurs + 2 hanbons avec coups de pied sautés",
         "evaluation": {
           "respect_protocole": 10,
           "precision_riposte": 10,
@@ -659,12 +659,12 @@
         "evaluation": {
           "fundamentals": {
             "theme": "Contre = Je touche avant d'être touché avec les poings et les pieds",
-            "instructions": "Exécuter son coup pendant l'attaque adverse pour \"stopper\"",
+            "instructions": "Exécuter son coup pendant l'attaque adverse pour stopper",
             "points": 10
           },
           "technical_variety": {
             "theme": "J'utilise des coups de pieds visage",
-            "instructions": "Toucher ou approcher le plus près possibles son pied du casque de l'adversaire",
+            "instructions": "Toucher ou approcher le plus près possible son pied du casque de l'adversaire",
             "points": 10
           },
           "tactical_variety": {
@@ -697,8 +697,8 @@
         "Ap koubi (basse)",
         "Joutchoum seugui (cavalier)",
         "Narahni tchoumbi seugui (attente)",
-        "Tchaliot seugui (Salut)",
-        "Dwitt Koubi seugui",
+        "Tchaliot seugui (salut)",
+        "Dwitt koubi seugui",
         "Oren seugui",
         "Owen seugui",
         "Dwitt koa seugui",
@@ -708,7 +708,7 @@
       "upper_limb_strikes": [
         "Je tcho jireugui",
         "Deung joumok je tcho jireugui",
-        "Do Kyang teung je tcho jireugui"
+        "Do kyang teung je tcho jireugui"
       ],
       "lower_limb_strikes": [
         "Tuyo yop tchagui",
@@ -720,7 +720,7 @@
         "Kaki maki",
         "Owe san teul maki"
       ],
-      "movements": "Pas tournants, Pas tournant vers l'avant",
+      "movements": "Pas tournants, pas tournant vers l'avant",
       "poomsae": {
         "name": "KORYO",
         "evaluation": {
@@ -739,7 +739,7 @@
         },
         "combinations": {
           "description": "Passer du 2e au 1e keup",
-          "requirements": "2 enchaînements de 3 techniques membres supérieurs ou inférieures différentes imposées 4 fois en avançant",
+          "requirements": "2 enchaînements de 3 techniques membres supérieurs ou inférieurs différentes imposées 4 fois en avançant",
           "note": "NOTE/30"
         },
         "evaluation": {
@@ -747,14 +747,14 @@
             "Armement / Finition de frappe",
             "Dégagement et poursuite technique après frappe",
             "Contrôle dans la qualité des exécutions",
-            "Connaissance des termes en coréen au choix du pratiquant, celui-ci énonce les termes technique qu'il pratique. Symétrie dans la qualité d'exécution à gauche et à droite"
+            "Connaissance des termes en coréen au choix du pratiquant, celui-ci énonce les termes techniques qu'il pratique. Symétrie dans la qualité d'exécution à gauche et à droite"
           ],
           "total": 30
         }
       },
       "hanbon_kyeurogui": {
         "description": "Passer du 2e au 1e keup",
-        "requirements": "1 hanbon membres supérieurs + 1 hanbon membres inférieurs + 2 hanbons avec coups de pieds sautés",
+        "requirements": "1 hanbon membres supérieurs + 1 hanbon membres inférieurs + 2 hanbons avec coups de pied sautés",
         "evaluation": {
           "respect_protocole": 10,
           "precision_riposte": 10,
@@ -767,12 +767,12 @@
         "evaluation": {
           "fundamentals": {
             "theme": "Contre = Je touche avant d'être touché avec les poings et les pieds",
-            "instructions": "Exécuter son coup pendant l'attaque adverse pour \"stopper\"",
+            "instructions": "Exécuter son coup pendant l'attaque adverse pour stopper",
             "points": 10
           },
           "technical_variety": {
             "theme": "J'utilise des coups de pieds visage",
-            "instructions": "Toucher ou approcher le plus près possibles son pied du casque de l'adversaire",
+            "instructions": "Toucher ou approcher le plus près possible son pied du casque de l'adversaire",
             "points": 10
           },
           "tactical_variety": {
@@ -799,4 +799,4 @@
       ]
     }
   }
-} 
+}

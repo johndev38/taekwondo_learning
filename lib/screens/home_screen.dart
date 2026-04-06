@@ -63,11 +63,11 @@ class HomeScreen extends StatelessWidget {
                                   width: 2,
                                 ),
                               ),
-                              /*     child: const Icon(
+                              child: const Icon(
                                 Icons.sports_martial_arts,
                                 color: Colors.white,
                                 size: 30,
-                              ), */
+                              ),
                             ),
                             const SizedBox(width: 16),
                             Column(
@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                           ],
                         ),
                         const SizedBox(height: 20),
-/*                         Text(
+                        Text(
                           'Votre guide d\'apprentissage du Taekwondo',
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -95,7 +95,7 @@ class HomeScreen extends StatelessWidget {
                             color: Colors.white.withOpacity(0.9),
                             fontWeight: FontWeight.w400,
                           ),
-                        ), */
+                        ),
                       ],
                     ),
                   ),

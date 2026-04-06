@@ -2,6 +2,13 @@
 
 A new Flutter project.
 
+build app pour google play
+flutter build appbundle --release
+
+
+pour build l'apk
+flutter build apk --release
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
