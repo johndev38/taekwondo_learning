@@ -91,6 +91,9 @@ flutter:
     - assets/questions_rouge.json
     - assets/questions_rouge_barrette1.json
     - assets/questions_noire.json
+    - assets/questions_module_b_2eme_dan.json
+    - assets/questions_module_b_3eme_dan_partie1.json
+    - assets/questions_module_b_3eme_dan_partie2.json
     - assets/belt_requirements.json
     - assets/icon/app_icon.png
   #   - images/a_dot_burr.jpeg

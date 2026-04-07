@@ -1,0 +1,165 @@
+{
+  "Module B - 2ème DAN": [
+    {
+      "id": 7001,
+      "question": "Quelle est la date de référence qui détermine la catégorie d’âge d’un compétiteur pour une saison ?",
+      "options": [
+        "La 1er septembre de la saison en cours",
+        "Le 1er janvier qui suit la saison en cours",
+        "La date anniversaire du compétiteur",
+        "Le 31 décembre de l’année qui suit le début de saison"
+      ],
+      "correctAnswer": ["Le 31 décembre de l’année qui suit le début de saison"]
+    },
+    {
+      "id": 7002,
+      "question": "En compétition Poomsé, quelle est la répartition des critères ?",
+      "options": [
+        "4 points pour la présentation, 6 points pour la réalisation",
+        "4 points pour la technique, 6 points pour la technique",
+        "4 points pour la précision, 6 points pour la souplesse",
+        "4 points pour la précision, 6 points pour la précision"
+      ],
+      "correctAnswer": ["4 points pour la présentation, 6 points pour la réalisation"]
+    },
+    {
+      "id": 7003,
+      "question": "En compétition Poomsé, en cas d’égalité au score le vainqueur est :",
+      "options": [
+        "Le compétiteur qui a obtenu le plus de points en présentation",
+        "Le compétiteur qui a obtenu le plus de points en précision",
+        "Le compétiteur qui a démontré une meilleure souplesse",
+        "Le compétiteur qui a été le plus rapide à exécuter ses Poomsé"
+      ],
+      "correctAnswer": ["Le compétiteur qui a obtenu le plus de points en présentation"]
+    },
+    {
+      "id": 7004,
+      "question": "En compétition Poomsé, combien de points sont retirés si la direction du concurrent n’est pas orientée du côté de la réalisation de ses enchaînements ?",
+      "options": ["Aucun", "0,1 point", "0,3 point", "1 point"],
+      "correctAnswer": ["0,3 point"]
+    },
+    {
+      "id": 7005,
+      "question": "En para taekwondo kyorugi, quelle est la surface de frappe autorisée ?",
+      "options": [
+        "La surface du tronc recouverte par le plastron",
+        "Uniquement le buste protégé par le plastron et le casque à bulle",
+        "La partie de la tête recouverte par le casque et le plastron",
+        "Le casque à bulle et le plastron"
+      ],
+      "correctAnswer": ["La surface du tronc recouverte par le plastron"]
+    },
+    {
+      "id": 7006,
+      "question": "En compétition kyorugi, qu’est-ce que le système PSS ?",
+      "options": [
+        "Un système de pointage électronique de coups de poing intégré dans un plastron",
+        "Un système de mesure d’intensité des techniques de pieds portées sur le plastron",
+        "Un système d’enregistrement de coups de pied portés sur le plastron",
+        "Un système électronique d’enregistrement de coups portés sur le plastron et sur le casque"
+      ],
+      "correctAnswer": ["Un système de mesure d’intensité des techniques de pieds portées sur le plastron"]
+    },
+    {
+      "id": 7007,
+      "question": "Quels sont les points valides en combat dans les catégories cadets, juniors, seniors ?",
+      "options": [
+        "3 points pour un coup de pied retourné valide au plastron",
+        "2 points pour un coup de pied valide à la tête",
+        "1 point pour un coup de pied valide au plastron",
+        "4 points pour un coup de pied retourné valide à la tête"
+      ],
+      "correctAnswer": [
+        "3 points pour un coup de pied retourné valide au plastron",
+        "2 points pour un coup de pied valide à la tête",
+        "1 point pour un coup de pied valide au plastron",
+        "4 points pour un coup de pied retourné valide à la tête"
+      ]
+    },
+    {
+      "id": 7008,
+      "question": "En compétition kyorugi, le système de recours vidéo permet au coach d’émettre une objection lorsque :",
+      "options": [
+        "Un point n’a pas été enregistré par le système électronique",
+        "Un point n’a pas été validé par les juges de chaise",
+        "Une pénalité n’a pas été donnée",
+        "Autant de fois qu’il le souhaite"
+      ],
+      "correctAnswer": ["Un point n’a pas été enregistré par le système électronique"]
+    },
+    {
+      "id": 7009,
+      "question": "En para taekwondo, quelles sont les catégories paralympiques ?",
+      "options": ["K44", "K42", "K41", "K43"],
+      "correctAnswer": ["K44"]
+    },
+    {
+      "id": 7010,
+      "question": "Dans le système des meilleurs des 3 rounds, le match prend fin quand :",
+      "options": [
+        "Un compétiteur reçoit 10 sanctions",
+        "Un compétiteur remporte deux rounds",
+        "L’écart de points atteint 20 points",
+        "Un compétiteur reçoit un coup violent (knock out)"
+      ],
+      "correctAnswer": ["Un compétiteur remporte deux rounds"]
+    },
+    {
+      "id": 7011,
+      "question": "En para taekwondo, quel est le barème de point pour un coup de pied retourné valide au plastron ?",
+      "options": ["Quatre points", "Deux points", "Cinq points", "Trois points"],
+      "correctAnswer": ["Quatre points"]
+    },
+    {
+      "id": 7012,
+      "question": "Le mauvais comportement d’un coach sur une aire de combat peut entraîner l’arbitre :",
+      "options": [
+        "A lui donner un carton jaune",
+        "A exclure le coach de l’aire de combat",
+        "A sanctionner son combattant par un Gam-jeom",
+        "A sanctionner son combattant par un Gam-jeom et un carton jaune"
+      ],
+      "correctAnswer": ["A sanctionner son combattant par un Gam-jeom"]
+    },
+    {
+      "id": 7013,
+      "question": "Dans le système des meilleurs des 3 rounds, quels sont les critères qui déterminent le vainqueur d’un round ?",
+      "options": [
+        "Le plus grand nombre de points marqués par un combattant",
+        "Le nombre de sanctions",
+        "L’écart de point",
+        "Les techniques à valeur de point"
+      ],
+      "correctAnswer": ["Le plus grand nombre de points marqués par un combattant"]
+    },
+    {
+      "id": 7014,
+      "question": "Lors d’un combat, à l’issue du 1er round, le score est de 9 points entre Tchong et Hong. Qui remporte le round ?",
+      "options": [
+        "Cas n°1 : Tchong 2 coups de pied retourné au plastron",
+        "Cas n°1 : Hong 1 coup de pied retourné au plastron",
+        "Cas n°2 : Tchong 1 coup de pied retourné à la tête",
+        "Cas n°2 : Hong 2 coups de pied au plastron"
+      ],
+      "correctAnswer": [
+        "Cas n°1 : Tchong 2 coups de pied retourné au plastron",
+        "Cas n°2 : Tchong 1 coup de pied retourné à la tête"
+      ]
+    },
+    {
+      "id": 7015,
+      "question": "Lors d’un combat, dans le système du meilleur des 3 rounds et en cas d’égalité du meilleur des 3 rounds, quel combattant a remporté le combat ?",
+      "options": [
+        "Round 1 : Tchong, 5 coups de pied au plastron",
+        "Round 1 : Hong, 4 coups de pied et 1 coup de poing",
+        "Round 2 : Tchong, 1 coup de poing au plastron, 1 coup de pied à la tête",
+        "Round 2 : Hong, 2 coups de pied au plastron"
+      ],
+      "correctAnswer": [
+        "Round 1 : Tchong, 5 coups de pied au plastron",
+        "Round 2 : Tchong, 1 coup de poing au plastron, 1 coup de pied à la tête"
+      ]
+    }
+  ]
+}

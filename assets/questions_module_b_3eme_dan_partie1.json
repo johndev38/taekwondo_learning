@@ -1,0 +1,140 @@
+{
+  "Module B - 3ème DAN - Gouvernance": [
+    {
+      "id": 6001,
+      "question": "Quelles sont les instances dirigeantes internationales en lien avec la F.F.T.D.A ?",
+      "options": ["W.T", "C.I.O", "A.G.F.I.S", "KUKKIWON"],
+      "correctAnswer": ["W.T", "C.I.O", "KUKKIWON"]
+    },
+    {
+      "id": 6002,
+      "question": "En quelle année le Comité International Paralympique a-t-il décidé d’inclure le Para-Taekwondo au J.O.P ?",
+      "options": ["31 janvier 2012", "31 janvier 2014", "31 janvier 2015", "31 janvier 2016"],
+      "correctAnswer": ["31 janvier 2015"]
+    },
+    {
+      "id": 6003,
+      "question": "Combien de Vice-Présidents sont membres du conseil Exécutif de la W.T au côté du Président Choue ?",
+      "options": ["4", "Un par continent", "6", "8"],
+      "correctAnswer": ["8"]
+    },
+    {
+      "id": 6004,
+      "question": "Combien d’Unions Continentales sont membres de la W.T ?",
+      "options": ["3", "4", "5", "6"],
+      "correctAnswer": ["5"]
+    },
+    {
+      "id": 6005,
+      "question": "Combien la W.T.E compte-t-elle de membres et de nations adhérentes en 2023 ?",
+      "options": ["Moins de 45", "Moins de 50", "Moins de 55", "Plus de 60"],
+      "correctAnswer": ["Plus de 60"]
+    },
+    {
+      "id": 6006,
+      "question": "Qu’est-ce que l’A.M.A ?",
+      "options": [
+        "L’Assistance Médicale des Athlètes",
+        "L’Autorité Mondiale de l’Arbitrage",
+        "L’Association des Arts Martiaux Affinitaires",
+        "L’Agence Mondiale Antidopage"
+      ],
+      "correctAnswer": ["L’Agence Mondiale Antidopage"]
+    },
+    {
+      "id": 6007,
+      "question": "Combien la W.T compte-t-elle de membres et de nations adhérentes en 2023 ?",
+      "options": ["moins de 200", "Moins de 205", "Moins de 210", "Plus de 210"],
+      "correctAnswer": ["Plus de 210"]
+    },
+    {
+      "id": 6008,
+      "question": "Quels sont les pré-requis pour être président d’une association Loi 1901 affiliée à la FFTDA ?",
+      "options": [
+        "Être de nationalité française",
+        "Avoir 21 ans révolu",
+        "Être 1er Dan minimum",
+        "Avoir obligatoirement une licence et un passeport sportif"
+      ],
+      "correctAnswer": ["Avoir 21 ans révolu"]
+    },
+    {
+      "id": 6009,
+      "question": "Quelle est la durée de vie maximum d’une association ?",
+      "options": ["Illimitée", "4 ans", "100 ans", "50 ans"],
+      "correctAnswer": ["Illimitée"]
+    },
+    {
+      "id": 6010,
+      "question": "Le Quorum d’une Assemblée Générale doit être ?",
+      "options": [
+        "De 50% des adhérents",
+        "D’un tiers des adhérents",
+        "En fonction de ses statuts",
+        "De 50% des adhérents majeurs"
+      ],
+      "correctAnswer": ["En fonction de ses statuts"]
+    },
+    {
+      "id": 6011,
+      "question": "Dans quel cas une association doit-elle recourir à un commissaire aux comptes ?",
+      "options": [
+        "Une association percevant plus de 153 000€ au cours de la même année",
+        "Une association recevant des dons de plus de 153 000€ au cours d’une même année",
+        "Obligatoire dès lors que l’association a des salariés",
+        "Obligatoire dès lors que l’association perçoit des subventions"
+      ],
+      "correctAnswer": [
+        "Une association recevant des dons de plus de 153 000€ au cours d’une même année",
+        "Obligatoire dès lors que l’association perçoit des subventions"
+      ]
+    },
+    {
+      "id": 6012,
+      "question": "En cas d’accident d’un adhérent lors d’un entraînement, quelles démarches sont à effectuer ?",
+      "options": [
+        "Faire la déclaration d’accident avec le licencié",
+        "Retourner la feuille d’accident dans les 5 jours ouvrables",
+        "Remplir l’ensemble de la feuille d’accident à la place du licencié",
+        "Seul le médecin doit remplir la feuille d’accident"
+      ],
+      "correctAnswer": [
+        "Faire la déclaration d’accident avec le licencié",
+        "Retourner la feuille d’accident dans les 5 jours ouvrables"
+      ]
+    },
+    {
+      "id": 6013,
+      "question": "Pour former une association Loi 1901, il faut ?",
+      "options": [
+        "Être juridiquement capable",
+        "Être deux au minimum",
+        "Habiter dans la même commune",
+        "Avoir un but commun"
+      ],
+      "correctAnswer": ["Être deux au minimum", "Avoir un but commun"]
+    },
+    {
+      "id": 6014,
+      "question": "Le Contrat d’Engagement Républicain :",
+      "options": [
+        "Ne s’applique pas pour les associations sportives",
+        "Ne s’applique pas pour les fondations",
+        "S’applique uniquement aux associations de plus de 100 adhérents",
+        "Obligatoire pour toutes les associations qui sollicitent une subvention"
+      ],
+      "correctAnswer": ["Obligatoire pour toutes les associations qui sollicitent une subvention"]
+    },
+    {
+      "id": 6015,
+      "question": "Lorsqu’une association a engagé un service civique :",
+      "options": [
+        "Seules les associations sportives peuvent y avoir recours",
+        "C’est l’État qui lui verse directement son indemnité",
+        "Le service civique peut remplacer un emploi salarié",
+        "Il faut avoir plus de 18 ans pour être en service civique"
+      ],
+      "correctAnswer": ["C’est l’État qui lui verse directement son indemnité"]
+    }
+  ]
+}
