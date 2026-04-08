@@ -59,7 +59,7 @@
         "Un système d’enregistrement de coups de pied portés sur le plastron",
         "Un système électronique d’enregistrement de coups portés sur le plastron et sur le casque"
       ],
-      "correctAnswer": ["Un système de mesure d’intensité des techniques de pieds portées sur le plastron"]
+      "correctAnswer": ["Un système de mesure d’intensité des techniques de pieds portées sur le plastron", "Un système d’enregistrement de coups de pied portés sur le plastron",  "Un système de mesure d’intensité des techniques de pieds portées sur le plastron"]
     },
     {
       "id": 7007,
@@ -68,13 +68,13 @@
         "3 points pour un coup de pied retourné valide au plastron",
         "2 points pour un coup de pied valide à la tête",
         "1 point pour un coup de pied valide au plastron",
-        "4 points pour un coup de pied retourné valide à la tête"
+        "6 points pour un coup de pied retourné valide à la tête"
       ],
       "correctAnswer": [
         "3 points pour un coup de pied retourné valide au plastron",
         "2 points pour un coup de pied valide à la tête",
         "1 point pour un coup de pied valide au plastron",
-        "4 points pour un coup de pied retourné valide à la tête"
+        "6 points pour un coup de pied retourné valide à la tête"
       ]
     },
     {
@@ -92,7 +92,7 @@
       "id": 7009,
       "question": "En para taekwondo, quelles sont les catégories paralympiques ?",
       "options": ["K44", "K42", "K41", "K43"],
-      "correctAnswer": ["K44"]
+      "correctAnswer": ["K44", "K43"]
     },
     {
       "id": 7010,
@@ -103,7 +103,7 @@
         "L’écart de points atteint 20 points",
         "Un compétiteur reçoit un coup violent (knock out)"
       ],
-      "correctAnswer": ["Un compétiteur remporte deux rounds"]
+      "correctAnswer": ["Un compétiteur remporte deux rounds", "Un compétiteur reçoit un coup violent (knock out)"]
     },
     {
       "id": 7011,
@@ -120,7 +120,7 @@
         "A sanctionner son combattant par un Gam-jeom",
         "A sanctionner son combattant par un Gam-jeom et un carton jaune"
       ],
-      "correctAnswer": ["A sanctionner son combattant par un Gam-jeom"]
+      "correctAnswer": ["A sanctionner son combattant par un Gam-jeom", "A sanctionner son combattant par un Gam-jeom et un carton jaune"]
     },
     {
       "id": 7013,
@@ -131,7 +131,7 @@
         "L’écart de point",
         "Les techniques à valeur de point"
       ],
-      "correctAnswer": ["Le plus grand nombre de points marqués par un combattant"]
+      "correctAnswer": ["Le plus grand nombre de points marqués par un combattant", "Les techniques à valeur de point"]
     },
     {
       "id": 7014,

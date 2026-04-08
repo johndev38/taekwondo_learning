@@ -4,7 +4,7 @@
       "id": 6001,
       "question": "Quelles sont les instances dirigeantes internationales en lien avec la F.F.T.D.A ?",
       "options": ["W.T", "C.I.O", "A.G.F.I.S", "KUKKIWON"],
-      "correctAnswer": ["W.T", "C.I.O", "KUKKIWON"]
+      "correctAnswer": ["W.T",  "KUKKIWON"]
     },
     {
       "id": 6002,
@@ -16,7 +16,7 @@
       "id": 6003,
       "question": "Combien de Vice-Présidents sont membres du conseil Exécutif de la W.T au côté du Président Choue ?",
       "options": ["4", "Un par continent", "6", "8"],
-      "correctAnswer": ["8"]
+      "correctAnswer": ["Un par continent"]
     },
     {
       "id": 6004,
@@ -56,7 +56,7 @@
         "Être 1er Dan minimum",
         "Avoir obligatoirement une licence et un passeport sportif"
       ],
-      "correctAnswer": ["Avoir 21 ans révolu"]
+      "correctAnswer": [  "Avoir obligatoirement une licence et un passeport sportif"]
     },
     {
       "id": 6009,
@@ -86,7 +86,7 @@
       ],
       "correctAnswer": [
         "Une association recevant des dons de plus de 153 000€ au cours d’une même année",
-        "Obligatoire dès lors que l’association perçoit des subventions"
+        "Une association percevant plus de 153 000€ au cours de la même année"
       ]
     },
     {
@@ -112,7 +112,7 @@
         "Habiter dans la même commune",
         "Avoir un but commun"
       ],
-      "correctAnswer": ["Être deux au minimum", "Avoir un but commun"]
+      "correctAnswer": ["Être juridiquement capable","Être deux au minimum", "Avoir un but commun"]
     },
     {
       "id": 6014,

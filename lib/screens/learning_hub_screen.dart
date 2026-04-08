@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'belt_selection_for_learning_screen.dart';
 import 'history_screen.dart';
+import 'module_b_review_screen.dart';
 import 'package:taekwondo_knowledge/screens/rules_screen.dart';
 
 class LearningHubScreen extends StatelessWidget {
@@ -161,6 +162,25 @@ class LearningHubScreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (_) => const TaekwondoRulesScreen()),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+
+                  // Module B — Fiches
+                  _LearningCard(
+                    title: 'Module B',
+                    subtitle: '2ème DAN · 3ème DAN',
+                    description:
+                        'Révisez toutes les questions et réponses officielles du Module B : gouvernance, vie associative, arbitrage, compétition Poomsé et Kyorugi.',
+                    icon: Icons.fact_check_rounded,
+                    topColor: const Color(0xFF4A148C),
+                    bottomColor: const Color(0xFF1A1040),
+                    tag: 'Q&R',
+                    tagIcon: Icons.checklist_rounded,
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) => const ModuleBReviewScreen()),
                     ),
                   ),
                 ],
