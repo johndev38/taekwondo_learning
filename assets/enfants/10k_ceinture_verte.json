@@ -1,0 +1,131 @@
+{
+  "id": "10K",
+  "title": "Ceinture verte 10e keup",
+  "beltColor": "verte",
+  "displayName": "ceinture verte",
+  "keup": 10,
+  "sourcePdf": "https://www.fftda.fr/files/file/Grades/Ceintures/10_Verte_Poster%20progression2.pdf",
+  "summary": "Entrée dans la ceinture verte : coup de pied latéral, premiers enchaînements codifiés de doubon kyeurougi, premiers hoshinsul et combat orienté vers le multi-temps.",
+  "positions": {
+    "referenceTerms": [
+      "Dwitt koubi"
+    ],
+    "objectives": [
+      "Positionner le corps",
+      "Répartir son poids",
+      "Respecter l’espace entre jambes"
+    ],
+    "coachingPoints": [
+      "Se déplacer et pivoter sur la pointe du pied sans perdre l’équilibre"
+    ]
+  },
+  "blocks": {
+    "referenceTerms": [
+      "Sonnal Bakkat"
+    ],
+    "objectives": [
+      "Armer correctement",
+      "Respecter la trajectoire",
+      "Respecter les niveaux"
+    ],
+    "coachingPoints": [
+      "La rotation des poignets et le travail simultané des bras participent à l’efficacité du blocage"
+    ]
+  },
+  "attacks": {
+    "referenceTerms": [
+      "Sonnal Mok An"
+    ],
+    "objectives": [
+      "Armer correctement",
+      "Respecter la trajectoire",
+      "Respecter les niveaux"
+    ],
+    "coachingPoints": [
+      "Armer la main pour une bonne rotation du poignet"
+    ]
+  },
+  "kicks": {
+    "referenceTerms": [
+      "Yop"
+    ],
+    "objectives": [
+      "Réaliser le coup de pied latéral",
+      "Faire différents coups de pieds avec la jambe arrière et la jambe avant"
+    ],
+    "coachingPoints": [
+      "Monter le genou",
+      "Tendre la jambe sans perdre l’équilibre",
+      "Toucher avec le talon"
+    ]
+  },
+  "poomsae": {
+    "referenceTerms": [
+      "Yi Jang"
+    ],
+    "objectives": [
+      "Connaître le diagramme",
+      "Synchroniser les mouvements",
+      "Respecter les niveaux",
+      "Connaître la terminologie",
+      "Faire des positions bien distinctes et stables",
+      "Changer de direction sur la pointe du pied sans perte d’équilibre"
+    ],
+    "theme": "Le lac"
+  },
+  "applicationPoomsae": null,
+  "stepSparring": {
+    "label": "Doubon Kyeurougi",
+    "objectives": [
+      "Enchaîner Anmakki et Jileugi",
+      "Enchaîner Alé makki et Jileugi",
+      "Enchaîner Eulgoul makki et Jileugi"
+    ]
+  },
+  "selfDefense": {
+    "label": "Hoshinsul",
+    "objectives": [
+      "Bloquer l’attaque de l’adversaire au visage",
+      "Bloquer l’attaque de l’adversaire au plexus",
+      "Bloquer l’attaque de l’adversaire au ventre",
+      "Riposter avec un coup de poing"
+    ]
+  },
+  "combat": {
+    "objectives": [
+      "Sautiller",
+      "Changer de garde sur place",
+      "Utiliser les deux jambes en attaque",
+      "Toucher avant d’être touché",
+      "Au moins une jambe touche la cible"
+    ],
+    "coachingPoints": [
+      "Me déplacer",
+      "Me placer",
+      "Soigner l’armement",
+      "Respecter la trajectoire",
+      "Choisir la bonne surface et la bonne hauteur de frappe",
+      "Soigner le retour de frappe",
+      "Soigner le replacement",
+      "Développer la vitesse d’exécution",
+      "Conserver l’équilibre général",
+      "Apprendre le multi-temps"
+    ]
+  },
+  "citizenshipBadge": {
+    "name": "Ambition Citoyenne",
+    "valueAxis": [
+      "Auto-critique",
+      "Acceptation"
+    ],
+    "pedagogicalFocus": "Accepter le résultat de ses actions"
+  },
+  "moralCode": [
+    "Fair-play",
+    "Humilité",
+    "Loyauté",
+    "Maîtrise de soi",
+    "Persévérance",
+    "Respect"
+  ]
+}

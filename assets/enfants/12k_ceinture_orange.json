@@ -1,0 +1,122 @@
+{
+  "id": "12K",
+  "title": "Ceinture orange 12e keup",
+  "beltColor": "orange",
+  "displayName": "ceinture orange",
+  "keup": 12,
+  "sourcePdf": "https://www.fftda.fr/files/file/Grades/Ceintures/12_Orange_Poster%20progression2.pdf",
+  "summary": "Niveau d’introduction à la ceinture orange : consolidation des positions avant et cavalier, premiers enchaînements de blocages et de coups de poing, découverte de Il Jang et travail du timing en combat.",
+  "positions": {
+    "referenceTerms": [
+      "Ap koubi"
+    ],
+    "objectives": [
+      "Réaliser la position du cavalier",
+      "Réaliser la position vers l’avant"
+    ],
+    "coachingPoints": [
+      "Conserver largeur et longueur dans les déplacements"
+    ]
+  },
+  "blocks": {
+    "referenceTerms": [
+      "Alé",
+      "Montong",
+      "Eulgoul"
+    ],
+    "objectives": [
+      "Réaliser le blocage bas en avançant",
+      "Réaliser le blocage moyen en avançant",
+      "Réaliser le blocage haut en avançant"
+    ],
+    "coachingPoints": [
+      "Coordonner la rotation des poignets et la trajectoire du blocage avec le déplacement"
+    ]
+  },
+  "attacks": {
+    "referenceTerms": [
+      "Montong Bandé",
+      "Montong Baro"
+    ],
+    "objectives": [
+      "Réaliser le coup de poing même jambe",
+      "Réaliser le coup de poing jambe opposée",
+      "Enchaîner les deux en avançant"
+    ],
+    "coachingPoints": [
+      "Poings serrés",
+      "Trajectoire rectiligne",
+      "Viser l’axe médian au niveau du plexus",
+      "Dissocier la jambe avant du bras qui frappe"
+    ]
+  },
+  "kicks": {
+    "referenceTerms": [
+      "Nélyo"
+    ],
+    "objectives": [
+      "Réaliser le coup de pied marteau",
+      "Toucher avec le dessous du pied",
+      "Toucher avec le talon"
+    ],
+    "coachingPoints": [
+      "Toucher la cible avec le dessous du pied ou le talon"
+    ]
+  },
+  "poomsae": {
+    "referenceTerms": [
+      "Il Jang"
+    ],
+    "objectives": [
+      "Connaître le diagramme",
+      "Synchroniser les mouvements",
+      "Respecter les niveaux",
+      "Faire des positions bien distinctes",
+      "Connaître la terminologie"
+    ],
+    "theme": "Le ciel"
+  },
+  "applicationPoomsae": null,
+  "stepSparring": {
+    "label": "Sebon Kyeurougi",
+    "objectives": [
+      "Trois pas combat",
+      "Réaliser le protocole",
+      "S’adapter à la distance de l’attaque"
+    ]
+  },
+  "selfDefense": {
+    "label": "Hoshinsul",
+    "objectives": [
+      "Pas de Hoshinsul pour le moment",
+      "Commencer à apprendre"
+    ]
+  },
+  "combat": {
+    "objectives": [
+      "Me déplacer et enchaîner une technique",
+      "Toucher sans être touché",
+      "Au moins une jambe touche la cible"
+    ],
+    "coachingPoints": [
+      "Adapter la distance au déplacement de l’adversaire",
+      "Toucher le plastron dans le bon timing"
+    ]
+  },
+  "citizenshipBadge": {
+    "name": "Ambition Citoyenne",
+    "valueAxis": [
+      "Solidarité",
+      "Inclusion"
+    ],
+    "pedagogicalFocus": "Favoriser l’inclusion de partenaires"
+  },
+  "moralCode": [
+    "Fair-play",
+    "Humilité",
+    "Loyauté",
+    "Maîtrise de soi",
+    "Persévérance",
+    "Respect"
+  ]
+}

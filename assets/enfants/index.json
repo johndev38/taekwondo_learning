@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0",
+  "language": "fr",
+  "sourceOrganization": "Fédération Française de Taekwondo et Disciplines Associées",
+  "collection": [
+    {
+      "id": "14K",
+      "title": "Ceinture jaune 14e keup",
+      "keup": 14,
+      "beltColor": "jaune",
+      "file": "14k_ceinture_jaune.json"
+    },
+    {
+      "id": "13K",
+      "title": "Ceinture jaune barrette orange 134e keup",
+      "keup": 13,
+      "beltColor": "jaune/orange",
+      "file": "13k_ceinture_jaune_barrette_orange.json"
+    },
+    {
+      "id": "12K",
+      "title": "Ceinture orange 12e keup",
+      "keup": 12,
+      "beltColor": "orange",
+      "file": "12k_ceinture_orange.json"
+    },
+    {
+      "id": "11K",
+      "title": "Ceinture orange barrette verte 11e keup",
+      "keup": 11,
+      "beltColor": "orange/verte",
+      "file": "11k_ceinture_orange_barrette_verte.json"
+    },
+    {
+      "id": "10K",
+      "title": "Ceinture verte 10e keup",
+      "keup": 10,
+      "beltColor": "verte",
+      "file": "10k_ceinture_verte.json"
+    },
+    {
+      "id": "9K",
+      "title": "Ceinture verte barrette violette 9e keup",
+      "keup": 9,
+      "beltColor": "verte/violette",
+      "file": "9k_ceinture_verte_barrette_violette.json"
+    },
+    {
+      "id": "8K",
+      "title": "Ceinture violette 8e keup",
+      "keup": 8,
+      "beltColor": "violette",
+      "file": "8k_ceinture_violette.json"
+    },
+    {
+      "id": "7K",
+      "title": "Ceinture violette barrette bleue 7e keup",
+      "keup": 7,
+      "beltColor": "violette/bleue",
+      "file": "7k_ceinture_violette_barrette_bleue.json"
+    },
+    {
+      "id": "6K",
+      "title": "Ceinture bleue 6e keup",
+      "keup": 6,
+      "beltColor": "bleue",
+      "file": "6k_ceinture_bleue.json"
+    }
+  ]
+}

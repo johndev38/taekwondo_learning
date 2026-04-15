@@ -4,13 +4,28 @@ import 'question_type_selection_screen.dart';
 class BeltSelectionScreen extends StatelessWidget {
   static const List<Map<String, String>> belts = [
     {'name': 'Jaune (9e keup)', 'file': 'questions_jaune.json'},
-    {'name': 'Jaune 1ère barrette (8e keup)', 'file': 'questions_jaune_barrette1.json'},
-    {'name': 'Jaune 2ème barrette (7e keup)', 'file': 'questions_jaune_barrette2.json'},
+    {
+      'name': 'Jaune 1ère barrette (8e keup)',
+      'file': 'questions_jaune_barrette1.json'
+    },
+    {
+      'name': 'Jaune 2ème barrette (7e keup)',
+      'file': 'questions_jaune_barrette2.json'
+    },
     {'name': 'Bleu (6e keup)', 'file': 'questions_bleu.json'},
-    {'name': 'Bleu 1ère barrette (5e keup)', 'file': 'questions_bleu_barrette1.json'},
-    {'name': 'Bleu 2ème barrette (4e keup)', 'file': 'questions_bleu_barrette2.json'},
+    {
+      'name': 'Bleu 1ère barrette (5e keup)',
+      'file': 'questions_bleu_barrette1.json'
+    },
+    {
+      'name': 'Bleu 2ème barrette (4e keup)',
+      'file': 'questions_bleu_barrette2.json'
+    },
     {'name': 'Rouge (3e keup)', 'file': 'questions_rouge.json'},
-    {'name': 'Rouge 1ère barrette (2e keup)', 'file': 'questions_rouge_barrette1.json'},
+    {
+      'name': 'Rouge 1ère barrette (2e keup)',
+      'file': 'questions_rouge_barrette1.json'
+    },
     {'name': 'Noire (1e keup)', 'file': 'questions_noire.json'},
   ];
 
@@ -72,21 +87,6 @@ class BeltSelectionScreen extends StatelessWidget {
             flexibleSpace: FlexibleSpaceBar(
               collapseMode: CollapseMode.pin,
               titlePadding: const EdgeInsets.fromLTRB(56, 0, 20, 14),
-              title: const Row(
-                children: [
-                  Icon(Icons.quiz_rounded, color: Colors.white70, size: 16),
-                  SizedBox(width: 8),
-                  Text(
-                    'QCM — TERMES',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w900,
-                      fontSize: 17,
-                      letterSpacing: 2,
-                    ),
-                  ),
-                ],
-              ),
               background: Stack(
                 fit: StackFit.expand,
                 children: [
@@ -151,7 +151,6 @@ class BeltSelectionScreen extends StatelessWidget {
               ),
             ),
           ),
-
           ..._groups.map((g) => _buildGroupSliver(context, g)),
           const SliverToBoxAdapter(child: SizedBox(height: 24)),
         ],
@@ -170,8 +169,7 @@ class BeltSelectionScreen extends StatelessWidget {
             Container(
               height: 62,
               decoration: BoxDecoration(
-                gradient:
-                    LinearGradient(colors: [g.topColor, g.bottomColor]),
+                gradient: LinearGradient(colors: [g.topColor, g.bottomColor]),
                 borderRadius: BorderRadius.circular(14),
               ),
               child: Row(
@@ -203,8 +201,8 @@ class BeltSelectionScreen extends StatelessWidget {
                   ),
                   Container(
                     margin: const EdgeInsets.only(right: 14),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 8, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.18),
                       borderRadius: BorderRadius.circular(8),
@@ -320,7 +318,8 @@ class _BeltItemCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 14),
-                Image.asset(beltImage, width: 30, height: 30, fit: BoxFit.contain),
+                Image.asset(beltImage,
+                    width: 30, height: 30, fit: BoxFit.contain),
                 const SizedBox(width: 14),
                 Expanded(
                   child: Column(

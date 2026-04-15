@@ -1,0 +1,120 @@
+{
+  "id": "13K",
+  "title": "Ceinture jaune barrette orange 13e keup",
+  "beltColor": "jaune/orange",
+  "displayName": "ceinture jaune barrette orange",
+  "keup": 13,
+  "sourcePdf": "https://www.fftda.fr/files/file/Grades/Ceintures/13_Jaune_Orange_Poster%20progression2.pdf",
+  "summary": "Niveau de consolidation après la jaune : introduction des positions de marche, cavalier et avant, premier poomsae Il Jang, coup de pied circulaire haut et travail du protocole avec un meilleur contrôle de la distance.",
+  "positions": {
+    "referenceTerms": [
+      "Ap",
+      "Joutchoum"
+    ],
+    "objectives": [
+      "Réaliser la position de marche ou combat",
+      "Réaliser la position du cavalier",
+      "Réaliser la position vers l’avant"
+    ],
+    "coachingPoints": [
+      "Garder une largeur identique en conservant les pieds parallèles",
+      "Rester stable dans les changements de position"
+    ]
+  },
+  "blocks": {
+    "referenceTerms": [
+      "Alé",
+      "Montong",
+      "Eulgoul"
+    ],
+    "objectives": [
+      "Réaliser le blocage bas",
+      "Réaliser le blocage moyen",
+      "Réaliser le blocage haut"
+    ],
+    "coachingPoints": [
+      "Sur tous les blocages, soigner la rotation des poignets",
+      "Les bras travaillent simultanément et les coudes ne s’écartent pas"
+    ]
+  },
+  "attacks": {
+    "referenceTerms": [
+      "Montong Pandé",
+      "Montong Baro"
+    ],
+    "objectives": [
+      "Réaliser le coup de poing même jambe",
+      "Réaliser le coup de poing jambe opposée"
+    ],
+    "coachingPoints": [
+      "Coordonner la frappe et la posture",
+      "Conserver une exécution simple et précise"
+    ]
+  },
+  "kicks": {
+    "referenceTerms": [
+      "Dolyo"
+    ],
+    "objectives": [
+      "Réaliser le coup de pied circulaire haut"
+    ],
+    "coachingPoints": [
+      "Toucher la cible avec le dessus du pied"
+    ]
+  },
+  "poomsae": {
+    "referenceTerms": [
+      "Il Jang"
+    ],
+    "objectives": [
+      "Connaître le diagramme",
+      "Synchroniser les mouvements",
+      "Respecter les niveaux",
+      "Faire des positions bien distinctes"
+    ],
+    "theme": "Le ciel"
+  },
+  "applicationPoomsae": null,
+  "stepSparring": {
+    "label": "Sebon Kyeurougi",
+    "objectives": [
+      "Trois pas combat",
+      "Réaliser le protocole",
+      "S’adapter à la distance de l’attaque"
+    ]
+  },
+  "selfDefense": {
+    "label": "Hoshinsul",
+    "objectives": [
+      "Pas de Hoshinsul pour le moment",
+      "Commencer à apprendre"
+    ]
+  },
+  "combat": {
+    "objectives": [
+      "Me déplacer et enchaîner une technique",
+      "Toucher dès que je suis touché",
+      "Au moins une jambe touche la cible"
+    ],
+    "coachingPoints": [
+      "Adapter ma distance au déplacement de l’adversaire",
+      "Toucher le plastron après que l’adversaire ait touché le mien"
+    ]
+  },
+  "citizenshipBadge": {
+    "name": "Ambition Citoyenne",
+    "valueAxis": [
+      "Respect",
+      "Encadrement"
+    ],
+    "pedagogicalFocus": "Respecter l’encadrement"
+  },
+  "moralCode": [
+    "Fair-play",
+    "Humilité",
+    "Loyauté",
+    "Maîtrise de soi",
+    "Persévérance",
+    "Respect"
+  ]
+}

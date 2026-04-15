@@ -28,15 +28,6 @@ class QcmSelectionScreen extends StatelessWidget {
             flexibleSpace: FlexibleSpaceBar(
               collapseMode: CollapseMode.pin,
               titlePadding: const EdgeInsets.fromLTRB(56, 0, 20, 14),
-              title: const Text(
-                'QCM',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w900,
-                  fontSize: 20,
-                  letterSpacing: 3,
-                ),
-              ),
               background: Container(
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
@@ -123,15 +114,14 @@ class QcmSelectionScreen extends StatelessWidget {
                     badgeColor: const Color(0xFF2E7D32),
                     onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(
-                          builder: (_) => BeltSelectionScreen()),
+                      MaterialPageRoute(builder: (_) => BeltSelectionScreen()),
                     ),
                   ),
                   const SizedBox(height: 16),
 
                   // Module B
                   _ModuleCard(
-                    title: 'Module B',
+                    title: 'Questionnaire Ceinture noire',
                     subtitle: 'Techniques avancées · Règles',
                     description:
                         'Section 3ème DAN disponible : institutions, vie associative, arbitrage, compétition poomsé et kyorugi.',

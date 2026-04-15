@@ -197,7 +197,11 @@ class _AccueilView extends StatelessWidget {
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Color(0xFF0A1628), Color(0xFF162840), Color(0xFF0A1628)],
+                  colors: [
+                    Color(0xFF0A1628),
+                    Color(0xFF162840),
+                    Color(0xFF0A1628)
+                  ],
                 ),
                 image: DecorationImage(
                   image: AssetImage('assets/images/background_poster.png'),
@@ -337,7 +341,8 @@ class _AccueilView extends StatelessWidget {
                 _BigCard(
                   title: 'Critères de passage',
                   subtitle: 'Exigences par ceinture',
-                  description: 'Blanc · Jaune · Orange · Vert · Bleu · Rouge · Noir',
+                  description:
+                      'Blanc · Jaune · Orange · Vert · Bleu · Rouge · Noir',
                   icon: Icons.workspace_premium_rounded,
                   gradient: const LinearGradient(
                     begin: Alignment.topLeft,
@@ -486,15 +491,6 @@ class _PoomsaeView extends StatelessWidget {
                 Icon(Icons.sports_martial_arts_rounded,
                     color: Colors.white70, size: 18),
                 SizedBox(width: 8),
-                Text(
-                  'POOMSAE',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w900,
-                    fontSize: 18,
-                    letterSpacing: 4,
-                  ),
-                ),
               ],
             ),
             background: Container(
@@ -549,7 +545,12 @@ class _PoomsaeView extends StatelessWidget {
   }
 
   List<Widget> _buildBeltGroups(BuildContext context) {
-    final groups = <String, List<Map>>{'Jaune': [], 'Bleu': [], 'Rouge': [], 'Noire': []};
+    final groups = <String, List<Map>>{
+      'Jaune': [],
+      'Bleu': [],
+      'Rouge': [],
+      'Noire': []
+    };
     for (final p in _poomsaes) {
       groups[p['belt'] as String]?.add(p);
     }
@@ -785,7 +786,7 @@ class _BigCard extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(20),
         child: Container(
-          height: 116,
+          constraints: const BoxConstraints(minHeight: 116),
           decoration: BoxDecoration(
             gradient: gradient,
             borderRadius: BorderRadius.circular(20),
@@ -834,8 +835,8 @@ class _BigCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Container(
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 3),
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.18),
                         borderRadius: BorderRadius.circular(8),

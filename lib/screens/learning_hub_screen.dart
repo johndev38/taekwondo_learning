@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'belt_selection_for_learning_screen.dart';
+import 'enfants_screen.dart';
 import 'history_screen.dart';
 import 'module_b_review_screen.dart';
 import 'package:taekwondo_knowledge/screens/rules_screen.dart';
@@ -30,15 +31,6 @@ class LearningHubScreen extends StatelessWidget {
             flexibleSpace: FlexibleSpaceBar(
               collapseMode: CollapseMode.pin,
               titlePadding: const EdgeInsets.fromLTRB(56, 0, 20, 14),
-              title: const Text(
-                'APPRENTISSAGE',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w900,
-                  fontSize: 18,
-                  letterSpacing: 2,
-                ),
-              ),
               background: Container(
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
@@ -111,7 +103,7 @@ class LearningHubScreen extends StatelessWidget {
 
                   // Kibon - Vocabulaire
                   _LearningCard(
-                    title: 'Kibon',
+                    title: 'Termes',
                     subtitle: 'Vocabulaire & techniques coréennes',
                     description:
                         'Apprenez les termes officiels du Taekwondo : commandes, noms des techniques de pied et de poing, positions et déplacements.',
@@ -123,7 +115,8 @@ class LearningHubScreen extends StatelessWidget {
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (_) => const BeltSelectionForLeaningScreen()),
+                          builder: (_) =>
+                              const BeltSelectionForLeaningScreen()),
                     ),
                   ),
                   const SizedBox(height: 16),
@@ -166,9 +159,27 @@ class LearningHubScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
 
+                  // Enfants
+                  _LearningCard(
+                    title: 'Enfants',
+                    subtitle: 'Progression 6e→12e keup',
+                    description:
+                        'Consultez les fiches de progression officielle FFTDA pour les ceintures enfants : positions, blocages, coups de pied, poomsae, combat et code moral par niveau.',
+                    icon: Icons.child_care_rounded,
+                    topColor: const Color(0xFF6A1B9A),
+                    bottomColor: const Color(0xFF38006B),
+                    tag: 'Progression',
+                    tagIcon: Icons.trending_up_rounded,
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const EnfantsScreen()),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+
                   // Module B — Fiches
                   _LearningCard(
-                    title: 'Module B',
+                    title: 'Questionnaire Ceinture noire',
                     subtitle: '2ème DAN · 3ème DAN',
                     description:
                         'Révisez toutes les questions et réponses officielles du Module B : gouvernance, vie associative, arbitrage, compétition Poomsé et Kyorugi.',
@@ -323,8 +334,8 @@ class _LearningCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 16, vertical: 8),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(12),

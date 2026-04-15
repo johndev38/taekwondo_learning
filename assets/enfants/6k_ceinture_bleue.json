@@ -1,0 +1,132 @@
+{
+  "id": "6K",
+  "title": "Ceinture bleue 6e keup",
+  "beltColor": "bleue",
+  "displayName": "ceinture bleue",
+  "keup": 6,
+  "sourcePdf": "https://www.fftda.fr/files/file/Grades/Ceintures/6_Bleue_Poster%20progression.pdf",
+  "summary": "Entrée dans la bleue : position croisée arrière, frappe revers du poing, coup de pied retourné et combat orienté tactique, stratégie et bagage technique varié.",
+  "positions": {
+    "referenceTerms": [
+      "Dwitkoa"
+    ],
+    "objectives": [
+      "Réaliser la position croisée arrière",
+      "Positionner le corps",
+      "Répartir son poids",
+      "Respecter l’espace entre les pieds"
+    ],
+    "coachingPoints": [
+      "Coordonner le pied avant et le pied arrière sans perdre l’équilibre lors du déplacement"
+    ]
+  },
+  "blocks": {
+    "referenceTerms": [
+      "Batangson Nullo"
+    ],
+    "objectives": [
+      "Réaliser un blocage de pression de la paume de la main",
+      "Armer correctement",
+      "Respecter la trajectoire"
+    ],
+    "coachingPoints": [
+      "Enchaîner les deux techniques en déplacement à droite et à gauche"
+    ]
+  },
+  "attacks": {
+    "referenceTerms": [
+      "Deungjumok Ap"
+    ],
+    "objectives": [
+      "Frapper avec le revers du poing"
+    ],
+    "coachingPoints": [
+      "Armer la main pour maximiser la rotation du poignet",
+      "Garder le poing fermé pour frapper avec le dos de la main"
+    ]
+  },
+  "kicks": {
+    "referenceTerms": [
+      "Momdollyo"
+    ],
+    "objectives": [
+      "Réaliser le coup de pied retourné"
+    ],
+    "coachingPoints": [
+      "Faire tourner le corps",
+      "Armer le genou pour toucher la cible avec le plat du pied ou le talon",
+      "Conserver l’équilibre",
+      "Revenir au point de départ"
+    ]
+  },
+  "poomsae": {
+    "referenceTerms": [
+      "Sa Jang"
+    ],
+    "objectives": [
+      "Connaître le diagramme",
+      "Connaître la terminologie",
+      "Respecter les niveaux",
+      "Faire des positions bien distinctes et stables",
+      "Faire des mouvements coordonnés, synchronisés et fluides",
+      "Changer de direction sur la pointe du pied sans perte d’équilibre"
+    ],
+    "theme": "Le tonnerre et la foudre"
+  },
+  "applicationPoomsae": {
+    "label": "Hanbon Kyeurougi",
+    "objectives": [
+      "Enchaîner Sonnal Bakkatmakki et Sonkkeut Jileugi, Apchagi, Jileugi",
+      "Enchaîner Jebipoum sonnal Anchigi, Muleup (coup de genou), Ollyochigi",
+      "Enchaîner Bakkatmakki, Apchagi et Sonnal anchigi"
+    ]
+  },
+  "stepSparring": null,
+  "selfDefense": {
+    "label": "Hoshinsul",
+    "objectives": [
+      "Double saisie même poignet",
+      "Saisie directe des deux poignets",
+      "Chute avant - Chute arrière"
+    ]
+  },
+  "combat": {
+    "objectives": [
+      "Mettre en place de la tactique et de la stratégie",
+      "Gérer les distances",
+      "Être dans le bon timing",
+      "Utiliser un bagage technique varié"
+    ],
+    "coachingPoints": [
+      "Me déplacer",
+      "Me placer",
+      "Feinter",
+      "Faire des appels",
+      "Soigner l’armement",
+      "Respecter la trajectoire",
+      "Choisir la bonne surface et la bonne hauteur de frappe",
+      "Soigner la qualité d’impact",
+      "Soigner le retour de frappe",
+      "Soigner le replacement",
+      "Développer la vitesse d’exécution",
+      "Conserver l’équilibre général",
+      "Savoir faire du multi-temps jambe avant / arrière"
+    ]
+  },
+  "citizenshipBadge": {
+    "name": "Ambition Citoyenne",
+    "valueAxis": [
+      "Respect",
+      "Soi-même"
+    ],
+    "pedagogicalFocus": "Se respecter soi-même"
+  },
+  "moralCode": [
+    "Fair-play",
+    "Humilité",
+    "Loyauté",
+    "Maîtrise de soi",
+    "Persévérance",
+    "Respect"
+  ]
+}

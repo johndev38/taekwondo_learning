@@ -1,0 +1,122 @@
+{
+  "id": "14K",
+  "title": "Ceinture jaune 14e keup",
+  "beltColor": "jaune",
+  "displayName": "ceinture jaune",
+  "keup": 14,
+  "sourcePdf": "https://www.fftda.fr/files/file/Grades/Ceintures/14_Jaune_Poster%20progression%20keup%20enfants2.pdf",
+  "summary": "Premier niveau enfant : découverte des bases du taekwondo avec les salutations, les trois niveaux de blocage, les premiers coups de poing et deux coups de pied simples, en insistant sur la posture, l’équilibre et la distance.",
+  "positions": {
+    "referenceTerms": [
+      "Moa",
+      "Naranhi",
+      "Tchaliot",
+      "Kyongnié",
+      "Tchoumbi"
+    ],
+    "objectives": [
+      "Réaliser le Tchaliot",
+      "Réaliser Kyongnié (le salut)",
+      "Réaliser Tchoumbi (départ)"
+    ],
+    "coachingPoints": [
+      "Garder une largeur identique en conservant les pieds parallèles",
+      "Se placer droit et stable dès la position de départ"
+    ]
+  },
+  "blocks": {
+    "referenceTerms": [
+      "Alé",
+      "Montong",
+      "Eulgoul"
+    ],
+    "objectives": [
+      "Réaliser le blocage bas",
+      "Réaliser le blocage moyen",
+      "Réaliser le blocage haut"
+    ],
+    "coachingPoints": [
+      "Faire passer la trajectoire par l’axe médian du corps",
+      "Tourner les poings au bon moment",
+      "Garder le buste droit pendant le blocage"
+    ]
+  },
+  "attacks": {
+    "referenceTerms": [
+      "Montong Bandé",
+      "Montong Baro"
+    ],
+    "objectives": [
+      "Réaliser le coup de poing même jambe",
+      "Réaliser le coup de poing jambe opposée"
+    ],
+    "coachingPoints": [
+      "Viser correctement la ligne médiane",
+      "Coordonner le bras qui frappe et la posture générale"
+    ]
+  },
+  "kicks": {
+    "referenceTerms": [
+      "Ap",
+      "Bandal"
+    ],
+    "objectives": [
+      "Réaliser le coup de pied direct",
+      "Réaliser le coup de pied circulaire moyen"
+    ],
+    "coachingPoints": [
+      "Monter le genou puis tendre la jambe sans perdre l’équilibre",
+      "Soigner l’orientation du pied d’impact"
+    ]
+  },
+  "poomsae": {
+    "referenceTerms": [],
+    "objectives": [
+      "Pas de poomsae pour le moment",
+      "Commencer à apprendre"
+    ],
+    "theme": null
+  },
+  "applicationPoomsae": null,
+  "stepSparring": {
+    "label": "Sebon Kyeurougi",
+    "objectives": [
+      "Trois pas combat",
+      "Réaliser le protocole",
+      "S’adapter à la distance de l’attaque"
+    ]
+  },
+  "selfDefense": {
+    "label": "Hoshinsul",
+    "objectives": [
+      "Pas de Hoshinsul pour le moment",
+      "Commencer à apprendre"
+    ]
+  },
+  "combat": {
+    "objectives": [
+      "Me déplacer et enchaîner une technique",
+      "Toucher dès que je suis touché",
+      "Au moins une jambe touche la cible"
+    ],
+    "coachingPoints": [
+      "Adapter ma distance au déplacement de l’adversaire pour toucher le plastron"
+    ]
+  },
+  "citizenshipBadge": {
+    "name": "Ambition Citoyenne",
+    "valueAxis": [
+      "Respect",
+      "Lieux"
+    ],
+    "pedagogicalFocus": "Respecter le ou les lieux de pratique"
+  },
+  "moralCode": [
+    "Fair-play",
+    "Humilité",
+    "Loyauté",
+    "Maîtrise de soi",
+    "Persévérance",
+    "Respect"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "11K",
+  "title": "Ceinture orange barrette verte 11e keup",
+  "beltColor": "orange/verte",
+  "displayName": "ceinture orange barrette verte",
+  "keup": 11,
+  "sourcePdf": "https://www.fftda.fr/files/file/Grades/Ceintures/11_Orange_Verte_Poster2.pdf",
+  "summary": "Niveau de transition entre orange et verte : maîtrise des fondamentaux mains ouvertes, introduction du coup de pied poussé, Yi Jang et premiers déplacements de combat plus dynamiques.",
+  "positions": {
+    "referenceTerms": [
+      "Dwitt koubi"
+    ],
+    "objectives": [
+      "Positionner le corps",
+      "Répartir son poids",
+      "Respecter l’espace entre jambes"
+    ],
+    "coachingPoints": [
+      "Avancer en gardant les genoux fléchis et les pieds correctement orientés"
+    ]
+  },
+  "blocks": {
+    "referenceTerms": [
+      "Sonnal Bakkat"
+    ],
+    "objectives": [
+      "Armer correctement",
+      "Respecter la trajectoire",
+      "Respecter les niveaux"
+    ],
+    "coachingPoints": [
+      "Passer de poing fermé à main ouverte"
+    ]
+  },
+  "attacks": {
+    "referenceTerms": [
+      "Sonnal Mok An"
+    ],
+    "objectives": [
+      "Armer correctement",
+      "Respecter la trajectoire",
+      "Respecter les niveaux",
+      "Enchaîner les deux coups de poing"
+    ],
+    "coachingPoints": [
+      "Poing serré à la ceinture",
+      "Tranchant de la main sur la raquette"
+    ]
+  },
+  "kicks": {
+    "referenceTerms": [
+      "Milo"
+    ],
+    "objectives": [
+      "Réaliser le coup de pied poussé",
+      "Avoir un armement correct",
+      "Avoir une trajectoire correcte",
+      "Réaliser le pivot du pied"
+    ],
+    "coachingPoints": [
+      "Ne pas poser le pied",
+      "Ne pas baisser le genou jusqu’à l’extension de la jambe",
+      "Pousser avec le plat du pied"
+    ]
+  },
+  "poomsae": {
+    "referenceTerms": [
+      "Yi Jang"
+    ],
+    "objectives": [
+      "Connaître le diagramme",
+      "Synchroniser les mouvements",
+      "Respecter les niveaux",
+      "Faire des positions bien distinctes et stables",
+      "Se déplacer et changer de direction sur la pointe du pied"
+    ],
+    "theme": "Le lac"
+  },
+  "applicationPoomsae": null,
+  "stepSparring": {
+    "label": "Doubon Kyeurougi",
+    "objectives": [
+      "Deux pas combat",
+      "Respecter le protocole dans les deux rôles",
+      "Faire le kihap sur la dernière technique"
+    ]
+  },
+  "selfDefense": {
+    "label": "Hoshinsul",
+    "objectives": [
+      "Pas de Hoshinsul pour le moment",
+      "Commencer à apprendre"
+    ]
+  },
+  "combat": {
+    "objectives": [
+      "Sautiller",
+      "Changer de garde sur place",
+      "Me déplacer un pas en avant",
+      "Utiliser les deux jambes en attaque",
+      "Toucher sans être touché",
+      "Au moins une jambe touche la cible"
+    ],
+    "coachingPoints": [
+      "Adapter la distance au déplacement de l’adversaire",
+      "Toucher le plastron dans le bon timing",
+      "Soigner le retour de frappe",
+      "Soigner le replacement",
+      "Soigner la vitesse d’exécution",
+      "Conserver l’équilibre général"
+    ]
+  },
+  "citizenshipBadge": {
+    "name": "Ambition Citoyenne",
+    "valueAxis": [
+      "Engagement",
+      "Implication"
+    ],
+    "pedagogicalFocus": "Pratiquer de façon assidue et impliquée"
+  },
+  "moralCode": [
+    "Fair-play",
+    "Humilité",
+    "Loyauté",
+    "Maîtrise de soi",
+    "Persévérance",
+    "Respect"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "9K",
+  "title": "Ceinture verte barrette violette 9e keup",
+  "beltColor": "verte/violette",
+  "displayName": "ceinture verte barrette violette",
+  "keup": 9,
+  "sourcePdf": "https://www.fftda.fr/files/file/Grades/Ceintures/9_Vert_Violet_Poster%20progression.pdf",
+  "summary": "Niveau de transition vers la violette : travail sur l’enchaînement de positions variées, blocages extérieurs, premières attaques à main ouverte plus complexes, coup de pied arrière et hanbon kyeurougi.",
+  "positions": {
+    "referenceTerms": [
+      "Ap",
+      "Ap koubi",
+      "Dwitt koubi"
+    ],
+    "objectives": [
+      "Positionner le corps",
+      "Répartir son poids",
+      "Respecter l’espace entre les pieds"
+    ],
+    "coachingPoints": [
+      "Enchaîner des positions différentes"
+    ]
+  },
+  "blocks": {
+    "referenceTerms": [
+      "Momtong Bakkat"
+    ],
+    "objectives": [
+      "Bloquer avec le bras vers l’extérieur",
+      "Armer correctement",
+      "Respecter la trajectoire"
+    ],
+    "coachingPoints": [
+      "La rotation des poignets et le travail simultané des bras participent à l’efficacité du blocage"
+    ]
+  },
+  "attacks": {
+    "referenceTerms": [
+      "Jebipoum sonnal Anchigi"
+    ],
+    "objectives": [
+      "Frapper du tranchant de la main au cou vers l’intérieur"
+    ],
+    "coachingPoints": [
+      "Exécuter simultanément le blocage et l’attaque à mains ouvertes"
+    ]
+  },
+  "kicks": {
+    "referenceTerms": [
+      "Dwitt"
+    ],
+    "objectives": [
+      "Réaliser le coup de pied arrière",
+      "Faire différents coups de pieds avec la jambe arrière et la jambe avant"
+    ],
+    "coachingPoints": [
+      "Ne pas perdre l’équilibre lors de la rotation du corps et de l’extension de la jambe"
+    ]
+  },
+  "poomsae": {
+    "referenceTerms": [
+      "Sam Jang"
+    ],
+    "objectives": [
+      "Connaître le diagramme",
+      "Synchroniser les mouvements",
+      "Respecter les niveaux",
+      "Faire des positions bien distinctes et stables",
+      "Se déplacer et changer de direction sur la pointe du pied sans perte d’équilibre"
+    ],
+    "theme": "Le feu"
+  },
+  "applicationPoomsae": {
+    "label": "Hanbon Kyeurougi",
+    "objectives": [
+      "Enchaîner Alé makki, Apchagi et Eulgoul Jileugi",
+      "Enchaîner Momtong makki et Sonnal mokchigi",
+      "Enchaîner an sonnal bakkat makki et Dou Bon jileugi"
+    ]
+  },
+  "stepSparring": null,
+  "selfDefense": {
+    "label": "Hoshinsul",
+    "objectives": [
+      "Saisie croisée",
+      "Saisie directe (miroir)",
+      "Chute avant - Jeonbangnakbeop",
+      "Chute arrière - Hubangnakbeop"
+    ]
+  },
+  "combat": {
+    "objectives": [
+      "Pas chassés, pas glissés",
+      "Utiliser les deux jambes en attaque",
+      "Toucher avant d’être touché",
+      "Au moins une jambe touche la cible"
+    ],
+    "coachingPoints": [
+      "Me déplacer",
+      "Me placer",
+      "Soigner l’armement",
+      "Respecter la trajectoire",
+      "Choisir la bonne surface et la bonne hauteur de frappe",
+      "Soigner le retour de frappe",
+      "Soigner le replacement",
+      "Développer la vitesse d’exécution",
+      "Conserver l’équilibre général",
+      "Apprendre le multi-temps"
+    ]
+  },
+  "citizenshipBadge": {
+    "name": "Ambition Citoyenne",
+    "valueAxis": [
+      "Camaraderie",
+      "Respect"
+    ],
+    "pedagogicalFocus": "Développer l’esprit de groupe et le respect"
+  },
+  "moralCode": null
+}

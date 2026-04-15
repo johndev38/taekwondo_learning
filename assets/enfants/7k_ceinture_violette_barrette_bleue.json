@@ -1,0 +1,127 @@
+{
+  "id": "7K",
+  "title": "Ceinture violette barrette bleue 7e keup",
+  "beltColor": "violette/bleue",
+  "displayName": "ceinture violette barrette bleue",
+  "keup": 7,
+  "sourcePdf": "https://www.fftda.fr/files/file/Grades/Ceintures/7_Violette_Bleue_Poster2.pdf",
+  "summary": "Niveau de transition vers la bleue : changement de direction, blocage de pression de paume, attaque du bout des doigts, croissant extérieur et approfondissement tactique du combat.",
+  "positions": {
+    "referenceTerms": [
+      "Wen",
+      "Oren"
+    ],
+    "objectives": [
+      "Positionner le corps",
+      "Répartir son poids",
+      "Respecter l’espace entre les pieds",
+      "Prendre une position gauche ou droite"
+    ],
+    "coachingPoints": [
+      "Changer de direction en gardant les pieds correctement orientés"
+    ]
+  },
+  "blocks": {
+    "referenceTerms": [
+      "Batangson Nullo"
+    ],
+    "objectives": [
+      "Réaliser un blocage descendant",
+      "Armer correctement",
+      "Respecter la trajectoire"
+    ],
+    "coachingPoints": [
+      "Passer de main fermée à main ouverte gardée horizontalement",
+      "Coordonner avec le déplacement"
+    ]
+  },
+  "attacks": {
+    "referenceTerms": [
+      "Pyonsonkeut Sewojireugi"
+    ],
+    "objectives": [
+      "Frapper du bout des doigts"
+    ],
+    "coachingPoints": [
+      "Passer de main fermée à main ouverte pour piquer",
+      "Garder les doigts serrés",
+      "Coordonner avec le déplacement"
+    ]
+  },
+  "kicks": {
+    "referenceTerms": [
+      "Bakkatchagi"
+    ],
+    "objectives": [
+      "Réaliser le coup de pied en croissant vers l’extérieur"
+    ],
+    "coachingPoints": [
+      "Soigner l’armement",
+      "Respecter la trajectoire",
+      "Réaliser le pivot du pied d’appui",
+      "Toucher avec l’extérieur du pied"
+    ]
+  },
+  "poomsae": {
+    "referenceTerms": [
+      "Sa Jang"
+    ],
+    "objectives": [
+      "Connaître le diagramme",
+      "Synchroniser les mouvements",
+      "Respecter les niveaux",
+      "Faire des positions bien distinctes et stables",
+      "Changer de direction sur la pointe du pied sans perte d’équilibre"
+    ],
+    "theme": "Le tonnerre et la foudre"
+  },
+  "applicationPoomsae": {
+    "label": "Hanbon Kyeurougi",
+    "objectives": [
+      "Enchaîner Sonnal Bakkatmakki et Sonkkeut Jileugi, Apchagi, Jileugi",
+      "Enchaîner Jebipoum sonnal Anchigi, Muleup (coup de genou), Ollyochigi",
+      "Enchaîner Bakkatmakki, Apchagi et Sonnal anchigi"
+    ]
+  },
+  "stepSparring": null,
+  "selfDefense": {
+    "label": "Hoshinsul",
+    "objectives": [
+      "Double saisie même poignet",
+      "Saisie directe des deux poignets",
+      "Chute avant - Jeonbangnakbeop",
+      "Chute arrière - Hubangnakbeop"
+    ]
+  },
+  "combat": {
+    "objectives": [
+      "Utiliser les deux jambes en attaque et en défense",
+      "Les deux jambes touchent la cible",
+      "Neutraliser"
+    ],
+    "coachingPoints": [
+      "Me déplacer",
+      "Me placer",
+      "Feinter",
+      "Faire des appels",
+      "Soigner l’armement",
+      "Respecter la trajectoire",
+      "Choisir la bonne surface et la bonne hauteur de frappe",
+      "Soigner la qualité d’impact",
+      "Soigner le retour de frappe",
+      "Soigner le replacement",
+      "Développer la vitesse d’exécution",
+      "Conserver l’équilibre général",
+      "Savoir faire du multi-temps jambe avant / arrière"
+    ]
+  },
+  "citizenshipBadge": {
+    "name": "Ambition Citoyenne",
+    "valueAxis": [
+      "Dépassement de soi",
+      "Engagement"
+    ],
+    "pedagogicalFocus": "S’investir et progresser avec exigence"
+  },
+  "moralCode": null
+}

@@ -1,0 +1,132 @@
+{
+  "id": "8K",
+  "title": "Ceinture violette 8e keup",
+  "beltColor": "violette",
+  "displayName": "ceinture violette",
+  "keup": 8,
+  "sourcePdf": "https://www.fftda.fr/files/file/Grades/Ceintures/8_Violette_poster%20progression2.pdf",
+  "summary": "Entrée dans la violette : fluidité des transitions, travail coordonné à mains ouvertes, coup de pied en croissant intérieur, hanbon kyeurougi plus rapide et combat avec feintes et appels.",
+  "positions": {
+    "referenceTerms": [
+      "Dwitt koubi",
+      "Ap koubi"
+    ],
+    "objectives": [
+      "Positionner le corps",
+      "Répartir son poids",
+      "Respecter l’espace entre les pieds",
+      "Faire la transition Dwitt koubi / Ap koubi"
+    ],
+    "coachingPoints": [
+      "Enchaîner les positions sans avoir à s’ajuster"
+    ]
+  },
+  "blocks": {
+    "referenceTerms": [
+      "Sonnal",
+      "Sonnal Godro Bakkat"
+    ],
+    "objectives": [
+      "Bloquer avec le tranchant de la main vers l’extérieur",
+      "Armer correctement",
+      "Respecter la trajectoire"
+    ],
+    "coachingPoints": [
+      "Faire tourner les poignets mains ouvertes",
+      "Coordonner les bras pendant le déplacement à droite et à gauche"
+    ]
+  },
+  "attacks": {
+    "referenceTerms": [
+      "Jebipoum sonnal Anchigi"
+    ],
+    "objectives": [
+      "Réaliser la frappe de l’hirondelle",
+      "Enchaîner les deux coups de poing"
+    ],
+    "coachingPoints": [
+      "Faire tourner les poignets mains ouvertes",
+      "Coordonner les bras et le déplacement à droite et à gauche"
+    ]
+  },
+  "kicks": {
+    "referenceTerms": [
+      "Antchagi"
+    ],
+    "objectives": [
+      "Faire le coup de pied en croissant vers l’intérieur",
+      "Faire différents coups de pieds avec la jambe arrière et la jambe avant"
+    ],
+    "coachingPoints": [
+      "Soigner l’armement",
+      "Respecter la trajectoire",
+      "Réaliser le pivot du pied d’appui",
+      "Toucher avec l’intérieur du pied"
+    ]
+  },
+  "poomsae": {
+    "referenceTerms": [
+      "Sam Jang"
+    ],
+    "objectives": [
+      "Connaître le diagramme",
+      "Connaître la terminologie",
+      "Respecter les niveaux",
+      "Faire des positions bien distinctes et stables",
+      "Faire des mouvements coordonnés, synchronisés et fluides",
+      "Changer de direction sur la pointe du pied sans perte d’équilibre"
+    ],
+    "theme": "Le feu"
+  },
+  "applicationPoomsae": {
+    "label": "Hanbon Kyeurougi",
+    "objectives": [
+      "Enchaîner Alé makki, Apchagi et Eulgoul Jileugi",
+      "Enchaîner Momtong makki et Sonnal mokchigi",
+      "Enchaîner an sonnal bakkat makki et Dou Bon jileugi",
+      "Enchaîner rapidement défense et attaque"
+    ]
+  },
+  "stepSparring": null,
+  "selfDefense": {
+    "label": "Hoshinsul",
+    "objectives": [
+      "Saisie croisée",
+      "Saisie directe (miroir)",
+      "Chute avant - Jeonbangnakbeop",
+      "Chute arrière - Hubangnakbeop"
+    ]
+  },
+  "combat": {
+    "objectives": [
+      "Pas chassés, pas glissés",
+      "Utiliser les deux jambes en attaque et en défense",
+      "Les deux jambes touchent la cible",
+      "Neutraliser"
+    ],
+    "coachingPoints": [
+      "Me déplacer",
+      "Me placer",
+      "Feinter",
+      "Faire des appels",
+      "Soigner l’armement",
+      "Respecter la trajectoire",
+      "Choisir la bonne surface et la bonne hauteur de frappe",
+      "Soigner la qualité d’impact",
+      "Soigner le retour de frappe",
+      "Soigner le replacement",
+      "Développer la vitesse d’exécution",
+      "Conserver l’équilibre général",
+      "Savoir faire du multi-temps jambe avant / arrière"
+    ]
+  },
+  "citizenshipBadge": {
+    "name": "Ambition Citoyenne",
+    "valueAxis": [
+      "Soutien",
+      "Solidarité"
+    ],
+    "pedagogicalFocus": "Aider et soutenir ses partenaires"
+  },
+  "moralCode": null
+}

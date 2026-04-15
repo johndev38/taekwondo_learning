@@ -74,31 +74,9 @@ class BeltSelectionForLeaningScreen extends StatelessWidget {
             flexibleSpace: FlexibleSpaceBar(
               collapseMode: CollapseMode.pin,
               titlePadding: const EdgeInsets.fromLTRB(56, 0, 20, 14),
-              title: const Row(
-                children: [
-                  Icon(Icons.record_voice_over_rounded,
-                      color: Colors.white70, size: 16),
-                  SizedBox(width: 8),
-                  Text(
-                    'KIBON',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w900,
-                      fontSize: 18,
-                      letterSpacing: 4,
-                    ),
-                  ),
-                ],
-              ),
               background: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Image.asset(
-                    'assets/images/background_poster.png',
-                    fit: BoxFit.cover,
-                    color: Colors.black.withOpacity(0.72),
-                    colorBlendMode: BlendMode.darken,
-                  ),
                   Container(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
@@ -129,9 +107,7 @@ class BeltSelectionForLeaningScreen extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                                width: 32,
-                                height: 2.5,
-                                color: _accentRed),
+                                width: 32, height: 2.5, color: _accentRed),
                             const SizedBox(width: 8),
                             Text(
                               'VOCABULAIRE OFFICIEL',
@@ -246,8 +222,7 @@ class BeltSelectionForLeaningScreen extends StatelessWidget {
                   onTap: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) =>
-                          TermLearningScreen(belt: item.beltKey),
+                      builder: (_) => TermLearningScreen(belt: item.beltKey),
                     ),
                   ),
                 )),
