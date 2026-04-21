@@ -3,6 +3,7 @@ import 'belt_selection_for_learning_screen.dart';
 import 'enfants_screen.dart';
 import 'history_screen.dart';
 import 'module_b_review_screen.dart';
+import 'reference_officielle_screen.dart';
 import 'package:taekwondo_knowledge/screens/rules_screen.dart';
 
 class LearningHubScreen extends StatelessWidget {
@@ -173,6 +174,26 @@ class LearningHubScreen extends StatelessWidget {
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(builder: (_) => const EnfantsScreen()),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+
+                  // Référence officielle FFTDA
+                  _LearningCard(
+                    title: 'Référence officielle',
+                    subtitle: 'Positions · Techniques · Lexique FFTDA',
+                    description:
+                        'Consultez le référentiel officiel FFTDA : les 17 positions de base, les techniques de pied (Tchagui), les 50 blocages (Maki), les attaques membres supérieurs et le lexique coréen complet.',
+                    icon: Icons.library_books_rounded,
+                    topColor: const Color(0xFF4A148C),
+                    bottomColor: const Color(0xFF1A0A2E),
+                    tag: 'FFTDA',
+                    tagIcon: Icons.verified_rounded,
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) =>
+                              const ReferenceOfficielleScreen()),
                     ),
                   ),
                   const SizedBox(height: 16),

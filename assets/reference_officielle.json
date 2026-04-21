@@ -1,0 +1,522 @@
+{
+  "source": "FFTDA — https://www.fftda.fr/fr/13-les-positions-de-base.html",
+  "sourceLabel": "Fédération Française de Taekwondo et Disciplines Associées",
+  "formes": {
+    "kibon": {
+      "description": "La terminologie officielle des «Kibon» est le Coréen.",
+      "composition": [
+        "Des techniques d'attaques des membres supérieurs",
+        "Des techniques de blocages des membres supérieurs",
+        "Des techniques d'attaques des membres inférieurs",
+        "Des techniques sautées",
+        "Des déplacements et enchaînements",
+        "Des positions",
+        "Un lexique sur les commandements et parties du corps"
+      ],
+      "criteres_evaluation": [
+        "La vitesse d'exécution",
+        "La puissance et efficacité",
+        "La stabilité et équilibre",
+        "La maîtrise technique et précision",
+        "La concentration et détermination",
+        "La connaissance de la terminologie"
+      ]
+    },
+    "kyorugui": {
+      "description": "Les «KYORUGUI» sont des assauts conventionnels permettant aux pratiquants de démontrer précision, maîtrise technique et concentration.",
+      "formes_codifiees": [
+        "SE BON KYORUGUI",
+        "DOU BON KYORUGUI",
+        "HAN BON KYORUGUI",
+        "BAL KYORUGUI",
+        "KYORUGUI"
+      ],
+      "note": "Les 4 premières formes s'exécutent sans touches. La cinquième (KYORUGUI) s'exécute en combat «touches» (cf règlement fédéral).",
+      "criteres": [
+        "Vitesse de réaction, d'exécution et d'anticipation",
+        "Puissance et efficacité technique contrôlées",
+        "Stabilité et équilibre",
+        "Originalité, variété et réalisme"
+      ],
+      "details": [
+        {
+          "nom": "SE BON KYORUGUI",
+          "description": "Chong et Hong sont attaquant ou défenseur, face à face, à portée d'attaque de poing.",
+          "sequence": [
+            "Chong et Hong : Tchaliot Seugui ; Kyongnye ; Kibon Joumbi Seugui",
+            "Chong : Ap Koubi (en reculant la jambe droite) Are Maki (bras gauche) «Kihap»",
+            "Hong : «Kihap»",
+            "Chong : Ap Koubi, Eulgoul Jileugui (en avançant le côté droit)",
+            "Hong : Blocage en reculant d'un pas",
+            "Chong : Ap Koubi, Eulgoul Jileugui (en avançant côté gauche)",
+            "Hong : Blocage identique au précédent en reculant d'un pas",
+            "Chong : Ap Koubi, Eulgoul Jileugui (en avançant le côté droit)",
+            "Hong : Blocage et riposte en reculant ; «Kihap»",
+            "Chong & Hong : Kibon Joumbi Seugui ; Tchaliot Seugui ; Kyongnye"
+          ]
+        },
+        {
+          "nom": "DOU BON KYORUGUI",
+          "description": "Identique à SE BON KYORUGUI sur deux attaques seulement."
+        },
+        {
+          "nom": "HAN BON KYORUGUI",
+          "description": "Chong et Hong sont attaquant ou défenseur, face à face, à portée d'attaque de poing.",
+          "sequence": [
+            "Chong et Hong : Tchaliot Seugui ; Kyongnye ; Kibon Joumbi Seugui",
+            "Chong : Ap Koubi (en reculant la jambe droite) Are Maki (bras gauche) «Kihap»",
+            "Hong : «Kihap»",
+            "Chong : Ap Koubi, Eulgoul Jileugui (en avançant le côté droit)",
+            "Hong : Blocage avec déplacement ou esquive, riposte ou contre-attaque",
+            "Chong & Hong : Kibon Joumbi Seugui ; Tchaliot Seugui ; Kyongnye"
+          ]
+        },
+        {
+          "nom": "BAL KYORUGUI",
+          "description": "Chong et Hong sont attaquant ou défenseur, face à face, à portée d'attaque de jambe.",
+          "sequence": [
+            "Chong et Hong : Tchaliot Seugui ; Kyongnye",
+            "Chong : Kiorugui Seugui «Kihap»",
+            "Hong : Kyorugui Seugi «Kihap»",
+            "Chong : Attaque avec une technique de jambe",
+            "Hong : Riposte avec la même technique",
+            "Chong & Hong : Tchaliot Seugui ; Kyongnye"
+          ]
+        }
+      ],
+      "criteres_precision": {
+        "note": "Pour SE BON, DOU BON et HAN BON KYORUGUI :",
+        "membres_inferieurs": "15 cm maximum entre le point visé et la surface de frappe",
+        "membres_superieurs": "10 cm maximum entre le point visé et la surface de frappe",
+        "bal_kyorugui": "La distance dans les attaques et les défenses devront être les plus proches possible du pratiquant et toujours orientées vers celui-ci"
+      }
+    }
+  },
+  "lexique": {
+    "termes": [
+      { "coreen": "Tchaliot", "francais": "Garde à vous" },
+      { "coreen": "Kyongnye", "francais": "Saluez" },
+      { "coreen": "Tchoumbi", "francais": "Position de départ" },
+      { "coreen": "Shijak", "francais": "Commencez" },
+      { "coreen": "Keuman", "francais": "Arrêtez" },
+      { "coreen": "Chwio", "francais": "Repos" },
+      { "coreen": "Baro", "francais": "Revenez" },
+      { "coreen": "Dwiro Dora", "francais": "Demi-tour" },
+      { "coreen": "Dora", "francais": "Tournez" },
+      { "coreen": "Balbakosso", "francais": "Changez de côté / de garde" },
+      { "coreen": "Dwiro Moulo namien so", "francais": "En reculant" },
+      { "coreen": "Apeuro Nagamienso", "francais": "En avançant" },
+      { "coreen": "Jésari", "francais": "Sur place" },
+      { "coreen": "Youdanja", "francais": "Pratiquant Ceinture Noire" },
+      { "coreen": "Youkeup ja", "francais": "Pratiquant avant la Ceinture Noire" },
+      { "coreen": "Wen tchouk", "francais": "À gauche" },
+      { "coreen": "Orun tchouk", "francais": "À droite" },
+      { "coreen": "Ann ja", "francais": "Assis" },
+      { "coreen": "Ja ouhyangou", "francais": "1/4 tour pour faire face" },
+      { "coreen": "Dobok", "francais": "Tenue" },
+      { "coreen": "Ti", "francais": "Ceinture" },
+      { "coreen": "Dojang", "francais": "Salle d'entraînement" },
+      { "coreen": "Hogou", "francais": "Plastron" },
+      { "coreen": "Kyo sa nim", "francais": "Assistant, instructeur" },
+      { "coreen": "Sa beum nim", "francais": "Maître" },
+      { "coreen": "Poumse", "francais": "Forme" },
+      { "coreen": "Kihap", "francais": "Cri" },
+      { "coreen": "Kibon", "francais": "Base" },
+      { "coreen": "Kyorugui", "francais": "Combat" },
+      { "coreen": "Kitcho", "francais": "Base primaire" },
+      { "coreen": "Dan", "francais": "Niveau à partir de la Ceinture Noire" },
+      { "coreen": "Keup", "francais": "Niveau avant la Ceinture Noire" }
+    ],
+    "membres_corps": [
+      { "coreen": "Joumok", "francais": "Le poing" },
+      { "coreen": "Deung joumok", "francais": "Revers du poing" },
+      { "coreen": "Me joumok", "francais": "Marteau du poing" },
+      { "coreen": "Sonn", "francais": "La main" },
+      { "coreen": "Sonn mok", "francais": "Le poignet" },
+      { "coreen": "Sonnal", "francais": "Tranchant de la main" },
+      { "coreen": "Sonnal deung", "francais": "Tranchant de la main côté pouce" },
+      { "coreen": "Pyon sonn keut", "francais": "L'extrémité des doigts" },
+      { "coreen": "Batangsonn", "francais": "La paume" },
+      { "coreen": "A gui sonn", "francais": "La palme de la main" },
+      { "coreen": "Pal", "francais": "Le bras" },
+      { "coreen": "Palkoup", "francais": "Le coude" },
+      { "coreen": "Palmok", "francais": "Tranchant de l'avant-bras (côté radius)" },
+      { "coreen": "Bakkat palmok", "francais": "Tranchant de l'avant-bras (côté cubitus)" },
+      { "coreen": "Bal", "francais": "Le pied" },
+      { "coreen": "Ap tchouk", "francais": "Le bol du pied (dessous des métatarsiens)" },
+      { "coreen": "Dwitt tchouk", "francais": "Le talon" },
+      { "coreen": "Balnal", "francais": "Le tranchant externe du pied" },
+      { "coreen": "Balnal deung", "francais": "Le tranchant interne du pied" },
+      { "coreen": "Baldeung", "francais": "Le dessus du pied" },
+      { "coreen": "Balpadak", "francais": "La plante du pied" },
+      { "coreen": "Moureup", "francais": "Le genou" },
+      { "coreen": "Han bal", "francais": "Un pied" },
+      { "coreen": "Han Goreum", "francais": "Un pas" },
+      { "coreen": "Han Goreum ban", "francais": "Un pas et demi" },
+      { "coreen": "Dwitt koumtchi", "francais": "Talon d'Achille" },
+      { "coreen": "Balnal dwitt tchouk", "francais": "Tranchant du talon (côté calcanéum)" },
+      { "coreen": "Bal keut", "francais": "Extrémité du pied (phalanges)" }
+    ],
+    "chiffres": [
+      { "cardinal": "Hana", "valeur": 1, "ordinal": "Il", "ordinal_label": "1er" },
+      { "cardinal": "Doul", "valeur": 2, "ordinal": "Yi", "ordinal_label": "2ème" },
+      { "cardinal": "Set", "valeur": 3, "ordinal": "Sam", "ordinal_label": "3ème" },
+      { "cardinal": "Net", "valeur": 4, "ordinal": "Sa", "ordinal_label": "4ème" },
+      { "cardinal": "Dasot", "valeur": 5, "ordinal": "Oh", "ordinal_label": "5ème" },
+      { "cardinal": "Yosot", "valeur": 6, "ordinal": "Youk", "ordinal_label": "6ème" },
+      { "cardinal": "Ilgop", "valeur": 7, "ordinal": "Tchil", "ordinal_label": "7ème" },
+      { "cardinal": "Yeudol", "valeur": 8, "ordinal": "Pal", "ordinal_label": "8ème" },
+      { "cardinal": "Ahop", "valeur": 9, "ordinal": "Gou", "ordinal_label": "9ème" },
+      { "cardinal": "Yeul", "valeur": 10, "ordinal": "Il chip", "ordinal_label": "10ème" },
+      { "cardinal": "Seumoul", "valeur": 20, "ordinal": "Yi chip", "ordinal_label": "20ème" },
+      { "cardinal": "Seureun", "valeur": 30, "ordinal": "Sam chip", "ordinal_label": "30ème" },
+      { "cardinal": "Maheun", "valeur": 40, "ordinal": "Sa chip", "ordinal_label": "40ème" },
+      { "cardinal": "Chui-eun", "valeur": 50, "ordinal": "Oh chip", "ordinal_label": "50ème" },
+      { "cardinal": "Esseun", "valeur": 60, "ordinal": "Youk chip", "ordinal_label": "60ème" },
+      { "cardinal": "Ireun", "valeur": 70, "ordinal": "Tchil chip", "ordinal_label": "70ème" },
+      { "cardinal": "Yeudeun", "valeur": 80, "ordinal": "Pal chip", "ordinal_label": "80ème" },
+      { "cardinal": "Aheun", "valeur": 90, "ordinal": "Gou chip", "ordinal_label": "90ème" },
+      { "cardinal": "Beck", "valeur": 100, "ordinal": "Back beun jae", "ordinal_label": "100ème" }
+    ]
+  },
+  "positions": [
+    {
+      "numero": 1,
+      "nom": "Tchaliot Seugui",
+      "description": "Talons joints, pointes de pieds ouvertes à 45°",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 2,
+      "nom": "Naranhi Seugui",
+      "description": "Pieds parallèles, distant d'un pied",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 3,
+      "nom": "Joutchoum Seugui",
+      "description": "Position du cavalier, pieds parallèles distant d'un pas et demi",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 4,
+      "nom": "Natchoa Seugui",
+      "description": "Position large, pieds parallèles distant de deux pas",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 5,
+      "nom": "Ap Seugui",
+      "description": "Position de marche, un pas entre les pieds, intérieurs des talons sur la même ligne, pied arrière désaxé à 30°",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 6,
+      "nom": "Ap Koubi Seugui",
+      "description": "Position longue, une largeur d'épaule et un pas et demi entre les pieds, jambe avant fléchie perpendiculaire au sol, jambe arrière tendue, pied arrière ouvert à 30°",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 7,
+      "nom": "Dwitt Koubi",
+      "description": "Pieds perpendiculaires distant d'un pas 1/2, talons sur la même ligne, jambes fléchies genoux orientés vers les orteils (transférer légèrement le poids du corps sur la jambe arrière)",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 8,
+      "nom": "Beum Seugui",
+      "description": "Pied arrière ouvert à 30°, pied avant sur la pointe (talon levé à un poing du sol, à hauteur des orteils de la jambe arrière), genoux fléchis (transférer nettement le poids du corps sur la jambe arrière)",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 9,
+      "nom": "Wen Seugui",
+      "description": "Pieds perpendiculaires distant d'un pas, talons sur la même ligne, jambe gauche devant",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 10,
+      "nom": "Orun Seugui",
+      "description": "Pieds perpendiculaires distant d'un pas, talons sur la même ligne, jambe droite devant",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 11,
+      "nom": "Pyonni Seugui",
+      "description": "Pieds écartés, distance un pied entre les talons, pointes de pieds à 30° vers l'extérieur",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 12,
+      "nom": "Dwitt Koa Seugui",
+      "description": "Jambes croisées, pied avant ouvert à 30° (intérieur), talon du pied arrière levé, tibia sur le mollet de la jambe avant (tronc de profil) — déplacement vers l'avant",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 13,
+      "nom": "Ap Koa Seugui",
+      "description": "Jambes croisées, genoux fléchis, pied avant ouvert à 30° (extérieur), talon du pied arrière levé, tibia en appui sur le mollet de la jambe avant — déplacement latéral (tronc de profil)",
+      "niveau_dan": "1er et 2e Dan"
+    },
+    {
+      "numero": 14,
+      "nom": "Moa Seugui",
+      "description": "Pieds joints, jambes tendues",
+      "niveau_dan": "3e et 4e Dan"
+    },
+    {
+      "numero": 15,
+      "nom": "Haktari Seugui",
+      "description": "Appui sur une jambe fléchie, l'autre levée et pliée avec la voûte du pied sous le genou (intérieur)",
+      "niveau_dan": "3e et 4e Dan"
+    },
+    {
+      "numero": 16,
+      "nom": "Keut Tari Seugui",
+      "description": "Pieds côte à côte, jambes semi-fléchies, talon de la jambe arrière levé situé au milieu du pied de la jambe avant",
+      "niveau_dan": "5e et 6e Dan"
+    },
+    {
+      "numero": 17,
+      "nom": "Ogueum Seugui",
+      "description": "Appui sur une jambe, l'autre jambe fléchie le pied derrière le creux poplité de la jambe d'appui",
+      "niveau_dan": "5e et 6e Dan"
+    }
+  ],
+  "techniques_pieds": {
+    "generalites": [
+      {
+        "nom": "Ap tchagui",
+        "description": "Coup de pied de face, frappe avec le bol du pied (dessous des métatarsiens)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Yop tchagui",
+        "description": "Coup de pied de profil, frappe avec le talon (Balnal ou duit tchouk)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Dolyeu tchagui",
+        "description": "Coup de pied circulaire, frappe avec le bol ou la face dorsale du pied (baldung ou ap tchouk)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Bandal tchagui",
+        "description": "Coup de pied ascendant à 45° (ancien bit ch'agui), frappe avec le bol ou la face dorsale du pied (baldung ou ap tchouk)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Mireu tchagui",
+        "description": "Coup de pied frontal en poussant avec le dessous du pied (balpadak)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Ann tchagui",
+        "description": "Coup de pied en demi-lune vers l'intérieur, frappe avec le tranchant interne du pied (balnal dung)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Bakkat tchagui",
+        "description": "Coup de pied en demi-lune vers l'extérieur, frappe avec le tranchant externe du pied (balnal)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Nelyeu tchagui",
+        "description": "Coup de pied écrasant, frappe avec le talon ou le dessous du pied (balpadak ou duitkoumtchi)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Ann nelyeu tchagui",
+        "description": "Coup de pied écrasant vers l'intérieur, frappe avec le talon ou le dessous du pied (balpadak ou duitkoumtchi)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Bakkat nelyeu tchagui",
+        "description": "Coup de pied écrasant vers l'extérieur, frappe avec le talon ou le dessous du pied (balpadak ou duitkoumtchi)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Dou bal dang sang ap tchagui",
+        "description": "Deux coups de pied de face enchaînés (sans poser entre les deux), frappe avec le bol du pied (dessous des métatarsiens)",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Moureup eulyeu tchigui",
+        "description": "Coup de genou remontant",
+        "niveau_dan": "1er et 2e Dan"
+      },
+      {
+        "nom": "Dwitt tchagui",
+        "description": "Coup de pied retourné, frappe de dos avec le talon (duit tchouk ou balnal duit tchouk)",
+        "niveau_dan": "3e et 4e Dan"
+      },
+      {
+        "nom": "Dwiro dora yop tchagui",
+        "description": "Coup de pied retourné, frappe de profil avec le talon (Balnal ou duit tchouk)",
+        "niveau_dan": "3e et 4e Dan"
+      },
+      {
+        "nom": "Foulyeu tchagui",
+        "description": "Coup de pied de profil fouetté (intérieur/extérieur), frappe avec le talon ou le dessous du pied (balpadak ou duitkoumtchi)",
+        "niveau_dan": "3e et 4e Dan"
+      },
+      {
+        "nom": "Dwiro dora foulyeu tchagui",
+        "description": "Coup de pied «Foulyeu tchagui» avec une rotation de 180°",
+        "niveau_dan": "3e et 4e Dan"
+      },
+      {
+        "nom": "Mon dolyeu tchagui",
+        "description": "Coup de pied retourné avec une rotation de 360°, frappe avec le talon ou le dessous du pied (balpadak ou duitkoumtchi)",
+        "niveau_dan": "3e et 4e Dan"
+      },
+      {
+        "nom": "Pyo jeuk tchagui",
+        "description": "Coup de pied ciblé dans la paume de la main opposée, frappe avec l'intérieur du pied (balnal dung)",
+        "niveau_dan": "3e et 4e Dan"
+      },
+      {
+        "nom": "Nakka tchagui",
+        "description": "Coup de pied de profil crocheté (intérieur/extérieur), frappe avec le talon (duitcoumtchi)",
+        "niveau_dan": "5e et 6e Dan"
+      },
+      {
+        "nom": "Biteureu tchagui",
+        "description": "Coup de pied ascendant avec un mouvement en torsion de l'intérieur vers l'extérieur, frappe avec le bol du pied (dessous des métatarsiens)",
+        "niveau_dan": "5e et 6e Dan"
+      }
+    ],
+    "modalites": [
+      { "nom": "Ap bal tchagui", "description": "Coup de pied jambe avant", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Dwitt bal tchagui", "description": "Coup de pied jambe arrière", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Keudeup tchagui", "description": "Coup de pied identique, exécuté plusieurs fois sans reposer", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Ap bal kouroh tchagui", "description": "Coup de pied jambe avant, pas glissé", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Duit bal kouroh tchagui", "description": "Coup de pied jambe arrière, pas glissé", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Han gorum nagamien tchagui", "description": "Coup de pied jambe avant, en avançant en pas chassé", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Y oh tchagui", "description": "Coup de pied identique, enchaîné avec les deux jambes", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Sok oh tchagui", "description": "Enchaînement de coups de pieds différents avec la même jambe", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Y oh sok oh tchagui", "description": "Enchaînement de coups de pieds différents en changeant de jambe", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Tuyeu tchagui", "description": "Coup de pied sauté", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Dolyeu tuyeu tchagui", "description": "Coup de pied sauté avec élan sans obstacle", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Nopi tchagi", "description": "Coup de pied en hauteur", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Tchagui", "description": "Coup de pied avec un impact fouetté", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Tchireugi", "description": "Frappe en utilisant les extrémités des pieds ou des mains", "niveau_dan": "1er et 2e Dan" },
+      { "nom": "Dabang yang tchagui", "description": "Enchaînement de plusieurs techniques dans différentes directions en changeant de jambe", "niveau_dan": "3e et 4e Dan" },
+      { "nom": "Tuyeu y oh tchagui", "description": "Coup de pied sauté identique, enchaîné avec les deux jambes", "niveau_dan": "3e et 4e Dan" },
+      { "nom": "Tuyeu y oh sok oh tchagui", "description": "Enchaînement de différents coups de pied sautés avec les 2 jambes", "niveau_dan": "3e et 4e Dan" },
+      { "nom": "Modeum bal tchagui", "description": "Coup de pied sauté pieds joints", "niveau_dan": "3e et 4e Dan" },
+      { "nom": "Kawi tchagui", "description": "Coup de pied sauté frontal sur 2 cibles", "niveau_dan": "3e et 4e Dan" },
+      { "nom": "Tuyeu neum oh tchagui", "description": "Coup de pied sauté par dessus un obstacle", "niveau_dan": "3e et 4e Dan" },
+      { "nom": "Il tja tchagui", "description": "Coup de pied sauté avec des techniques différentes pour chaque jambe", "niveau_dan": "3e et 4e Dan" }
+    ]
+  },
+  "blocages": [
+    { "numero": 1, "nom": "Ale maki", "description": "Blocage circulaire extérieur, niveau bas ventre, avec le côté externe de l'avant-bras (côté cubitus)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 2, "nom": "Montong maki", "description": "Blocage circulaire intérieur niveau plexus, côté jambe avant, avec le côté externe de l'avant-bras (côté cubitus)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 3, "nom": "Montong an maki", "description": "Blocage circulaire intérieur niveau plexus, côté jambe arrière", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 4, "nom": "Eulgoul maki", "description": "Blocage ascendant niveau haut, avec le côté externe de l'avant-bras (côté cubitus)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 5, "nom": "Montong bakkat maki", "description": "Blocage vers l'extérieur, avec le tranchant externe de l'avant-bras (côté cubitus et jambe avant)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 6, "nom": "An montong bakkat maki", "description": "Blocage vers l'extérieur, avec le tranchant externe de l'avant-bras (côté cubitus et jambe arrière)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 7, "nom": "Bakkat palmok montong maki", "description": "Blocage vers l'extérieur, avec le tranchant interne de l'avant-bras (côté radius)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 8, "nom": "An bakkat palmok montong maki", "description": "Blocage vers l'extérieur, avec le tranchant interne de l'avant-bras (côté radius et jambe arrière)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 9, "nom": "An palmok montong bakkat yop maki", "description": "Blocage de profil, avec le tranchant externe de l'avant-bras (côté cubitus)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 10, "nom": "Bakkat palmok montong yop maki", "description": "Blocage de profil, avec le tranchant interne de l'avant-bras (côté radius)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 11, "nom": "Keudeuro montong bakkat maki", "description": "Blocage avec le tranchant externe de l'avant-bras (côté cubitus), l'autre bras ramené en protection au plexus (paume vers le haut)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 12, "nom": "Keudeuro ale maki", "description": "Blocage avec le tranchant externe de l'avant-bras (côté cubitus) niveau bas, l'autre bras ramené en protection au plexus (paume vers le haut)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 13, "nom": "Han sonnal ale maki", "description": "Blocage vers l'extérieur avec le tranchant de main (côté cubitus) niveau bas, l'autre bras plié à la ceinture", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 14, "nom": "Han sonnal ale yop maki", "description": "Blocage vers l'extérieur avec le tranchant de main (côté cubitus) de profil, l'autre bras plié à la ceinture", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 15, "nom": "Han sonnal montong maki", "description": "Blocage vers l'extérieur avec le tranchant de main (côté cubitus) buste à 45° niveau moyen, l'autre bras plié à la ceinture", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 16, "nom": "Han sonnal montong an maki", "description": "Blocage vers l'extérieur avec le tranchant de main (côté cubitus et jambe arrière) buste à 45° niveau moyen, l'autre bras plié à la ceinture", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 17, "nom": "Han sonnal montong yop maki", "description": "Blocage vers l'extérieur avec le tranchant de main (côté cubitus) de profil, niveau moyen, l'autre bras plié à la ceinture", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 18, "nom": "Sonnal montong maki", "description": "Blocage vers l'extérieur avec le tranchant de main (niveau cubitus) buste à 45°, l'autre bras en protection au plexus", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 19, "nom": "Sonnal montong yop maki", "description": "Blocage vers l'extérieur avec le tranchant de main (niveau cubitus) de profil, l'autre bras en protection au plexus (position Joutchoum Seugui)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 20, "nom": "Sonnal ale maki", "description": "Blocage vers l'extérieur avec le tranchant de main (niveau cubitus) buste à 45° niveau bas, l'autre bras en protection au plexus", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 21, "nom": "Batangson ale maki", "description": "Blocage descendant (écrasant) avec la paume de la main, niveau bas ventre", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 22, "nom": "Batangson montong maki", "description": "Blocage vers l'intérieur (horizontal) avec la paume de la main, niveau plexus", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 23, "nom": "Batangson montong an maki", "description": "Blocage vers l'intérieur (horizontal) avec la paume de la main, niveau moyen, côté jambe arrière", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 24, "nom": "Batangson montong nelyeu maki", "description": "Blocage descendant (écrasant) avec la paume de la main, niveau moyen", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 25, "nom": "Montong hetcheu maki", "description": "Blocage double de dégagement, niveau moyen, tranchant externe des avant-bras (côté cubitus) vers l'extérieur", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 26, "nom": "Montong palmok hetcheu maki", "description": "Blocage double de dégagement niveau moyen, tranchant interne des avant-bras (côté radius) vers l'extérieur", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 27, "nom": "Eut keuro ale maki", "description": "Blocage niveau bas avec le tranchant externe de l'avant-bras (côté cubitus), l'autre bras se positionne sur le tranchant interne en renfort", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 28, "nom": "Kawi maki", "description": "Double blocage simultané de face (en ciseau) vers l'extérieur avec le tranchant des avant-bras, niveau moyen (côté radius) et niveau bas (côté cubitus)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 29, "nom": "Owé santeul maki", "description": "Double blocage simultané de profil, vers l'extérieur, avec le tranchant des avant-bras niveau haut (côté radius) et niveau bas (côté cubitus)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 30, "nom": "Han sonnal biteurô eulgoul maki", "description": "Blocage circulaire, niveau haut avec le tranchant de la main (hypoténar), côté jambe arrière, dans un mouvement de torsion du buste", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 31, "nom": "Keudeuro batangson montong an maki", "description": "Blocage niveau moyen vers l'intérieur avec la paume de la main, l'autre bras en soutien sous le coude, au niveau plexus", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 32, "nom": "Keumgan maki", "description": "Blocage double simultané de profil, ale maki & eulgoul maki", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 33, "nom": "Ale hetcheu maki", "description": "Blocage double de dégagement (en ciseau), niveau bas ventre", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 34, "nom": "Sonnal ale hetcheu maki", "description": "Blocage double de dégagement (croisé), mains ouvertes (côté cubitus) niveau bas ventre", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 35, "nom": "Keumkan montong maki", "description": "Blocages double simultanés, eulgoul maki & an palmok montong yop (ou bakkat) maki", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 36, "nom": "Sonnal deung montong maki", "description": "Blocage vers l'extérieur avec le tranchant de main (niveau radius, paume face à l'épaule) buste à 45° niveau bas, l'autre bras en protection au plexus", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 37, "nom": "Sonnal montong hetcheu maki", "description": "Blocage double de dégagement (ciseau), mains ouvertes niveau moyen, tranchant externe des avant-bras (côté cubitus) vers l'extérieur", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 38, "nom": "Sonnal deung montong hetcheu maki", "description": "Blocage double de dégagement (croisé), mains ouvertes niveau moyen, tranchant interne des avant-bras (côté radius) vers l'extérieur", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 39, "nom": "Eut keuro eulgoul maki", "description": "Blocage ascendant renforcé, niveau haut avec le tranchant externe de l'avant-bras (côté cubitus), l'autre bras se positionne sur le tranchant interne en renfort", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 40, "nom": "Sonnal eut keuro ale maki", "description": "Blocage niveau bas avec le tranchant externe de l'avant-bras (côté cubitus), l'autre bras se positionne sur le tranchant interne en renfort, main ouverte", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 41, "nom": "Sonnal deung maki", "description": "Double blocage haut, un vers l'intérieur (paume face au sol), l'autre vers l'extérieur (paume face à l'épaule), dans un mouvement de torsion", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 42, "nom": "Hetcheu santeul maki", "description": "Double blocage simultanés, niveau haut avec le tranchant externe des avant-bras (côté radius), vers l'extérieur", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 43, "nom": "Keudeuro eulgoul yop maki", "description": "Blocage de profil niveau haut, poings fermés, avec le tranchant interne de l'avant-bras, l'autre bras positionné horizontalement en renfort au niveau du plexus (8ème mvt Pyonwonn)", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 44, "nom": "Hwang sô maki", "description": "Blocage double simultané en eulgoul maki (1er mvt Sipjin)", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 45, "nom": "Son badak keudeuro montong bakkat maki", "description": "Blocage niveau moyen, main ouverte de profil, un bras bloque avec la paume face à l'épaule, l'autre bras dans un mouvement d'écrasement (batangson montong nelyeu maki) se place horizontalement devant le plexus", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 46, "nom": "Sonnal keumgan maki", "description": "Blocages double simultané en ale maki & eulgoul maki, mains ouvertes", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 47, "nom": "Pyojeuk ale maki", "description": "Blocage de dégagement d'une saisie de poignet, en frappant le poignet saisi (poing fermé) vers la paume de l'autre bras", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 48, "nom": "Sonnal owé santeul maki", "description": "Double blocage simultané de profil main ouverte, vers l'extérieur, avec le tranchant des avant-bras niveau haut (côté radius) et niveau bas (côté cubitus)", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 49, "nom": "Meongyé pegui", "description": "Blocage de dégagement d'un ceinturage au corps par l'arrière, les bras pliés croisés devant le plexus, coude contre le corps, mains ouvertes, exécuter un arc de cercle de la ceinture vers l'épaule", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 50, "nom": "Keuro oligi", "description": "Blocage ascendant avec le tranchant intérieur (côté radius) niveau moyen, bras de blocage horizontal, l'autre bras ramené à la ceinture", "niveau_dan": "5e et 6e Dan" }
+  ],
+  "attaques": [
+    { "numero": 1, "nom": "Ale", "description": "Niveau bas", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 2, "nom": "Momtong", "description": "Niveau moyen", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 3, "nom": "Eulgoul", "description": "Niveau haut", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 4, "nom": "An", "description": "Vers l'intérieur", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 5, "nom": "Bakkat", "description": "Vers l'extérieur", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 6, "nom": "Tchigui", "description": "Mouvement d'attaque avec impact fouetté", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 7, "nom": "Jileugui", "description": "Mouvement d'attaque en percussion", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 8, "nom": "Baro", "description": "Bras inversé à la jambe avant", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 9, "nom": "Bande", "description": "Bras du côté de la jambe avant", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 10, "nom": "Yop", "description": "De côté", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 11, "nom": "Dolyeu", "description": "Mouvement circulaire", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 12, "nom": "Nelyeu", "description": "Mouvement descendant", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 13, "nom": "Eulyeu", "description": "Mouvement ascendant", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 14, "nom": "Tchireugui", "description": "Mouvement d'attaque avec impact piqué des extrémités (doigts ou pieds)", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 15, "nom": "Momtong bande jileugui", "description": "Coup de poing niveau moyen, côté jambe avant", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 16, "nom": "Momtong balo jileugui", "description": "Coup de poing niveau moyen, côté opposé à la jambe avant", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 17, "nom": "Eulgoul jileugui", "description": "Coup de poing niveau haut", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 18, "nom": "Momtong yop jileugui", "description": "Coup de poing de profil, niveau moyen", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 19, "nom": "Baro jetcho jileugui", "description": "Coup de poing remontant, côté jambe arrière", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 20, "nom": "Bande jetcho jileugui", "description": "Coup de poing remontant, côté jambe avant", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 21, "nom": "Dou jumok jetcho jileugui", "description": "Double coup de poing remontant simultané", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 22, "nom": "Deung jumok ap tchigui", "description": "Coup de poing en revers de face", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 23, "nom": "Deung jumok bakkat tchigui", "description": "Revers de poing vers l'extérieur", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 24, "nom": "Han sonnal momtong bakkat tchigui", "description": "Frappe du tranchant niveau moyen, vers l'extérieur", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 25, "nom": "Han sonnal mok tchigui", "description": "Frappe du tranchant niveau cou, vers l'intérieur côté jambe avant", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 26, "nom": "Han sonnal je bi poum mok tchigui", "description": "Frappe du tranchant niveau cou, vers l'intérieur côté jambe arrière", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 27, "nom": "Je bi poum mok tchigui", "description": "Blocage du tranchant niveau haut et attaque du tranchant vers l'intérieur", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 28, "nom": "Batangson teuk tchigui", "description": "Frappe directe de la base de la paume, niveau haut", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 29, "nom": "Palkoup yop tchigui", "description": "Frappe du coude de profil", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 30, "nom": "Palkoup momtong dolyeu tchigui", "description": "Frappe circulaire du coude, vers l'intérieur, niveau moyen", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 31, "nom": "Palkoup momtong piojok tchigui", "description": "Frappe du plat du coude contre l'autre main ouverte au niveau moyen", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 32, "nom": "Me joumok nelyeu tchigui", "description": "Frappe du poing en marteau, descendante", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 33, "nom": "Dang kyeu teuk jileugui", "description": "Coup de poing montant en tirant simultanément l'adversaire vers soi", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 34, "nom": "Pyon sonn keut sewo tchireugui", "description": "Pique de doigts, main perpendiculaire au sol", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 35, "nom": "Pyon sonn keut ale jetcho tchireugui", "description": "Coup avec l'extrémité des doigts, paume vers le ciel, niveau bas", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 36, "nom": "A guï son cal jae bi", "description": "Attaque directe avec la palme de la main", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 37, "nom": "Joumok pyojok tchireugui", "description": "Coup de poing dans l'autre main ouverte", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 38, "nom": "Me jumok ale pyojok tchigui", "description": "Coup de poing en marteau circulaire, contre l'autre paume, au niveau bas", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 39, "nom": "Moureup kôki", "description": "La palme de la main attrape une jambe de bas en haut, et frappe l'autre palme", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 40, "nom": "Keun dol tchogui", "description": "Coup de poing circulaire niveau moyen", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 41, "nom": "Ja keun dol tchogui", "description": "Les deux poings ramenés à la hanche du même côté", "niveau_dan": "1er et 2e Dan" },
+    { "numero": 43, "nom": "Sonnal deung tchigui", "description": "Frappe du tranchant de la main (côté pouce), côté jambe avant", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 44, "nom": "Palkoup eulyeu tchigui", "description": "Frappe du coude ascendante", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 45, "nom": "Palkoup nelyeu tchigui", "description": "Frappe du coude descendante", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 46, "nom": "Keudeuro deung joumok ap tchigui", "description": "Revers de poing de face, en appui sur l'autre bras ramené à la poitrine", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 47, "nom": "Pyon sonn keut eupo tchireugui", "description": "Piqué de doigts, paume vers le sol", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 48, "nom": "Mong et tchigui", "description": "Coups de coudes simultanés des deux côtés, niveau haut", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 49, "nom": "Moureup dolyeu tchigui", "description": "Coup de genou circulaire", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 50, "nom": "Keum kang yop jileugui", "description": "Réalisation simultanée de «eulgoul maki» et «momtong yop jileugui»", "niveau_dan": "3e et 4e Dan" },
+    { "numero": 51, "nom": "Tchet dari jileugui", "description": "Coups de poings simultanés niveau moyen (bras décalés)", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 52, "nom": "Keum kang ap jileugui", "description": "Réalisation simultanée de «eulgoul maki» et «eulgoul bande jileugui»", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 53, "nom": "So seum jileugui", "description": "Double frappe remontante simultanée, les poings fermés mais les majeurs sortis", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 54, "nom": "Ba oui milgui", "description": "Double dégagement de face mains ouvertes au niveau de la poitrine", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 55, "nom": "Tae sann milgui", "description": "Dégagement de face mains ouvertes l'une au dessus de l'autre", "niveau_dan": "5e et 6e Dan" },
+    { "numero": 56, "nom": "Nalgué pyogui", "description": "Double dégagement latéral mains ouvertes au niveau des épaules", "niveau_dan": "5e et 6e Dan" }
+  ]
+}

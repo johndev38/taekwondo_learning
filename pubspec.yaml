@@ -95,6 +95,7 @@ flutter:
     - assets/questions_module_b_3eme_dan_partie1.json
     - assets/questions_module_b_3eme_dan_partie2.json
     - assets/belt_requirements.json
+    - assets/reference_officielle.json
     - assets/icon/app_icon.png
     - assets/enfants/
   #   - images/a_dot_burr.jpeg
