@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'home_screen.dart';
+import '../app_shell.dart';
 
 class QuizGameScreen extends StatefulWidget {
   final String belt;
@@ -176,7 +176,6 @@ class QuizGameScreenState extends State<QuizGameScreen>
   // ── Chargement ──
   Widget _buildLoading() {
     return const Scaffold(
-      backgroundColor: Color(0xFFF0F2F5),
       body: Center(child: CircularProgressIndicator()),
     );
   }
@@ -188,7 +187,7 @@ class QuizGameScreenState extends State<QuizGameScreen>
     final progress = (currentQuestionIndex + 1) / total;
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: SafeArea(
         child: Column(
           children: [
@@ -728,7 +727,7 @@ class QuizGameScreenState extends State<QuizGameScreen>
                   onPressed: () => Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (_) => const HomeScreen()),
+                        builder: (_) => const AppShell()),
                   ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFFCC1122),

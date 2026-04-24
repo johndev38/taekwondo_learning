@@ -100,4 +100,7 @@ flutter {
 dependencies {
     // Les splits d'app bundle fonctionnent automatiquement sans Play Core
     // Play Core n'est nécessaire que pour les fonctionnalités avancées (deferred components, etc.)
+
+    // Requis pour enableEdgeToEdge() (affichage bord à bord Android 15 / SDK 35)
+    implementation "androidx.activity:activity-ktx:1.9.3"
 }

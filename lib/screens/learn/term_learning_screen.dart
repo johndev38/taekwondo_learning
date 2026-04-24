@@ -226,7 +226,7 @@ class TermLearningScreenState extends State<TermLearningScreen>
         Container(
           margin: const EdgeInsets.fromLTRB(16, 14, 16, 8),
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: Theme.of(context).cardColor,
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: Colors.grey.shade200),
             boxShadow: [
@@ -457,7 +457,7 @@ class TermLearningScreenState extends State<TermLearningScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
         backgroundColor: _navy,
         foregroundColor: Colors.white,
@@ -548,7 +548,7 @@ class _TermCard extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Theme.of(context).cardColor,
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: accentColor.withOpacity(0.2)),
         boxShadow: [

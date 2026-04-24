@@ -1,43 +1,60 @@
 import 'package:flutter/material.dart';
-import 'belt_selection_for_learning_screen.dart';
+import '../app_shell.dart';
+import '../common/search_screen.dart';
+import '../common/settings_screen.dart';
+import '../training/module_b_review_screen.dart';
+import 'belt_requirements_screen.dart';
 import 'enfants_screen.dart';
-import 'history_screen.dart';
-import 'module_b_review_screen.dart';
-import 'reference_officielle_screen.dart';
-import 'package:taekwondo_knowledge/screens/rules_screen.dart';
+import 'my_progress_screen.dart';
 
-class LearningHubScreen extends StatelessWidget {
-  const LearningHubScreen({super.key});
+/// Hub de progression : parcours structurés par niveau (adultes / enfants / DAN)
+/// + écran personnel « Ma progression ».
+class ProgressionHubScreen extends StatelessWidget {
+  const ProgressionHubScreen({super.key});
 
   static const Color _navyDark = Color(0xFF0A1628);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
-          // ── Header ──
           SliverAppBar(
             pinned: true,
             expandedHeight: 130,
             backgroundColor: _navyDark,
             foregroundColor: Colors.white,
             elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back_ios_rounded, size: 20),
-              onPressed: () => Navigator.pop(context),
-            ),
+            automaticallyImplyLeading: false,
+            actions: [
+              IconButton(
+                tooltip: 'Rechercher',
+                icon: const Icon(Icons.search_rounded),
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SearchScreen()),
+                ),
+              ),
+              IconButton(
+                tooltip: 'Paramètres',
+                icon: const Icon(Icons.settings_rounded),
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SettingsScreen()),
+                ),
+              ),
+              const SizedBox(width: 4),
+            ],
             flexibleSpace: FlexibleSpaceBar(
               collapseMode: CollapseMode.pin,
-              titlePadding: const EdgeInsets.fromLTRB(56, 0, 20, 14),
               background: Container(
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
-                    colors: [Color(0xFF0A1628), Color(0xFF1A2E1A)],
+                    colors: [_navyDark, Color(0xFF1A3A1F)],
                   ),
                 ),
                 child: Padding(
@@ -56,34 +73,33 @@ class LearningHubScreen extends StatelessWidget {
                             width: 1.5,
                           ),
                         ),
-                        child: const Icon(
-                          Icons.menu_book_rounded,
-                          color: Colors.white,
-                          size: 26,
-                        ),
+                        child: const Icon(Icons.trending_up_rounded,
+                            color: Colors.white, size: 26),
                       ),
                       const SizedBox(width: 14),
-                      const Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'APPRENTISSAGE',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 22,
-                              letterSpacing: 3,
+                      const Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'PROGRESSION',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w900,
+                                fontSize: 22,
+                                letterSpacing: 3,
+                              ),
                             ),
-                          ),
-                          Text(
-                            'Étude & révisions',
-                            style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 13,
+                            Text(
+                              'Parcours par niveau',
+                              style: TextStyle(
+                                color: Colors.white54,
+                                fontSize: 12,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ],
                   ),
@@ -91,124 +107,79 @@ class LearningHubScreen extends StatelessWidget {
               ),
             ),
           ),
-
-          // ── Contenu ──
           SliverToBoxAdapter(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 24, 20, 32),
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 32),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const _SectionLabel(label: 'RUBRIQUES'),
-                  const SizedBox(height: 16),
-
-                  // Kibon - Vocabulaire
-                  _LearningCard(
-                    title: 'Termes',
-                    subtitle: 'Vocabulaire & techniques coréennes',
+                  // Ma progression (en tête)
+                  _ProgressCard(
+                    title: 'Ma progression',
+                    subtitle: 'Mon parcours personnalisé',
                     description:
-                        'Apprenez les termes officiels du Taekwondo : commandes, noms des techniques de pied et de poing, positions et déplacements.',
-                    icon: Icons.record_voice_over_rounded,
-                    topColor: const Color(0xFF00695C),
-                    bottomColor: const Color(0xFF004D40),
-                    tag: 'Flashcards',
-                    tagIcon: Icons.style_rounded,
+                        'Visualise ton avancement par ceinture, tes critères cochés et tes objectifs.',
+                    icon: Icons.person_rounded,
+                    topColor: const Color(0xFF0A1628),
+                    bottomColor: const Color(0xFF162840),
+                    tag: 'Moi',
+                    tagIcon: Icons.account_circle_rounded,
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (_) =>
-                              const BeltSelectionForLeaningScreen()),
+                          builder: (_) => const MyProgressScreen()),
                     ),
                   ),
-                  const SizedBox(height: 16),
 
-                  // Histoire
-                  _LearningCard(
-                    title: 'Histoire',
-                    subtitle: 'Origines & évolution du Taekwondo',
+                  const SizedBox(height: 28),
+
+                  // ═════════ PARCOURS ═════════
+                  const SectionLabel(label: 'PARCOURS'),
+                  const SizedBox(height: 12),
+                  _ProgressCard(
+                    title: 'Adultes',
+                    subtitle: 'Critères de passage Blanc → Noir',
                     description:
-                        'Découvrez l\'histoire fascinante du Taekwondo, des arts martiaux coréens anciens jusqu\'à sa reconnaissance olympique.',
-                    icon: Icons.history_edu_rounded,
-                    topColor: const Color(0xFFBF360C),
-                    bottomColor: const Color(0xFF870000),
-                    tag: 'Lecture',
-                    tagIcon: Icons.book_rounded,
+                        'Toutes les exigences par ceinture : positions, techniques, poomsae, combat et histoire.',
+                    icon: Icons.workspace_premium_rounded,
+                    topColor: const Color(0xFFB8860B),
+                    bottomColor: const Color(0xFF7B5800),
+                    tag: 'Adultes',
+                    tagIcon: Icons.group_rounded,
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (_) => const TaekwondoHistoryScreen()),
+                          builder: (_) => const BeltRequirementsScreen()),
                     ),
                   ),
-                  const SizedBox(height: 16),
-
-                  // Règles
-                  _LearningCard(
-                    title: 'Règles',
-                    subtitle: 'Règlement officiel de compétition',
-                    description:
-                        'Maîtrisez les règles d\'arbitrage : zones de marque, pénalités, système de points et déroulement d\'un combat officiel.',
-                    icon: Icons.gavel_rounded,
-                    topColor: const Color(0xFF283593),
-                    bottomColor: const Color(0xFF1A237E),
-                    tag: 'Réglementation',
-                    tagIcon: Icons.verified_rounded,
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (_) => const TaekwondoRulesScreen()),
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-
-                  // Enfants
-                  _LearningCard(
+                  const SizedBox(height: 14),
+                  _ProgressCard(
                     title: 'Enfants',
-                    subtitle: 'Progression 6e→12e keup',
+                    subtitle: 'Progression 14ᵉ → 6ᵉ keup',
                     description:
-                        'Consultez les fiches de progression officielle FFTDA pour les ceintures enfants : positions, blocages, coups de pied, poomsae, combat et code moral par niveau.',
+                        'Fiches officielles FFTDA enfants : positions, blocages, coups de pied, poomsae, combat, code moral.',
                     icon: Icons.child_care_rounded,
                     topColor: const Color(0xFF6A1B9A),
                     bottomColor: const Color(0xFF38006B),
-                    tag: 'Progression',
-                    tagIcon: Icons.trending_up_rounded,
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => const EnfantsScreen()),
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-
-                  // Référence officielle FFTDA
-                  _LearningCard(
-                    title: 'Référence officielle',
-                    subtitle: 'Positions · Techniques · Lexique FFTDA',
-                    description:
-                        'Consultez le référentiel officiel FFTDA : les 17 positions de base, les techniques de pied (Tchagui), les 50 blocages (Maki), les attaques membres supérieurs et le lexique coréen complet.',
-                    icon: Icons.library_books_rounded,
-                    topColor: const Color(0xFF4A148C),
-                    bottomColor: const Color(0xFF1A0A2E),
-                    tag: 'FFTDA',
-                    tagIcon: Icons.verified_rounded,
+                    tag: 'Enfants',
+                    tagIcon: Icons.stars_rounded,
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (_) =>
-                              const ReferenceOfficielleScreen()),
+                          builder: (_) => const EnfantsScreen()),
                     ),
                   ),
-                  const SizedBox(height: 16),
-
-                  // Module B — Fiches
-                  _LearningCard(
-                    title: 'Questionnaire Ceinture noire',
-                    subtitle: '2ème DAN · 3ème DAN',
+                  const SizedBox(height: 14),
+                  _ProgressCard(
+                    title: 'Ceinture noire (DAN)',
+                    subtitle: 'Module B — fiches de révision',
                     description:
-                        'Révisez toutes les questions et réponses officielles du Module B : gouvernance, vie associative, arbitrage, compétition Poomsé et Kyorugi.',
-                    icon: Icons.fact_check_rounded,
+                        'Préparation aux passages 2ème et 3ème DAN : questions officielles + révision complète.',
+                    icon: Icons.military_tech_rounded,
                     topColor: const Color(0xFF4A148C),
                     bottomColor: const Color(0xFF1A1040),
-                    tag: 'Q&R',
-                    tagIcon: Icons.checklist_rounded,
+                    tag: 'DAN',
+                    tagIcon: Icons.verified_rounded,
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -225,7 +196,7 @@ class LearningHubScreen extends StatelessWidget {
   }
 }
 
-class _LearningCard extends StatelessWidget {
+class _ProgressCard extends StatelessWidget {
   final String title;
   final String subtitle;
   final String description;
@@ -236,7 +207,7 @@ class _LearningCard extends StatelessWidget {
   final IconData tagIcon;
   final VoidCallback onTap;
 
-  const _LearningCard({
+  const _ProgressCard({
     required this.title,
     required this.subtitle,
     required this.description,
@@ -266,16 +237,15 @@ class _LearningCard extends StatelessWidget {
             ),
             borderRadius: BorderRadius.circular(20),
           ),
-          padding: const EdgeInsets.all(22),
+          padding: const EdgeInsets.all(20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Ligne titre + tag
               Row(
                 children: [
                   Container(
-                    width: 52,
-                    height: 52,
+                    width: 50,
+                    height: 50,
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.15),
                       borderRadius: BorderRadius.circular(14),
@@ -284,7 +254,7 @@ class _LearningCard extends StatelessWidget {
                         width: 1.5,
                       ),
                     ),
-                    child: Icon(icon, size: 28, color: Colors.white),
+                    child: Icon(icon, size: 26, color: Colors.white),
                   ),
                   const SizedBox(width: 14),
                   Expanded(
@@ -294,7 +264,7 @@ class _LearningCard extends StatelessWidget {
                         Text(
                           title,
                           style: const TextStyle(
-                            fontSize: 22,
+                            fontSize: 20,
                             fontWeight: FontWeight.w900,
                             color: Colors.white,
                             letterSpacing: 0.3,
@@ -304,7 +274,7 @@ class _LearningCard extends StatelessWidget {
                         Text(
                           subtitle,
                           style: TextStyle(
-                            fontSize: 12,
+                            fontSize: 11.5,
                             color: Colors.white.withOpacity(0.7),
                           ),
                         ),
@@ -336,27 +306,27 @@ class _LearningCard extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              const SizedBox(height: 12),
               Container(
                 height: 1,
                 color: Colors.white.withOpacity(0.15),
               ),
-              const SizedBox(height: 14),
+              const SizedBox(height: 12),
               Text(
                 description,
                 style: TextStyle(
-                  fontSize: 13,
+                  fontSize: 12.5,
                   color: Colors.white.withOpacity(0.85),
-                  height: 1.55,
+                  height: 1.5,
                 ),
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 14),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 14, vertical: 7),
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(12),
@@ -372,13 +342,13 @@ class _LearningCard extends StatelessWidget {
                           'Accéder',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 13,
+                            fontSize: 12,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
                         SizedBox(width: 6),
                         Icon(Icons.arrow_forward_rounded,
-                            color: Colors.white, size: 16),
+                            color: Colors.white, size: 15),
                       ],
                     ),
                   ),
@@ -388,38 +358,6 @@ class _LearningCard extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class _SectionLabel extends StatelessWidget {
-  final String label;
-
-  const _SectionLabel({required this.label});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(
-          width: 4,
-          height: 20,
-          decoration: BoxDecoration(
-            color: const Color(0xFFCC1122),
-            borderRadius: BorderRadius.circular(2),
-          ),
-        ),
-        const SizedBox(width: 10),
-        Text(
-          label,
-          style: const TextStyle(
-            fontSize: 13,
-            fontWeight: FontWeight.w800,
-            color: Color(0xFF37474F),
-            letterSpacing: 2,
-          ),
-        ),
-      ],
     );
   }
 }

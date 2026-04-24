@@ -17,7 +17,7 @@ class VideoScreen extends StatefulWidget {
   });
 
   @override
-  _VideoScreenState createState() => _VideoScreenState();
+  State<VideoScreen> createState() => _VideoScreenState();
 }
 
 class _VideoScreenState extends State<VideoScreen> {

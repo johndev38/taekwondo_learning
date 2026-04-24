@@ -161,7 +161,7 @@ class _ReferenceOfficielleScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : CustomScrollView(
@@ -229,7 +229,7 @@ class _ReferenceOfficielleScreenState
   Widget _buildHeader(BuildContext context) {
     return SliverAppBar(
       pinned: true,
-      expandedHeight: 140,
+      expandedHeight: 170,
       backgroundColor: _navyDark,
       foregroundColor: Colors.white,
       elevation: 0,
@@ -258,9 +258,9 @@ class _ReferenceOfficielleScreenState
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(24, 56, 24, 16),
+            padding: const EdgeInsets.fromLTRB(24, 56, 24, 48),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                   width: 52,
@@ -275,25 +275,33 @@ class _ReferenceOfficielleScreenState
                       color: Colors.white, size: 28),
                 ),
                 const SizedBox(width: 14),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'FFTDA — Positions & Techniques',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 14,
-                        letterSpacing: 0.5,
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'FFTDA — Positions & Techniques',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 14,
+                          letterSpacing: 0.5,
+                        ),
                       ),
-                    ),
-                    Text(
-                      'Référentiel officiel Dan',
-                      style: TextStyle(
-                          color: Colors.white.withOpacity(0.6), fontSize: 12),
-                    ),
-                  ],
+                      const SizedBox(height: 2),
+                      Text(
+                        'Référentiel officiel Dan',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            color: Colors.white.withOpacity(0.6),
+                            fontSize: 12),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),

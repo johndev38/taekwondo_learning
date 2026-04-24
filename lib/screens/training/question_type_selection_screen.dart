@@ -25,14 +25,14 @@ class QuestionTypeSelectionScreen extends StatelessWidget {
     final keup = RegExp(r'\(.*\)').firstMatch(belt)?.group(0) ?? '';
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
           // ── Header ──
           SliverAppBar(
             pinned: true,
-            expandedHeight: 130,
+            expandedHeight: 170,
             backgroundColor: _navy,
             foregroundColor: Colors.white,
             elevation: 0,
@@ -64,11 +64,10 @@ class QuestionTypeSelectionScreen extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(24, 52, 24, 16),
+                  padding: const EdgeInsets.fromLTRB(24, 56, 24, 48),
                   child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      // Image ceinture
                       Container(
                         width: 52,
                         height: 52,
@@ -84,28 +83,36 @@ class QuestionTypeSelectionScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(width: 14),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            label,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 22,
-                            ),
-                          ),
-                          if (keup.isNotEmpty)
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
                             Text(
-                              keup,
-                              style: TextStyle(
-                                color: beltColor.withOpacity(0.9),
-                                fontSize: 13,
-                                fontWeight: FontWeight.w500,
+                              label,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w900,
+                                fontSize: 22,
                               ),
                             ),
-                        ],
+                            if (keup.isNotEmpty) ...[
+                              const SizedBox(height: 2),
+                              Text(
+                                keup,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  color: beltColor.withOpacity(0.9),
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
                       ),
                     ],
                   ),

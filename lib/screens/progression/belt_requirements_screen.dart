@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../models/belt_requirement.dart';
-import '../notifiers/belt_notifier.dart';
+import '../../models/belt_requirement.dart';
+import '../../notifiers/belt_notifier.dart';
 
 class BeltRequirementsScreen extends StatefulWidget {
   const BeltRequirementsScreen({super.key});
 
   @override
-  _BeltRequirementsScreenState createState() => _BeltRequirementsScreenState();
+  State<BeltRequirementsScreen> createState() => _BeltRequirementsScreenState();
 }
 
 class _BeltRequirementsScreenState extends State<BeltRequirementsScreen>
@@ -84,7 +84,6 @@ class _BeltRequirementsScreenState extends State<BeltRequirementsScreen>
 
   @override
   Widget build(BuildContext context) {
-    final beltNotifier = Provider.of<BeltNotifier>(context);
     final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
@@ -293,7 +292,7 @@ class _BeltRequirementsScreenState extends State<BeltRequirementsScreen>
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Theme.of(context).cardColor,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(color: Colors.blue.shade200),
             ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../notifiers/belt_notifier.dart';
+import '../../notifiers/belt_notifier.dart';
 import 'video_screen.dart';
 
 class HanbanListScreen extends StatefulWidget {
@@ -9,7 +9,7 @@ class HanbanListScreen extends StatefulWidget {
   const HanbanListScreen({super.key, this.selectedBelt});
 
   @override
-  _HanbanListScreenState createState() => _HanbanListScreenState();
+  State<HanbanListScreen> createState() => _HanbanListScreenState();
 }
 
 class _HanbanListScreenState extends State<HanbanListScreen> {

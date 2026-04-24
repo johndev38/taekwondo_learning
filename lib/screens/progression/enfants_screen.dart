@@ -57,7 +57,7 @@ class _EnfantsScreenState extends State<EnfantsScreen> {
     final screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
@@ -199,7 +199,7 @@ class _BeltCard extends StatelessWidget {
           child: Container(
             height: 66,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Theme.of(context).cardColor,
               borderRadius: BorderRadius.circular(14),
               border: Border.all(
                 color: beltColor.withOpacity(0.2),

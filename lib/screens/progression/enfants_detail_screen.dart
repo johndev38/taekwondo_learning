@@ -43,7 +43,7 @@ class _EnfantsDetailScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: _isLoading
           ? Center(
               child: CircularProgressIndicator(
@@ -470,7 +470,7 @@ class _SectionCard extends StatelessWidget {
       shadowColor: Colors.black.withOpacity(0.07),
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Theme.of(context).cardColor,
           borderRadius: BorderRadius.circular(14),
         ),
         child: Column(

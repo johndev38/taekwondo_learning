@@ -45,7 +45,7 @@ class BeltNotifier with ChangeNotifier {
 
     // Vérifier si la ceinture stockée existe dans la liste actuelle
     if (_currentBelt != null && !belts.contains(_currentBelt)) {
-      print(
+      debugPrint(
           'Ceinture stockée "$_currentBelt" non trouvée dans la liste des ceintures disponibles');
       _currentBelt = null; // Réinitialiser si la valeur n'est pas valide
     }

@@ -98,14 +98,14 @@ class _ModuleBReviewScreenState extends State<ModuleBReviewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
           // ── Header ──
           SliverAppBar(
             pinned: true,
-            expandedHeight: 130,
+            expandedHeight: 170,
             backgroundColor: _navy,
             foregroundColor: Colors.white,
             elevation: 0,
@@ -134,9 +134,9 @@ class _ModuleBReviewScreenState extends State<ModuleBReviewScreen> {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(24, 52, 24, 16),
+                  padding: const EdgeInsets.fromLTRB(24, 56, 24, 48),
                   child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
                         width: 48,
@@ -153,27 +153,34 @@ class _ModuleBReviewScreenState extends State<ModuleBReviewScreen> {
                             color: Colors.white, size: 26),
                       ),
                       const SizedBox(width: 14),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text(
-                            'MODULE B',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 22,
-                              letterSpacing: 3,
+                      const Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'MODULE B',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w900,
+                                fontSize: 22,
+                                letterSpacing: 3,
+                              ),
                             ),
-                          ),
-                          Text(
-                            'Fiches questions / réponses',
-                            style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 13,
+                            SizedBox(height: 2),
+                            Text(
+                              'Fiches questions / réponses',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                color: Colors.white54,
+                                fontSize: 13,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ],
                   ),
@@ -332,7 +339,7 @@ class _QACardState extends State<_QACard> {
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Theme.of(context).cardColor,
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: widget.accentColor.withOpacity(0.15)),
         boxShadow: [

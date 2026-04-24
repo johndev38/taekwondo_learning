@@ -1,39 +1,58 @@
 import 'package:flutter/material.dart';
+import '../app_shell.dart';
+import '../common/search_screen.dart';
+import '../common/settings_screen.dart';
 import 'belt_selection_screen.dart';
+import 'module_b_review_screen.dart';
 import 'module_b_screen.dart';
 
-class QcmSelectionScreen extends StatelessWidget {
-  const QcmSelectionScreen({super.key});
+/// Hub d'entraînement : tous les QCM et révisions interactives.
+class TrainingHubScreen extends StatelessWidget {
+  const TrainingHubScreen({super.key});
 
   static const Color _navyDark = Color(0xFF0A1628);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
-          // ── Header ──
           SliverAppBar(
             pinned: true,
             expandedHeight: 130,
             backgroundColor: _navyDark,
             foregroundColor: Colors.white,
             elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back_ios_rounded, size: 20),
-              onPressed: () => Navigator.pop(context),
-            ),
+            automaticallyImplyLeading: false,
+            actions: [
+              IconButton(
+                tooltip: 'Rechercher',
+                icon: const Icon(Icons.search_rounded),
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SearchScreen()),
+                ),
+              ),
+              IconButton(
+                tooltip: 'Paramètres',
+                icon: const Icon(Icons.settings_rounded),
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SettingsScreen()),
+                ),
+              ),
+              const SizedBox(width: 4),
+            ],
             flexibleSpace: FlexibleSpaceBar(
               collapseMode: CollapseMode.pin,
-              titlePadding: const EdgeInsets.fromLTRB(56, 0, 20, 14),
               background: Container(
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
-                    colors: [Color(0xFF0A1628), Color(0xFF162840)],
+                    colors: [_navyDark, Color(0xFF162840)],
                   ),
                 ),
                 child: Padding(
@@ -52,34 +71,33 @@ class QcmSelectionScreen extends StatelessWidget {
                             width: 1.5,
                           ),
                         ),
-                        child: const Icon(
-                          Icons.quiz_rounded,
-                          color: Colors.white,
-                          size: 26,
-                        ),
+                        child: const Icon(Icons.quiz_rounded,
+                            color: Colors.white, size: 26),
                       ),
                       const SizedBox(width: 14),
-                      const Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'QCM',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 26,
-                              letterSpacing: 4,
+                      const Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "S'ENTRAÎNER",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w900,
+                                fontSize: 22,
+                                letterSpacing: 3,
+                              ),
                             ),
-                          ),
-                          Text(
-                            'Choisissez un module',
-                            style: TextStyle(
-                              color: Colors.white54,
-                              fontSize: 13,
+                            Text(
+                              'QCM · Flashcards · Révisions',
+                              style: TextStyle(
+                                color: Colors.white54,
+                                fontSize: 12,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ],
                   ),
@@ -87,23 +105,20 @@ class QcmSelectionScreen extends StatelessWidget {
               ),
             ),
           ),
-
-          // ── Contenu ──
           SliverToBoxAdapter(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 24, 20, 32),
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 32),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const _SectionLabel(label: 'MODULES DISPONIBLES'),
-                  const SizedBox(height: 16),
-
-                  // Module Termes
+                  // ═════════ QCM ═════════
+                  const SectionLabel(label: 'QCM'),
+                  const SizedBox(height: 12),
                   _ModuleCard(
-                    title: 'Termes',
+                    title: 'QCM Termes',
                     subtitle: 'Vocabulaire coréen · Techniques',
                     description:
-                        'Testez votre connaissance des termes officiels du Taekwondo : commandes, techniques et positions.',
+                        'Testez votre connaissance des termes officiels : commandes, techniques et positions. Choix par ceinture.',
                     icon: Icons.translate_rounded,
                     gradient: const LinearGradient(
                       begin: Alignment.topLeft,
@@ -114,31 +129,52 @@ class QcmSelectionScreen extends StatelessWidget {
                     badgeColor: const Color(0xFF2E7D32),
                     onTap: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => BeltSelectionScreen()),
+                      MaterialPageRoute(
+                          builder: (_) => const BeltSelectionScreen()),
                     ),
                   ),
-                  const SizedBox(height: 16),
-
-                  // Module B
+                  const SizedBox(height: 14),
                   _ModuleCard(
-                    title: 'Questionnaire Ceinture noire',
-                    subtitle: 'Techniques avancées · Règles',
+                    title: 'QCM Module B (DAN)',
+                    subtitle: '2ème DAN · 3ème DAN',
                     description:
-                        'Section 3ème DAN disponible : institutions, vie associative, arbitrage, compétition poomsé et kyorugi.',
+                        'QCM officiels Module B : institutions, vie associative, arbitrage, compétition poomsé et kyorugi.',
                     icon: Icons.extension_rounded,
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
-                      colors: [
-                        const Color(0xFF4A148C).withOpacity(0.7),
-                        const Color(0xFF311B92).withOpacity(0.7),
-                      ],
+                      colors: [Color(0xFF4A148C), Color(0xFF311B92)],
                     ),
-                    badge: 'Nouveau',
-                    badgeColor: const Color(0xFF2E7D32),
+                    badge: 'DAN',
+                    badgeColor: const Color(0xFF4A148C),
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(builder: (_) => const ModuleBScreen()),
+                    ),
+                  ),
+
+                  const SizedBox(height: 28),
+
+                  // ═════════ RÉVISIONS ═════════
+                  const SectionLabel(label: 'RÉVISIONS Q&R'),
+                  const SizedBox(height: 12),
+                  _ModuleCard(
+                    title: 'Module B — Fiches Q&R',
+                    subtitle: '2ème DAN · 3ème DAN',
+                    description:
+                        'Révisez toutes les questions et réponses officielles du Module B en mode lecture (non chronométré).',
+                    icon: Icons.fact_check_rounded,
+                    gradient: const LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [Color(0xFF00695C), Color(0xFF004D40)],
+                    ),
+                    badge: 'Lecture',
+                    badgeColor: const Color(0xFF00695C),
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) => const ModuleBReviewScreen()),
                     ),
                   ),
                 ],
@@ -190,16 +226,15 @@ class _ModuleCard extends StatelessWidget {
               gradient: gradient,
               borderRadius: BorderRadius.circular(20),
             ),
-            padding: const EdgeInsets.all(22),
+            padding: const EdgeInsets.all(20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Ligne titre + badge
                 Row(
                   children: [
                     Container(
-                      width: 52,
-                      height: 52,
+                      width: 50,
+                      height: 50,
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.15),
                         borderRadius: BorderRadius.circular(14),
@@ -208,7 +243,7 @@ class _ModuleCard extends StatelessWidget {
                           width: 1.5,
                         ),
                       ),
-                      child: Icon(icon, size: 28, color: Colors.white),
+                      child: Icon(icon, size: 26, color: Colors.white),
                     ),
                     const SizedBox(width: 14),
                     Expanded(
@@ -218,7 +253,7 @@ class _ModuleCard extends StatelessWidget {
                           Text(
                             title,
                             style: const TextStyle(
-                              fontSize: 22,
+                              fontSize: 20,
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
                               letterSpacing: 0.3,
@@ -228,7 +263,7 @@ class _ModuleCard extends StatelessWidget {
                           Text(
                             subtitle,
                             style: TextStyle(
-                              fontSize: 12,
+                              fontSize: 11.5,
                               color: Colors.white.withOpacity(0.7),
                             ),
                           ),
@@ -253,30 +288,28 @@ class _ModuleCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 14),
-                // Séparateur
+                const SizedBox(height: 12),
                 Container(
                   height: 1,
                   color: Colors.white.withOpacity(0.15),
                 ),
-                const SizedBox(height: 14),
-                // Description
+                const SizedBox(height: 12),
                 Text(
                   description,
                   style: TextStyle(
-                    fontSize: 13,
+                    fontSize: 12.5,
                     color: Colors.white.withOpacity(0.85),
                     height: 1.5,
                   ),
                 ),
                 if (enabled) ...[
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 14),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Container(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 16, vertical: 8),
+                            horizontal: 14, vertical: 7),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(12),
@@ -292,13 +325,13 @@ class _ModuleCard extends StatelessWidget {
                               'Commencer',
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 13,
+                                fontSize: 12,
                                 fontWeight: FontWeight.w700,
                               ),
                             ),
                             SizedBox(width: 6),
                             Icon(Icons.arrow_forward_rounded,
-                                color: Colors.white, size: 16),
+                                color: Colors.white, size: 15),
                           ],
                         ),
                       ),
@@ -310,38 +343,6 @@ class _ModuleCard extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class _SectionLabel extends StatelessWidget {
-  final String label;
-
-  const _SectionLabel({required this.label});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(
-          width: 4,
-          height: 20,
-          decoration: BoxDecoration(
-            color: const Color(0xFFCC1122),
-            borderRadius: BorderRadius.circular(2),
-          ),
-        ),
-        const SizedBox(width: 10),
-        Text(
-          label,
-          style: const TextStyle(
-            fontSize: 13,
-            fontWeight: FontWeight.w800,
-            color: Color(0xFF37474F),
-            letterSpacing: 2,
-          ),
-        ),
-      ],
     );
   }
 }

@@ -50,7 +50,31 @@ class _TimelineEvent {
 // ─── Écran ────────────────────────────────────────────────────
 
 class TaekwondoHistoryScreen extends StatefulWidget {
-  const TaekwondoHistoryScreen({super.key});
+  final String assetPath;
+  final String title;
+  final String headerTitle;
+  final String headerSubtitle;
+  final Color headerGradientEnd;
+  final IconData headerIcon;
+
+  const TaekwondoHistoryScreen({
+    super.key,
+    this.assetPath = 'assets/history.json',
+    this.title = 'HISTOIRE',
+    this.headerTitle = 'Origines & évolution',
+    this.headerSubtitle = 'Du Taekkyeon aux JO de Paris 2024',
+    this.headerGradientEnd = const Color(0xFF870000),
+    this.headerIcon = Icons.history_edu_rounded,
+  });
+
+  /// Constructeur pratique pour l'historique fédéral FFTDA.
+  const TaekwondoHistoryScreen.federal({super.key})
+      : assetPath = 'assets/history_federal.json',
+        title = 'HISTOIRE FÉDÉRALE',
+        headerTitle = 'FFTDA — grandes dates',
+        headerSubtitle = 'Chronologie du Taekwondo en France',
+        headerGradientEnd = const Color(0xFF0D47A1),
+        headerIcon = Icons.flag_rounded;
 
   @override
   TaekwondoHistoryScreenState createState() => TaekwondoHistoryScreenState();
@@ -70,7 +94,7 @@ class TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
   }
 
   Future<void> _loadHistory() async {
-    final raw = await rootBundle.loadString('assets/history.json');
+    final raw = await rootBundle.loadString(widget.assetPath);
     final data = json.decode(raw) as Map<String, dynamic>;
     setState(() {
       _sections = (data['history'] as List)
@@ -83,7 +107,7 @@ class TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F2F5),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : CustomScrollView(
@@ -110,7 +134,7 @@ class TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
   Widget _buildHeader(BuildContext context) {
     return SliverAppBar(
       pinned: true,
-      expandedHeight: 140,
+      expandedHeight: 170,
       backgroundColor: _navyDark,
       foregroundColor: Colors.white,
       elevation: 0,
@@ -121,9 +145,9 @@ class TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
       flexibleSpace: FlexibleSpaceBar(
         collapseMode: CollapseMode.pin,
         titlePadding: const EdgeInsets.fromLTRB(56, 0, 20, 14),
-        title: const Text(
-          'HISTOIRE',
-          style: TextStyle(
+        title: Text(
+          widget.title,
+          style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -131,17 +155,17 @@ class TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
           ),
         ),
         background: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
-              colors: [Color(0xFF0A1628), Color(0xFF870000)],
+              colors: [const Color(0xFF0A1628), widget.headerGradientEnd],
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(24, 56, 24, 16),
+            padding: const EdgeInsets.fromLTRB(24, 56, 24, 48),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                   width: 52,
@@ -152,27 +176,35 @@ class TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
                     border: Border.all(
                         color: Colors.white.withOpacity(0.25), width: 1.5),
                   ),
-                  child: const Icon(Icons.history_edu_rounded,
+                  child: Icon(widget.headerIcon,
                       color: Colors.white, size: 28),
                 ),
                 const SizedBox(width: 14),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'Origines & évolution',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 14),
-                    ),
-                    Text(
-                      'Du Taekkyeon aux JO de Paris 2024',
-                      style: TextStyle(
-                          color: Colors.white.withOpacity(0.6), fontSize: 12),
-                    ),
-                  ],
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        widget.headerTitle,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 14),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        widget.headerSubtitle,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            color: Colors.white.withOpacity(0.6),
+                            fontSize: 12),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -254,6 +286,7 @@ class TaekwondoHistoryScreenState extends State<TaekwondoHistoryScreen> {
       child: Theme(
         data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
         child: ExpansionTile(
+          initiallyExpanded: true,
           tilePadding: const EdgeInsets.fromLTRB(20, 8, 16, 8),
           childrenPadding: EdgeInsets.zero,
           leading: Container(
